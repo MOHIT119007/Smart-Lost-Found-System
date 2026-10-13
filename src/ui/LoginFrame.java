@@ -37,7 +37,6 @@ public class LoginFrame extends JFrame {
         getContentPane().setBackground(UITheme.BG_APP);
         setLayout(new BorderLayout());
 
-        // ── Top Header Banner ───────────────────────────────────────────────
         JPanel headerPanel = new JPanel();
         headerPanel.setBackground(UITheme.BG_HEADER);
         headerPanel.setLayout(new BoxLayout(headerPanel, BoxLayout.Y_AXIS));
@@ -53,10 +52,8 @@ public class LoginFrame extends JFrame {
         brandRow.add(titleLabel);
         headerPanel.add(brandRow);
 
-
         add(headerPanel, BorderLayout.NORTH);
 
-        // ── Center Form Card ────────────────────────────────────────────────
         JPanel centerWrapper = new JPanel(new GridBagLayout());
         centerWrapper.setBackground(UITheme.BG_APP);
         centerWrapper.setBorder(new EmptyBorder(12, 20, 18, 20));
@@ -76,7 +73,6 @@ public class LoginFrame extends JFrame {
         card.add(loginTitle);
         card.add(Box.createVerticalStrut(14));
 
-        // Role Dropdown
         card.add(createLabel("Select Role"));
         card.add(Box.createVerticalStrut(4));
         roleBox = new JComboBox<>(new String[]{"STUDENT", "ADMIN"});
@@ -86,7 +82,6 @@ public class LoginFrame extends JFrame {
         card.add(roleBox);
         card.add(Box.createVerticalStrut(12));
 
-        // Email Address
         card.add(createLabel("College Email Address"));
         card.add(Box.createVerticalStrut(4));
         emailField = new JTextField();
@@ -96,7 +91,6 @@ public class LoginFrame extends JFrame {
         card.add(emailField);
         card.add(Box.createVerticalStrut(12));
 
-        // Password
         card.add(createLabel("Password"));
         card.add(Box.createVerticalStrut(4));
         pwdField = new JPasswordField();
@@ -106,7 +100,6 @@ public class LoginFrame extends JFrame {
         card.add(pwdField);
         card.add(Box.createVerticalStrut(6));
 
-        // Show password checkbox
         JCheckBox showPwd = new JCheckBox("Show password");
         showPwd.setFont(new Font("Segoe UI", Font.PLAIN, 12));
         showPwd.setBackground(UITheme.BG_PANEL);
@@ -117,7 +110,6 @@ public class LoginFrame extends JFrame {
         card.add(showPwd);
         card.add(Box.createVerticalStrut(16));
 
-        // Login Button
         loginBtn = UITheme.createPrimaryButton("Sign In");
         loginBtn.setFont(new Font("Segoe UI", Font.BOLD, 14));
         loginBtn.setMaximumSize(new Dimension(Integer.MAX_VALUE, 38));
@@ -126,7 +118,6 @@ public class LoginFrame extends JFrame {
         card.add(loginBtn);
         card.add(Box.createVerticalStrut(10));
 
-        // Register Button
         registerBtn = UITheme.createSecondaryButton("Register as New Student");
         registerBtn.setMaximumSize(new Dimension(Integer.MAX_VALUE, 36));
         registerBtn.setAlignmentX(Component.LEFT_ALIGNMENT);
@@ -177,7 +168,6 @@ public class LoginFrame extends JFrame {
                         return;
                     }
 
-                    // Open Main Dashboard with 5 modules
                     new DashboardFrame(user).setVisible(true);
                     dispose();
                 } else {

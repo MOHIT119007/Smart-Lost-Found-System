@@ -42,10 +42,7 @@ public class ClaimDAO {
     }
 
     /**
-     * Retrieves all claims with joined found item and claimant user details (for Admin Console).
-     */
-    /**
-     * Retrieves all claims with joined found item, claimant user details, and linked lost item (for Admin Console).
+     * Retrieves all claims with joined found item, claimant user details, and linked lost item.
      */
     public List<Claim> getAllClaims() {
         String sql = "SELECT c.*, f.item_name, f.category as item_category, f.found_location, f.storage_location, f.description as item_desc, "

@@ -36,7 +36,6 @@ public class RegisterDialog extends JDialog {
         getContentPane().setBackground(UITheme.BG_APP);
         setLayout(new BorderLayout());
 
-        // Header Panel
         JPanel headerPanel = new JPanel(new GridLayout(2, 1, 0, 4));
         headerPanel.setBackground(UITheme.BG_HEADER);
         headerPanel.setBorder(new EmptyBorder(16, 20, 16, 20));
@@ -53,7 +52,6 @@ public class RegisterDialog extends JDialog {
         headerPanel.add(subLabel);
         add(headerPanel, BorderLayout.NORTH);
 
-        // Form Card
         JPanel formCard = new JPanel(new GridBagLayout());
         formCard.setBackground(UITheme.BG_PANEL);
         formCard.setBorder(new CompoundBorder(
@@ -67,14 +65,12 @@ public class RegisterDialog extends JDialog {
         gc.gridy = 0;
         gc.weightx = 1.0;
 
-        // Full Name
         formCard.add(createLabel("Full Name *"), gc);
         gc.gridy++;
         nameField = new JTextField();
         UITheme.styleTextField(nameField);
         formCard.add(nameField, gc);
 
-        // College Roll Number
         gc.gridy++;
         formCard.add(createLabel("College Roll Number / ID *"), gc);
         gc.gridy++;
@@ -82,7 +78,6 @@ public class RegisterDialog extends JDialog {
         UITheme.styleTextField(collegeIdField);
         formCard.add(collegeIdField, gc);
 
-        // Mobile Number with +91 fixed label
         gc.gridy++;
         formCard.add(createLabel("Mobile Number (10 Digits) *"), gc);
         gc.gridy++;
@@ -99,7 +94,6 @@ public class RegisterDialog extends JDialog {
         phonePanel.add(phoneField, BorderLayout.CENTER);
         formCard.add(phonePanel, gc);
 
-        // Email
         gc.gridy++;
         formCard.add(createLabel("College Email Address *"), gc);
         gc.gridy++;
@@ -107,7 +101,6 @@ public class RegisterDialog extends JDialog {
         UITheme.styleTextField(emailField);
         formCard.add(emailField, gc);
 
-        // Password
         gc.gridy++;
         formCard.add(createLabel("Account Password *"), gc);
         gc.gridy++;
@@ -115,7 +108,6 @@ public class RegisterDialog extends JDialog {
         UITheme.stylePasswordField(passwordField);
         formCard.add(passwordField, gc);
 
-        // Confirm Password
         gc.gridy++;
         formCard.add(createLabel("Confirm Password *"), gc);
         gc.gridy++;
@@ -123,7 +115,6 @@ public class RegisterDialog extends JDialog {
         UITheme.stylePasswordField(confirmPasswordField);
         formCard.add(confirmPasswordField, gc);
 
-        // Buttons
         gc.gridy++;
         gc.insets = new Insets(14, 4, 4, 4);
         JPanel btnPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT, 10, 0));

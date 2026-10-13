@@ -21,44 +21,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Smart Lost & Found System – Main Application Dashboard.
- *
- * Designed for simplicity, clean architecture, and easy viva explanation.
- *
- * Student Modules:
- *   1. Report Lost Item (Status: PENDING)
- *   2. Report Found Item (Status: PENDING)
- *   3. Search Items (Simple name & category match)
- *
- * Admin Modules:
- *   1. Verify / Approve Items (Quick pending verification)
- *   2. Lost Items (Full table + Details + Approve/Reject)
- *   3. Found Items (Full table + Details + Approve/Reject)
- *   4. Registered Users (Directory of students & admins)
+ * Main Application Dashboard for Smart Lost & Found System.
+ * Manages administrator review and student lost/found reporting.
  */
 public class DashboardFrame extends JFrame {
 
     private final User currentUser;
     private final boolean isAdmin;
 
-    // DAOs
     private final UserDAO userDAO = new UserDAO();
     private final LostItemDAO lostItemDAO = new LostItemDAO();
     private final FoundItemDAO foundItemDAO = new FoundItemDAO();
     private final MatchingService matchingService = new MatchingService();
 
-    // Layout
     private final CardLayout cardLayout = new CardLayout();
     private final JPanel contentCards = new JPanel(cardLayout);
     private final List<JButton> navButtons = new ArrayList<>();
 
-    // ── Admin Components ────────────────────────────────────────────────────
-    // 1. Registered Users Section
+    // Admin Components
     private JTable adminUsersTable;
     private DefaultTableModel adminUsersModel;
     private JTextArea adminUsersDetailArea;
 
-    // 2. Register Found Items Section (Approval, List & Desk Entry)
     private JTable adminFoundTable;
     private DefaultTableModel adminFoundModel;
     private JTextArea adminFoundDetailArea;
@@ -66,7 +50,6 @@ public class DashboardFrame extends JFrame {
     private JButton adminFoundRejectBtn;
     private FoundItem selectedFoundItem = null;
 
-    // 3. Lost Items Approval Section
     private JTable adminLostTable;
     private DefaultTableModel adminLostModel;
     private JTextArea adminLostDetailArea;
@@ -75,15 +58,13 @@ public class DashboardFrame extends JFrame {
     private JComboBox<String> adminLostFilterBox;
     private LostItem selectedLostItem = null;
 
-    // 4. Claimed Items Details Section
     private JTable adminClaimedTable;
     private DefaultTableModel adminClaimedModel;
     private JTextArea adminClaimedDetailArea;
     private JComboBox<String> adminClaimedFilterBox;
     private final List<Object> adminClaimedRecordList = new ArrayList<>();
 
-    // ── Student Components ──────────────────────────────────────────────────
-    // 3. Notifications & Approvals Section
+    // Student Components
     private JTable studentNotificationsTable;
     private DefaultTableModel studentNotificationsModel;
     private JTextArea studentNotificationsDetailArea;
@@ -93,7 +74,6 @@ public class DashboardFrame extends JFrame {
     private JLabel studentActionHintLabel;
     private final List<Object> studentNotificationsRecordList = new ArrayList<>();
 
-    // 4. My Claimed Items Section
     private JTable studentClaimedTable;
     private DefaultTableModel studentClaimedModel;
     private JTextArea studentClaimedDetailArea;
@@ -118,10 +98,8 @@ public class DashboardFrame extends JFrame {
         getContentPane().setBackground(UITheme.BG_APP);
         setLayout(new BorderLayout());
 
-        // Left Navigation Sidebar
         add(createSidebar(), BorderLayout.WEST);
 
-        // Center Content Cards
         contentCards.setBackground(UITheme.BG_APP);
         if (isAdmin) {
             contentCards.add(createAdminUsersCard(), "ADMIN_USERS");
@@ -136,7 +114,6 @@ public class DashboardFrame extends JFrame {
         }
         add(contentCards, BorderLayout.CENTER);
 
-        // Default Tab Activation
         if (!navButtons.isEmpty()) {
             if (isAdmin) {
                 setActiveTab("ADMIN_USERS", navButtons.get(0));
@@ -148,16 +125,12 @@ public class DashboardFrame extends JFrame {
         }
     }
 
-    // ════════════════════════════════════════════════════════════════════════
-    //  LEFT SIDEBAR NAVIGATION (Matches existing professional dark styling)
-    // ════════════════════════════════════════════════════════════════════════
     private JPanel createSidebar() {
         JPanel sidebar = new JPanel(new BorderLayout());
         sidebar.setBackground(UITheme.BG_SIDEBAR);
         sidebar.setPreferredSize(new Dimension(285, 0));
         sidebar.setBorder(new MatteBorder(0, 0, 0, 1, UITheme.BORDER));
 
-        // Top: Logo & User Badge
         JPanel profileBox = new JPanel();
         profileBox.setLayout(new BoxLayout(profileBox, BoxLayout.Y_AXIS));
         profileBox.setBackground(UITheme.BG_SIDEBAR);
@@ -176,7 +149,6 @@ public class DashboardFrame extends JFrame {
 
         profileBox.add(Box.createVerticalStrut(14));
 
-        // User Details Badge
         JPanel userBadge = new JPanel(new GridLayout(3, 1, 0, 3));
         userBadge.setBackground(UITheme.BG_PANEL);
         userBadge.setBorder(new CompoundBorder(
@@ -205,7 +177,6 @@ public class DashboardFrame extends JFrame {
 
         sidebar.add(profileBox, BorderLayout.NORTH);
 
-        // Center: Navigation Menu Buttons
         JPanel menuPanel = new JPanel();
         menuPanel.setLayout(new BoxLayout(menuPanel, BoxLayout.Y_AXIS));
         menuPanel.setBackground(UITheme.BG_SIDEBAR);
@@ -213,7 +184,6 @@ public class DashboardFrame extends JFrame {
 
         navButtons.clear();
         if (isAdmin) {
-            // ADMIN: 1. Registered Users, 2. Register Found Items, 3. Lost Items Approval, 4. Claimed Items Details
             JButton b1 = createSidebarNavButton("Registered Users Details", "ADMIN_USERS", () -> refreshAdminUsers());
             JButton b2 = createSidebarNavButton("Register Found Items", "ADMIN_FOUND", () -> refreshAdminFound());
             JButton b3 = createSidebarNavButton("Lost Items Approval", "ADMIN_LOST", () -> refreshAdminLost());
@@ -227,7 +197,6 @@ public class DashboardFrame extends JFrame {
             menuPanel.add(Box.createVerticalStrut(8));
             menuPanel.add(b4);
         } else {
-            // STUDENT: 1. Report Lost, 2. Report Found, 3. Notifications & Approvals, 4. My Claimed Items
             JButton b1 = createSidebarNavButton("Report Lost Item", "STUDENT_LOST", null);
             JButton b2 = createSidebarNavButton("Report Found Item", "STUDENT_FOUND", null);
             JButton b3 = createSidebarNavButton("Notifications & Approvals", "STUDENT_NOTIFICATIONS", () -> refreshStudentNotifications());
@@ -244,7 +213,6 @@ public class DashboardFrame extends JFrame {
 
         sidebar.add(menuPanel, BorderLayout.CENTER);
 
-        // Bottom: Logout Button
         JPanel bottomPanel = new JPanel(new BorderLayout());
         bottomPanel.setBackground(UITheme.BG_SIDEBAR);
         bottomPanel.setBorder(new EmptyBorder(12, 14, 16, 14));
@@ -295,12 +263,6 @@ public class DashboardFrame extends JFrame {
         activeBtn.setForeground(UITheme.TEXT_WHITE);
     }
 
-    // ════════════════════════════════════════════════════════════════════════
-    //  ADMIN SECTION 1: VERIFY / APPROVE ITEMS (Quick Pending Verification)
-    // ════════════════════════════════════════════════════════════════════════
-    // ════════════════════════════════════════════════════════════════════════
-    //  ADMIN SECTION 4: CLAIMED ITEMS DETAILS (Only Items Claimed by Users)
-    // ════════════════════════════════════════════════════════════════════════
     private JPanel createAdminClaimedCard() {
         JPanel panel = createPageRoot();
 
@@ -346,7 +308,6 @@ public class DashboardFrame extends JFrame {
         tableScroll.setPreferredSize(new Dimension(0, 270));
         center.add(tableScroll, BorderLayout.CENTER);
 
-        // Details below
         JPanel bottomBox = new JPanel(new BorderLayout(0, 10));
         bottomBox.setBackground(UITheme.BG_APP);
 
@@ -616,9 +577,6 @@ public class DashboardFrame extends JFrame {
         return row;
     }
 
-    // ════════════════════════════════════════════════════════════════════════
-    //  ADMIN SECTION 3: LOST ITEMS APPROVAL (Pending/Approved reports; removed when claimed)
-    // ════════════════════════════════════════════════════════════════════════
     private JPanel createAdminLostCard() {
         JPanel panel = createPageRoot();
 
@@ -664,7 +622,6 @@ public class DashboardFrame extends JFrame {
         tableScroll.setPreferredSize(new Dimension(0, 260));
         center.add(tableScroll, BorderLayout.CENTER);
 
-        // Detail panel below
         JPanel bottomBox = new JPanel(new BorderLayout(0, 10));
         bottomBox.setBackground(UITheme.BG_APP);
 
@@ -690,7 +647,6 @@ public class DashboardFrame extends JFrame {
 
         bottomBox.add(detailCard, BorderLayout.CENTER);
 
-        // Action Buttons: [ APPROVE ]   [ REJECT ]
         JPanel btnBar = new JPanel(new FlowLayout(FlowLayout.RIGHT, 12, 0));
         btnBar.setBackground(UITheme.BG_APP);
 
@@ -745,7 +701,7 @@ public class DashboardFrame extends JFrame {
 
         List<LostItem> list = lostItemDAO.getAllLostItems();
         for (LostItem l : list) {
-            // Once claimed by student, it is REMOVED from this section and appears in Claimed Items Details!
+            // Skip already claimed items
             if ("CLAIMED".equalsIgnoreCase(l.getStatus()) || "CONFIRMED".equalsIgnoreCase(l.getStatus())) {
                 continue;
             }
@@ -793,9 +749,6 @@ public class DashboardFrame extends JFrame {
         }
     }
 
-    // ════════════════════════════════════════════════════════════════════════
-    //  ADMIN SECTION 2: REGISTER FOUND ITEMS & APPROVAL (List + Approval + Desk Entry)
-    // ════════════════════════════════════════════════════════════════════════
     private JPanel createAdminFoundCard() {
         JPanel panel = createPageRoot();
 
@@ -838,7 +791,6 @@ public class DashboardFrame extends JFrame {
         tableScroll.setPreferredSize(new Dimension(0, 260));
         center.add(tableScroll, BorderLayout.CENTER);
 
-        // Detail panel below
         JPanel bottomBox = new JPanel(new BorderLayout(0, 10));
         bottomBox.setBackground(UITheme.BG_APP);
 
@@ -864,7 +816,6 @@ public class DashboardFrame extends JFrame {
 
         bottomBox.add(detailCard, BorderLayout.CENTER);
 
-        // Action Buttons: [ APPROVE ]   [ REJECT ]
         JPanel btnBar = new JPanel(new FlowLayout(FlowLayout.RIGHT, 12, 0));
         btnBar.setBackground(UITheme.BG_APP);
 
@@ -947,9 +898,6 @@ public class DashboardFrame extends JFrame {
         }
     }
 
-    // ════════════════════════════════════════════════════════════════════════
-    //  ADMIN SECTION 4: REGISTERED USERS (Section 8: ID | Name | Roll No | Email | Mobile)
-    // ════════════════════════════════════════════════════════════════════════
     private JPanel createAdminUsersCard() {
         JPanel panel = createPageRoot();
 
@@ -969,7 +917,6 @@ public class DashboardFrame extends JFrame {
         JPanel center = new JPanel(new BorderLayout(0, 14));
         center.setBackground(UITheme.BG_APP);
 
-        // Columns required by Section 8: ID | Name | Roll No | Email | Mobile
         String[] cols = {"ID", "Name", "Roll No", "Email", "Mobile"};
         adminUsersModel = new DefaultTableModel(cols, 0) {
             @Override
@@ -1002,9 +949,6 @@ public class DashboardFrame extends JFrame {
         }
     }
 
-    // ════════════════════════════════════════════════════════════════════════
-    //  STUDENT SECTION 1: REPORT LOST ITEM (Section 13)
-    // ════════════════════════════════════════════════════════════════════════
     private JPanel createStudentReportLostCard() {
         JPanel wrapper = new JPanel(new BorderLayout());
         wrapper.setBackground(UITheme.BG_APP);
@@ -1042,7 +986,6 @@ public class DashboardFrame extends JFrame {
         JTextField dateField = new JTextField(LocalDate.now().toString());
         UITheme.styleTextField(dateField);
 
-        // Mobile Field with +91 fixed label
         JPanel phonePanel = new JPanel(new BorderLayout(6, 0));
         phonePanel.setBackground(UITheme.BG_PANEL);
         JLabel codeLabel = new JLabel("+91 ");
@@ -1061,7 +1004,6 @@ public class DashboardFrame extends JFrame {
         descScroll.setBorder(UITheme.createFieldBorder());
         descScroll.getViewport().setBackground(UITheme.BG_INPUT);
 
-        // Build Form Layout
         formCard.add(UITheme.createLabel("Item Name *"), gc);
         gc.gridy++;
         formCard.add(nameField, gc);
@@ -1091,7 +1033,6 @@ public class DashboardFrame extends JFrame {
         gc.gridy++;
         formCard.add(descScroll, gc);
 
-        // Buttons
         gc.gridy++;
         gc.insets = new Insets(14, 6, 6, 6);
         JPanel btnRow = new JPanel(new FlowLayout(FlowLayout.RIGHT, 10, 0));
@@ -1158,9 +1099,6 @@ public class DashboardFrame extends JFrame {
         return wrapper;
     }
 
-    // ════════════════════════════════════════════════════════════════════════
-    //  STUDENT SECTION 2: REPORT FOUND ITEM (Section 13)
-    // ════════════════════════════════════════════════════════════════════════
     private JPanel createStudentReportFoundCard() {
         JPanel wrapper = new JPanel(new BorderLayout());
         wrapper.setBackground(UITheme.BG_APP);
@@ -1198,7 +1136,6 @@ public class DashboardFrame extends JFrame {
         JTextField dateField = new JTextField(LocalDate.now().toString());
         UITheme.styleTextField(dateField);
 
-        // Mobile Field with +91 fixed label
         JPanel phonePanel = new JPanel(new BorderLayout(6, 0));
         phonePanel.setBackground(UITheme.BG_PANEL);
         JLabel codeLabel = new JLabel("+91 ");
@@ -1217,7 +1154,6 @@ public class DashboardFrame extends JFrame {
         descScroll.setBorder(UITheme.createFieldBorder());
         descScroll.getViewport().setBackground(UITheme.BG_INPUT);
 
-        // Build Form Layout
         formCard.add(UITheme.createLabel("Item Name *"), gc);
         gc.gridy++;
         formCard.add(nameField, gc);
@@ -1247,7 +1183,6 @@ public class DashboardFrame extends JFrame {
         gc.gridy++;
         formCard.add(descScroll, gc);
 
-        // Buttons
         gc.gridy++;
         gc.insets = new Insets(14, 6, 6, 6);
         JPanel btnRow = new JPanel(new FlowLayout(FlowLayout.RIGHT, 10, 0));
@@ -1312,9 +1247,8 @@ public class DashboardFrame extends JFrame {
         scroll.getViewport().setBackground(UITheme.BG_APP);
         wrapper.add(scroll, BorderLayout.CENTER);
         return wrapper;
-    }    // ════════════════════════════════════════════════════════════════════════
-    //  STUDENT SECTION 3: NOTIFICATIONS & APPROVALS (Accept items approved by Admin)
-    // ════════════════════════════════════════════════════════════════════════
+    }
+
     private JPanel createStudentNotificationsCard() {
         JPanel panel = createPageRoot();
 
@@ -1348,7 +1282,6 @@ public class DashboardFrame extends JFrame {
         JPanel center = new JPanel(new BorderLayout(0, 14));
         center.setBackground(UITheme.BG_APP);
 
-        // Results Table
         String[] cols = {"ID", "Item Name", "Category", "Report Type", "Location", "Date", "Status"};
         studentNotificationsModel = new DefaultTableModel(cols, 0) {
             @Override
@@ -1368,7 +1301,6 @@ public class DashboardFrame extends JFrame {
         scrollTable.getViewport().setBackground(UITheme.BG_INPUT);
         center.add(scrollTable, BorderLayout.CENTER);
 
-        // Details & Confirmation Panel below
         JPanel detailBox = UITheme.createCardPanel();
         detailBox.setLayout(new BorderLayout(0, 8));
         detailBox.setPreferredSize(new Dimension(0, 215));
@@ -1394,7 +1326,6 @@ public class DashboardFrame extends JFrame {
         scrollDetails.setBorder(new LineBorder(UITheme.BORDER, 1));
         detailBox.add(scrollDetails, BorderLayout.CENTER);
 
-        // Action Bar: Hint label on left, Action Buttons on right
         JPanel actionRow = new JPanel(new BorderLayout(10, 0));
         actionRow.setBackground(UITheme.BG_PANEL);
 
@@ -1615,9 +1546,6 @@ public class DashboardFrame extends JFrame {
         }
     }
 
-    // ════════════════════════════════════════════════════════════════════════
-    //  STUDENT SECTION 4: MY CLAIMED ITEMS (Items Claimed by Student from Admin)
-    // ════════════════════════════════════════════════════════════════════════
     private JPanel createStudentClaimedCard() {
         JPanel panel = createPageRoot();
 
@@ -1629,7 +1557,9 @@ public class DashboardFrame extends JFrame {
         JPanel controls = new JPanel(new FlowLayout(FlowLayout.RIGHT, 10, 0));
         controls.setBackground(UITheme.BG_APP);
 
-        studentClaimedFilterBox = new JComboBox<>(new String[]{"All My Claimed Items", "Claimed Lost Items", "Claimed Found Items"});
+        studentClaimedFilterBox = new JComboBox<>(new String[]{
+                "All My Claimed Items", "Claimed Lost Items", "Claimed Found Items"
+        });
         UITheme.styleComboBox(studentClaimedFilterBox);
         studentClaimedFilterBox.setPreferredSize(new Dimension(180, 36));
         studentClaimedFilterBox.addActionListener(e -> refreshStudentClaimed());
@@ -1646,7 +1576,6 @@ public class DashboardFrame extends JFrame {
         JPanel center = new JPanel(new BorderLayout(0, 14));
         center.setBackground(UITheme.BG_APP);
 
-        // Table
         String[] cols = {"ID", "Item Name", "Category", "Report Type", "Location", "Date", "Contact", "Status"};
         studentClaimedModel = new DefaultTableModel(cols, 0) {
             @Override
@@ -1666,7 +1595,6 @@ public class DashboardFrame extends JFrame {
         scrollTable.getViewport().setBackground(UITheme.BG_INPUT);
         center.add(scrollTable, BorderLayout.CENTER);
 
-        // Details Panel below
         JPanel detailBox = UITheme.createCardPanel();
         detailBox.setLayout(new BorderLayout(0, 10));
         detailBox.setPreferredSize(new Dimension(0, 180));
@@ -1777,9 +1705,6 @@ public class DashboardFrame extends JFrame {
         }
     }
 
-    // ════════════════════════════════════════════════════════════════════════
-    //  MOBILE NUMBER VALIDATION & PAGE HELPERS
-    // ════════════════════════════════════════════════════════════════════════
     private boolean validateMobile(String phone) {
         if (phone == null) return false;
         String clean = phone.trim();
@@ -1788,7 +1713,7 @@ public class DashboardFrame extends JFrame {
     }
 
     /**
-     * Validates that the entered mobile number contains EXACTLY 10 digits (Section 11 & 12).
+     * Validates that the entered mobile number contains exactly 10 digits.
      */
     private String validateMobileInput(JTextField field) {
         String phone = field.getText().trim();

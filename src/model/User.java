@@ -38,7 +38,7 @@ public class User {
         this.collegeId = collegeId;
     }
 
-    // Getters and Setters (Encapsulation)
+    // Getters and Setters
     public int getId() {
         return id;
     }

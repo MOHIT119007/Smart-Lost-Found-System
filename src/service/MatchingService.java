@@ -8,13 +8,7 @@ import java.util.List;
 
 /**
  * Service class for matching Lost and Found items.
- *
- * Matching Logic (Simplified for College Project & Viva):
- * 1. Category must be identical (e.g., Electronics == Electronics).
- * 2. Item Name keyword matches OR Location keyword matches.
- *
- * This provides an intuitive, rule-based matching mechanism
- * that is easy to understand, test, and explain in viva.
+ * Performs rule-based category and keyword matching.
  */
 public class MatchingService {
 
