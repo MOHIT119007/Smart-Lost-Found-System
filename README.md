@@ -562,8 +562,6 @@ SmartLostAndFound/
 │       │   ├── SmartLostAndFound.cfg        # Java launcher configuration
 │       │   └── db.properties                # Live database configuration
 │       ├── db.properties                    # Live database configuration
-│       ├── db.properties.example            # Configuration template
-│       ├── database.sql                     # Schema backup script
 │       └── README_PORTABLE.txt              # Standalone user guide
 │
 ├── docs/                                    # Academic Project Documentation
