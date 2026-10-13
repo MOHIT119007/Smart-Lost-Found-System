@@ -26,7 +26,7 @@ temp/
 # Local Database Configuration & Secrets
 # ===================================================================
 db.properties
-release/db.properties
+dist/**/db.properties
 .env
 .env.*
 !.env.example
@@ -62,10 +62,8 @@ Desktop.ini
 
 # ===================================================================
 # Dependencies & Distribution Artifacts
-# Allow necessary distribution JAR and library dependencies
 # ===================================================================
 *.jar
 !lib/
 !lib/*.jar
-!release/SmartLostAndFound.jar
 

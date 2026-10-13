@@ -48,13 +48,14 @@ pushd "%STAGING%"
 popd
 xcopy /s /e /y "bin\*" "%STAGING%\" >nul
 
-if not exist "release" mkdir "release"
-"%JAR_CMD%" --create --file "release\SmartLostAndFound.jar" --main-class "Main" -C "%STAGING%" .
+if not exist "dist\SmartLostAndFound\app" mkdir "dist\SmartLostAndFound\app"
+"%JAR_CMD%" --create --file "dist\SmartLostAndFound\app\SmartLostAndFound.jar" --main-class "Main" -C "%STAGING%" .
 rd /s /q "%STAGING%" >nul 2>nul
+if exist "bin" rd /s /q "bin" >nul 2>nul
 
 echo ===================================================
 echo  BUILD SUCCESSFUL!
-echo  Runnable JAR: release\SmartLostAndFound.jar
-echo  Windows Executable: release\SmartLostAndFound.exe
+echo  Application: dist\SmartLostAndFound\SmartLostAndFound.exe
+echo  App JAR: dist\SmartLostAndFound\app\SmartLostAndFound.jar
 echo ===================================================
 pause

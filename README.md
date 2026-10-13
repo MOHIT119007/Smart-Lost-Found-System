@@ -110,12 +110,14 @@ SmartLostAndFound/
 │   └── database.sql                     # Table DDL schema & sample records
 ├── lib/
 │   └── mysql-connector-j.jar            # Official MySQL JDBC Driver
-├── release/                             # Application Distribution & Executable Package
-│   ├── SmartLostAndFound.exe            # Native Windows executable launcher
-│   ├── SmartLostAndFound.jar            # Self-contained runnable application JAR
-│   └── db.properties.example            # Database configuration template for release
+├── dist/                                # Application Distribution
+│   └── SmartLostAndFound/               # Portable standalone package (with bundled runtime)
+│       ├── SmartLostAndFound.exe        # Native Windows executable launcher
+│       ├── runtime/                     # Bundled Java runtime (portable, no install needed)
+│       └── app/
+│           └── SmartLostAndFound.jar    # Application JAR
 ├── db.properties.example                # Safe database configuration template
-├── build.bat                            # Rebuild Java sources & update JAR in release/
+├── build.bat                            # Rebuild Java sources & update JAR in dist/
 ├── setup_jdk.ps1                        # Automatic JDK 17 setup script
 ├── LICENSE                              # MIT License
 └── README.md                            # Project documentation
@@ -134,7 +136,7 @@ SmartLostAndFound/
    *This creates the `smart_lost_found` database, required tables (`users`, `lost_items`, `found_items`, `claims`), and initial demo records.*
 
 ### Step 2: Configure Database Credentials
-1. Copy `db.properties.example` to `db.properties` in the project root (or inside `release/`):
+1. Copy `db.properties.example` to `db.properties` in the project root (or inside `dist/SmartLostAndFound/`):
    ```cmd
    copy db.properties.example db.properties
    ```
@@ -151,13 +153,13 @@ SmartLostAndFound/
 You can launch the application in either of two ways:
 
 * **Method 1 (Recommended — Native Windows App):**
-  Open the **`release/`** folder and double-click **`SmartLostAndFound.exe`**.
-  *(The EXE detects your installed Java runtime and launches seamlessly).*
+  Open the **`dist/SmartLostAndFound/`** folder and double-click **`SmartLostAndFound.exe`**.
+  *(Runs portably with bundled runtime — no separate Java installation required).*
 
 * **Method 2 (Runnable JAR):**
-  Inside the **`release/`** folder, double-click **`SmartLostAndFound.jar`** or run from PowerShell:
+  Run from PowerShell or Command Prompt:
   ```powershell
-  java -jar release/SmartLostAndFound.jar
+  java -jar dist/SmartLostAndFound/app/SmartLostAndFound.jar
   ```
 
 ---
