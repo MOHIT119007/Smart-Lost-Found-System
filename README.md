@@ -32,7 +32,6 @@ A stand-alone, high-performance desktop application engineered in **Core Java (J
 | Naitik Pathak | 24EARAD106 | Admin Panel (UI + Logic) |
 | Paramveer Singh | 24EARAD119 | Testing, Integration & Documentation |
 
-> **Saturday = Mentor Meeting (All members attend) | Sunday = Review / Self-Study**
 
 ---
 
