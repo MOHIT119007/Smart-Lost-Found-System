@@ -42,8 +42,8 @@ A stand-alone, high-performance desktop application engineered in **Core Java (J
 | 📄 **Final Project Report** | Complete 36-Page Technical Architecture Document, System Requirements Specification (SRS), and Evaluation Metrics | [View Project Report](docs/PROJECT_REPORT) \| [ARCHITECTURE.md](docs/ARCHITECTURE.md) |
 | 📊 **Presentation Deck (PPT)** | 16-Slide B.Tech Final Project Evaluation Deck covering System Design, Cloud DB, Matching Service & Testing | [View Presentation Deck (Slides)](docs/PPT) |
 | 🎥 **Video Demonstration** | 10-Minute HD Walkthrough of Smart Lost & Found System (Student Workflow, Matching Engine, Live Cloud DB & Admin Console) | [Watch Video Demonstration](docs/demo_video_link.md) |
-| 📜 **Software Requirements (SRS)** | IEEE 830 / ISO 29148 Compliant Specification Document covering all 16 Functional & Non-Functional Requirements | [View SRS Document](docs/SRS) |
-| 🔬 **Research Paper** | Complete Academic Research Paper on Campus Property Recovery & Rule-Based Matching Algorithms | [View Research Paper](docs/RESEARCH_PAPER) |
+| 📜 **Software Requirements (SRS)** | College Curriculum Format (Arya College / RTU Kota) covering 16 Functional & Non-Functional Requirements, User Roles & Constraints | [View SRS Document](docs/SRS) |
+| 🔬 **Research Paper** | IEEE Standard Format Academic Research Paper on Campus Property Recovery & Rule-Based Matching Algorithms| [View Research Paper](docs/RESEARCH_PAPER) |
 
 ---
 
