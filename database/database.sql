@@ -94,3 +94,22 @@ VALUES
     (5, 'Naitik Pathak', 'naitik.pathak@campus.edu', 'student123', 'STUDENT', '9829012348', '24EARAD106'),
     (6, 'Paramveer Singh', 'paramveer.singh@campus.edu', 'student123', 'STUDENT', '9829012349', '24EARD119');
 
+-- ---------------------------------------------------
+-- Initial Sample Lost Items
+-- ---------------------------------------------------
+INSERT INTO lost_items (id, user_id, item_name, category, location, lost_date, description, contact_phone, status) VALUES
+    (1, 2, 'iPhone 13 (Black)', 'Electronics', 'Library (2nd Floor)', '2026-10-04', 'Black iPhone 13 with clear silicone case, small scratch near camera.', '9829012345', 'PENDING'),
+    (2, 3, 'Blue Wallet', 'Accessories', 'Sports Complex', '2026-10-06', 'Leather bi-fold wallet containing student ID card and bus pass.', '9829012346', 'PENDING'),
+    (3, 4, 'Dell Charger 65W', 'Electronics', 'Computer Center Lab 3', '2026-10-02', 'Dell Type-C original 65W fast charger with braided cable.', '9829012347', 'APPROVED'),
+    (4, 5, 'Earbuds', 'Electronics', 'HOD Office', '2026-10-05', 'White wireless earbuds in charging case.', '9876543210', 'APPROVED'),
+    (5, 6, 'Titan Black Leather Watch', 'Accessories', 'Basketball Court', '2026-10-01', 'Analog quartz watch with black textured strap and silver bezel.', '9829012349', 'REJECTED');
+
+-- ---------------------------------------------------
+-- Initial Sample Found Items
+-- ---------------------------------------------------
+INSERT INTO found_items (id, user_id, item_name, category, found_location, storage_location, found_date, description, contact_phone, status) VALUES
+    (1, 3, 'Blue Wallet', 'Accessories', 'Sports Complex', 'Security Desk Gate 1', '2026-10-06', 'Blue leather wallet found near sports complex pavilion.', '9829012346', 'PENDING'),
+    (2, 2, 'iPhone (Black)', 'Electronics', 'Computer Center', 'Proctor Office Room 102', '2026-10-03', 'Black smartphone found near terminal 22.', '9829012345', 'PENDING'),
+    (3, 4, 'Mobile Phone', 'Electronics', 'Block A Corridor', 'Admin Helpdesk Counter', '2026-10-02', 'Dark colour phone in case handed over by lab assistant.', '9829012347', 'APPROVED'),
+    (4, 5, 'Scientific Calculator', 'Electronics', 'Mechanical Workshop', 'Proctor Office', '2026-10-04', 'Casio scientific calculator found on table.', '9829012348', 'APPROVED'),
+    (5, 6, 'Dell Charger', 'Electronics', 'Central Library', 'Security Desk Gate 1', '2026-10-02', 'Dell 65W laptop adapter.', '9829012349', 'REJECTED');

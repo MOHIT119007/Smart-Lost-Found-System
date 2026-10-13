@@ -1,5 +1,5 @@
 $ErrorActionPreference = "Stop"
-$jdkDir = "C:\Users\Lenovo\.jdk17"
+$jdkDir = "$env:USERPROFILE\.jdk17"
 $zipPath = "$env:TEMP\jdk17.zip"
 $extractTemp = "$env:TEMP\jdk_extract"
 

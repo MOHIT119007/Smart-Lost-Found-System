@@ -12,6 +12,7 @@ import javax.swing.table.JTableHeader;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.InputStream;
 
 /**
  * Official Campus Dark Dashboard Theme for Smart Lost & Found System.
@@ -275,10 +276,19 @@ public class UITheme {
 
     // ── App Logo Helper ─────────────────────────────────────────────────────
     public static Image getAppLogo() {
+        try {
+            InputStream is = UITheme.class.getResourceAsStream("/resources/logo.png");
+            if (is == null) {
+                is = UITheme.class.getClassLoader().getResourceAsStream("resources/logo.png");
+            }
+            if (is != null) {
+                return ImageIO.read(is);
+            }
+        } catch (Exception ignored) {}
+
         File[] candidateFiles = {
                 new File("src/resources/logo.png"),
-                new File("resources/logo.png"),
-                new File("logo.png")
+                new File("resources/logo.png")
         };
         for (File f : candidateFiles) {
             if (f.exists()) {

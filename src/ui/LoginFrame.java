@@ -53,12 +53,6 @@ public class LoginFrame extends JFrame {
         brandRow.add(titleLabel);
         headerPanel.add(brandRow);
 
-        headerPanel.add(Box.createVerticalStrut(3));
-        JLabel subtitleLabel = new JLabel("Official Campus Property Recovery & Management Portal", SwingConstants.CENTER);
-        subtitleLabel.setFont(new Font("Segoe UI", Font.PLAIN, 12));
-        subtitleLabel.setForeground(new Color(203, 213, 225));
-        subtitleLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
-        headerPanel.add(subtitleLabel);
 
         add(headerPanel, BorderLayout.NORTH);
 

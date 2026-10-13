@@ -1,47 +1,17 @@
-```gitignore
-# ==============================
-# Environment Variables & Secrets
-# ==============================
-.env
-.env.*
-!.env.example
-secrets/
-*.pem
-*.key
-*.p12
-*.pfx
-
-# ==============================
-# Java Compiled Files
-# ==============================
+# ===================================================================
+# Java Compiled Output & Build Directories
+# ===================================================================
 *.class
-*.jar
-*.war
-*.ear
-
-# ==============================
-# Build & Output Directories
-# ==============================
-target/
+bin/
 build/
 out/
-bin/
+target/
 dist/
 
-# ==============================
-# IDE Settings
-# ==============================
-.idea/
-.vscode/
-*.iml
-.project
-.classpath
-.settings/
-.metadata/
-
-# ==============================
-# Logs & Temporary Files
-# ==============================
+# ===================================================================
+# Temporary Files & Build Logs
+# ===================================================================
+sources.txt
 *.log
 logs/
 tmp/
@@ -52,55 +22,50 @@ temp/
 *.swo
 *~
 
-# ==============================
+# ===================================================================
+# Local Database Configuration & Secrets
+# ===================================================================
+db.properties
+release/db.properties
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+
+# ===================================================================
+# Local Database Dumps & Cache
+# ===================================================================
+*.db
+*.sqlite
+*.sqlite3
+*.dump
+
+# ===================================================================
+# IDE & Editor Settings
+# ===================================================================
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+.settings/
+.metadata/
+
+# ===================================================================
 # Operating System Files
-# ==============================
+# ===================================================================
 .DS_Store
 Thumbs.db
 Desktop.ini
 
-# ==============================
-# Database & Local Data
-# ==============================
-*.db
-*.sqlite
-*.sqlite3
-*.mv.db
-*.trace.db
+# ===================================================================
+# Dependencies & Distribution Artifacts
+# Allow necessary distribution JAR and library dependencies
+# ===================================================================
+*.jar
+!lib/
+!lib/*.jar
+!release/SmartLostAndFound.jar
 
-# ==============================
-# Dependency & Package Caches
-# ==============================
-.gradle/
-.mvn/wrapper/maven-wrapper.jar
-
-# ==============================
-# Node.js (if used)
-# ==============================
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-pnpm-debug.log*
-
-# ==============================
-# Python (if used)
-# ==============================
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-
-# ==============================
-# Coverage & Test Reports
-# ==============================
-coverage/
-reports/
-surefire-reports/
-
-# ==============================
-# Local Configuration
-# ==============================
-application-local.properties
-application-secret.properties
-config.local.properties
-```

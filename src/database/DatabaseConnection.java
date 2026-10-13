@@ -43,6 +43,12 @@ public class DatabaseConnection {
     private static void loadConfiguration() {
         Properties props = new Properties();
         File configFile = new File("db.properties");
+        if (!configFile.exists()) {
+            configFile = new File("app/db.properties");
+        }
+        if (!configFile.exists()) {
+            configFile = new File("../db.properties");
+        }
         if (configFile.exists()) {
             try (InputStream input = new FileInputStream(configFile)) {
                 props.load(input);
