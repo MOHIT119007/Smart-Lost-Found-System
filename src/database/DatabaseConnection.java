@@ -28,6 +28,7 @@ public class DatabaseConnection {
     private static String dbName = DEFAULT_DB;
     private static String dbUser = DEFAULT_USER;
     private static String dbPass = DEFAULT_PASS;
+    private static String dbSsl = "false";
 
     static {
         loadConfiguration();
@@ -57,6 +58,7 @@ public class DatabaseConnection {
                 dbName = props.getProperty("db.name", DEFAULT_DB);
                 dbUser = props.getProperty("db.user", DEFAULT_USER);
                 dbPass = props.getProperty("db.password", DEFAULT_PASS);
+                dbSsl = props.getProperty("db.ssl", "false");
             } catch (Exception e) {
                 System.err.println("Could not load db.properties, using defaults: " + e.getMessage());
             }
@@ -78,7 +80,7 @@ public class DatabaseConnection {
 
                 String url = "jdbc:mysql://" + dbHost + ":" + dbPort + "/" + dbName
                         + "?createDatabaseIfNotExist=true"
-                        + "&useSSL=false"
+                        + "&useSSL=" + dbSsl
                         + "&allowPublicKeyRetrieval=true"
                         + "&serverTimezone=UTC"
                         + "&characterEncoding=UTF-8";

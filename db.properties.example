@@ -19,5 +19,8 @@ db.name=smart_lost_found
 # MySQL Username (default: root)
 db.user=root
 
-# MySQL Password (replace with your local MySQL root password)
+# MySQL Password (replace with your MySQL password)
 db.password=YOUR_MYSQL_PASSWORD
+
+# SSL Connection (set to true for cloud MySQL providers like TiDB/Aiven, or false for local/Clever Cloud)
+db.ssl=false
