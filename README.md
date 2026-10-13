@@ -22,17 +22,17 @@ A stand-alone, high-performance desktop application engineered in **Core Java (J
 * **Project Guide & Mentor:** **Er. Ram Babu Buri**, Assistant Professor
 * **Head of Department (HOD):** **Dr. Ashok Kajla**, Professor
 
-### 👥 Team Members & Module Allocation
+### Team Members
 
-| Name | RTU Roll No. | College Email | Assigned Module | Core Responsibility |
-| :--- | :--- | :--- | :--- | :--- |
-| **Mohit Kumar Sharma** | `24EARAD103` | mohit.sharma@campus.edu | **Database & DAO Layer** | Schema design, `DatabaseConnection`, DAO implementation, Cloud MySQL |
-| **Prabhash Kumar Chaudhary** | `24EARAD121` | prabhash.chaudhary@campus.edu | **Authentication & User Management** | `LoginFrame`, `RegisterDialog`, `User`, session & role validation |
-| **Mitesh Nehra** | `24EARAD102` | mitesh.nehra@campus.edu | **Student Panel (UI + Logic)** | `DashboardFrame` student tabs, report forms, notifications & claims |
-| **Naitik Pathak** | `24EARAD106` | naitik.pathak@campus.edu | **Admin Panel (UI + Logic)** | `DashboardFrame` admin tabs, item approval, desk registration, users directory |
-| **Paramveer Singh** | `24EARAD119` | paramveer.singh@campus.edu | **Testing, Integration & Documentation** | 35 test cases, SRS, UML, research paper, packaging & build automation |
+| Name | Roll No. | Module |
+| :--- | :--- | :--- |
+| Mohit Kumar Sharma | 24EARAD103 | Database & DAO Layer |
+| Prabhash Kumar Chaudhary | 24EARAD121 | Authentication & User Management |
+| Mitesh Nehra | 24EARAD102 | Student Panel (UI + Logic) |
+| Naitik Pathak | 24EARAD106 | Admin Panel (UI + Logic) |
+| Paramveer Singh | 24EARAD119 | Testing, Integration & Documentation |
 
-> **Weekly Schedule:** Monday to Friday = Module Engineering & Development | Saturday = Mentor Meeting with Er. Ram Babu Buri | Sunday = Review, Self-Study & Git Sync
+> **Saturday = Mentor Meeting (All members attend) | Sunday = Review / Self-Study**
 
 ---
 
