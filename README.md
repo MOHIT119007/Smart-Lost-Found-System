@@ -46,7 +46,6 @@ A stand-alone, high-performance desktop application engineered in **Core Java (J
 | 📜 **Software Requirements (SRS)** | IEEE 830 / ISO 29148 Compliant Specification Document covering all 16 Functional & Non-Functional Requirements | [View SRS Document](docs/SRS.md) |
 | 🔬 **Research Paper** | Complete Academic Research Paper on Campus Property Recovery & Rule-Based Matching Algorithms | [View Research Paper](docs/RESEARCH_PAPER.md) |
 
-
 ---
 
 # 📅 12-Week Project Development Log (Week-by-Week)
@@ -63,22 +62,20 @@ The **Smart Lost & Found System** resolves these deficiencies by introducing a c
 1. **Student Self-Service Panel:** Enables students to report lost articles, submit found belongings, track status changes in real-time, receive administrative approval alerts, and claim matching articles.
 2. **Administrative Governance Console:** Empowers campus staff to verify incoming reports, register items received at the campus desk, approve/reject submissions, and maintain an audit log of claimed items.
 
-Furthermore, the system incorporates a rule-based **Matching Service** that evaluates lexical keyword overlap and category equality between lost reports and recovered inventory. Packaged as a portable Windows desktop bundle with an embedded Java runtime and cloud database support, the application provides immediate responsiveness, zero SQL injection vulnerabilities via parameterized queries, and ACID-compliant transaction integrity.
-
 ### 1.2 Module Allocations & Deliverables
 * Team registration completed on the academic project portal under **Er. Ram Babu Buri**.
-* Initial Git repository initialized with Maven/Java directory layout.
+* Initial Git repository initialized with basic Maven/Java project folders.
 * Initial high-level feature list and problem definition approved.
 
 ### 1.3 Week 1 Daily Activity Log
 
 | Member | Mon (6 Jul) | Tue (7 Jul) | Wed (8 Jul) | Thu (9 Jul) | Fri (10 Jul) | Sat (11 Jul) | Sun (12 Jul) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Mohit Kumar** | Registered team on portal, created GitHub repo & basic folders. | Listed required database entities and role workflows. | Researched online lost & found portals; finalized feature list. | Authored initial 250-word project abstract draft. | Revised abstract per team input; pushed first repository commit. | **Mentor Meeting:** Presented abstract to Er. Ram Babu Buri. | Reviewed mentor feedback; sketched table column requirements. |
-| **Prabhash Kumar** | Joined repo; outlined auth, session, and role scopes. | Identified login distinction between Student and Admin. | Studied Swing password fields and dialog popups. | Wrote auth summary for abstract; drafted screen requirements. | Created placeholder `LoginFrame`, `RegisterFrame`, `User`. | **Mentor Meeting:** Attended; recorded login validation feedback. | Researched package structure conventions (`ui`, `model`, `dao`). |
-| **Mitesh Nehra** | Joined repo; mapped Student Panel requirements and lifecycle. | Designed student journey: report, approval, notification, claim. | Researched Swing `CardLayout`, `JTable`, and `JScrollPane`. | Wrote student panel summary for abstract. | Created placeholder `StudentDashboard` and `LostItem`. | **Mentor Meeting:** Attended; clarified student workflow expectations. | Listed 5 student sections: Lost, Found, Reports, Alerts, Claims. |
-| **Naitik Pathak** | Joined repo; outlined Admin Panel sections. | Documented admin capabilities: review, desk entry, claimed audit. | Studied `JTable` selection handling and action events. | Wrote admin summary for abstract; aligned with Mitesh. | Created placeholder `AdminDashboard` and `FoundItem`. | **Mentor Meeting:** Attended; received guidance on admin actions. | Drafted schema columns for 4 admin operational panels. |
-| **Paramveer Singh** | Joined repo; drafted testing, doc, and submission roadmap. | Analyzed end-to-end workflows from both user perspectives. | Researched IEEE SRS standards and testing levels. | Wrote QA summary for abstract; created `docs/` and `test/`. | Added all members on GitHub; initiated `TestPlan.md`. | **Mentor Meeting:** Served as note-taker; prepared weekly tracking sheet. | Synthesized mentor feedback; planned test scenarios. |
+| **Mohit Kumar** | Today I registered our team on the portal and picked our guide. I also made the GitHub repo and the basic Maven project folders. | I tried to understand the problem properly. I wrote down what data we need to save and what the Admin and Student can do. | I looked at a few lost and found websites online to see what features they have. Then I made a smaller feature list for our college project. | I wrote the project abstract (about 250 words) with the problem, our idea and the tools we will use. I sent it to the team to check. | I fixed the abstract after the team's suggestions. Then I did my first proper commit on GitHub with the project folders and the abstract. | **Mentor meeting.** I told the mentor our idea and showed the abstract. I noted the feedback and updated the tracking sheet. | I read the mentor's feedback again. I also made a rough list of database tables and what columns each one needs. |
+| **Prabhash Kumar** | I joined the team today, made my GitHub account and joined the repo. My part is login, register, session and role access. | I understood the project idea and how login is different for Admin and Student. I listed the fields needed to register. | I read about making login screens in Java Swing, like hiding the password and showing error pop-ups. | I wrote 2-3 lines about the login part for the abstract and sent them to Mohit. We also talked about the fields on the screens. | I made empty LoginFrame, RegisterFrame and User files and did my first GitHub commit. I also looked at the folder setup. | **Mentor meeting.** I attended and noted the mentor's feedback about login. I helped update the tracking sheet. | I read the feedback and learned how to put my files in the right package folder. |
+| **Mitesh Nehra** | I joined the team and understood my part, the Student Panel. I will make everything a student sees: report lost, report found, my reports, notifications and claimed items. | I understood the student's journey: register, login, report an item, wait for admin approval, get a notification, accept or reject it and then see it in claimed items. | I read about making a sidebar dashboard in Java Swing using CardLayout, and about tables and scroll panes. | I wrote 2-3 lines about the student panel for the abstract and sent them to Mohit. We also talked about the sections it needs. | I made empty StudentDashboard and LostItem files and did my first GitHub commit. | **Mentor meeting.** I attended and noted what the mentor expects from the student features. I helped update the tracking sheet. | I made a final list of 5 sections to build: Report Lost, Report Found, My Reports, Notifications and My Claimed Items. |
+| **Naitik Pathak** | I joined the team today. My part is the Admin Panel with 4 sections: Registered Users, Found Items Approval, Lost Items Approval and Claimed Items. | I understood what the admin does: see all students, approve or reject lost and found reports, notify students and track claimed items. | I read about making table screens in Java Swing using JTable and how to get the selected row to do an action. | I wrote 2-3 lines about the admin panel for the abstract and sent them to Mohit. I also talked with Mitesh about how approval connects to notifications. | I made empty AdminDashboard and FoundItem files and did my first GitHub commit. | **Mentor meeting.** I attended and noted what the mentor expects from the admin panel. I helped update the tracking sheet. | I studied the 4 admin sections and noted for each one what data to show and what the buttons will do. |
+| **Paramveer Singh** | I joined the team today. My part is testing, joining everything together and documents. I will do the SRS, test cases, report, PPT, video and GitHub tracking. | I understood the full system from both sides: the student registering and claiming an item, and the admin approving items and tracking claims. | I read about the types of testing (unit, integration, system and user acceptance) and about the IEEE SRS format. | I wrote 2-3 lines about testing and documents for the abstract. I also made the testing and docs folders on GitHub. | I added all 5 members on GitHub and made a TestPlan.md with columns for test ID, steps, expected result, actual result and status. | **Mentor meeting.** I attended as note-taker, wrote down all the feedback and made the weekly tracking sheet. I pushed it to GitHub. | I read all the feedback notes and made a plan for the test cases. I added the first test scenarios to the test plan. |
 
 ---
 
@@ -114,13 +111,13 @@ graph TD
 
 | Req ID | Requirement Statement | Priority | Module |
 | :--- | :--- | :--- | :--- |
-| **FR-01** | Student self-registration with full name, college ID, 10-digit phone, email, and password. | High | Auth |
-| **FR-02** | Validation rejection for blank fields, malformed email, non-10-digit phone, password mismatch, or duplicate email. | High | Auth |
-| **FR-03** | Credential authentication with role verification (prevents role mismatch between UI and database). | High | Auth |
-| **FR-04** | Lost-item reporting with item title, category, campus location, date (YYYY-MM-DD), and phone. | High | Student |
+| **FR-01** | Student self-registration with full name, college roll number/ID, 10-digit mobile number, college email, password and confirmation. | High | Auth |
+| **FR-02** | Validation rejection for blank fields, non-10-digit mobile numbers, malformed email, password mismatch, or duplicate email. | High | Auth |
+| **FR-03** | User authentication by email and password with role matching. | High | Auth |
+| **FR-04** | Lost-item reporting with item title, category, campus location, date (YYYY-MM-DD), and contact phone. | High | Student |
 | **FR-05** | Found-item reporting with storage location, finder contact, and recovery details. | High | Student |
-| **FR-06** | Form input validation rejecting invalid dates and non-numeric phone values prior to DAO dispatch. | High | Student/Admin |
-| **FR-07** | Automated assignment of `PENDING` status upon initial report submission. | High | DAO / DB |
+| **FR-06** | Form input validation rejecting invalid dates and non-numeric phone values prior to database save. | High | Student/Admin |
+| **FR-07** | Automatic assignment of `PENDING` status upon report creation. | High | DAO / DB |
 | **FR-08** | Administrator queue for reviewing pending lost and found records with reporter contact details. | High | Admin |
 | **FR-09** | Automated student notification generation when a lost report is approved by administrator. | High | Student/Admin |
 | **FR-10** | Direct desk registration of recovered belongings handed to administration staff. | Medium | Admin |
@@ -131,21 +128,15 @@ graph TD
 | **FR-15** | Persistent ACID storage in MySQL with automated schema bootstrapping on initial launch. | High | Database |
 | **FR-16** | Clean user session termination and secure return to login interface upon logout. | High | UI / Auth |
 
-### 2.3 Non-Functional Requirements (NFR)
-* **Usability:** High-contrast dark UI palette (`#0F172A`, `#1E293B`, `#38BDF8`), labeled fields, and explicit dialog feedback.
-* **Performance:** Sub-100ms local query latency and sub-1.5s cloud roundtrip latency on datasets up to 10,000 records.
-* **Security:** 100% parameterized SQL via `PreparedStatement` to eliminate SQL injection attacks; role-based UI routing.
-* **Portability:** Self-contained executable bundle supporting Windows 10/11 with zero client-side JDK or MySQL installation prerequisites.
-
-### 2.4 Week 2 Daily Activity Log
+### 2.3 Week 2 Daily Activity Log
 
 | Member | Mon (13 Jul) | Tue (14 Jul) | Wed (15 Jul) | Thu (16 Jul) | Fri (17 Jul) | Sat (18 Jul) | Sun (19 Jul) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Mohit Kumar** | Drafted SRS Section 1 (Introduction, Purpose, Scope). | Drafted SRS Section 2 (System Environment, Constraints). | Defined DB requirements & 4 lifecycle statuses. | Documented use-case data transactions (User, Item, Claim). | Consolidated SRS drafts; pushed initial version to GitHub. | **Mentor Meeting:** Presented SRS draft to Er. Ram Babu Buri. | Revised SRS with mentor feedback; planned DB normalization. |
-| **Prabhash Kumar** | Documented FR-01 & FR-02 (Registration & validation). | Documented FR-03 (Authentication & role redirection). | Defined auth NFRs (session persistence, hidden passwords). | Drafted use-case steps for login/register exceptions. | Delivered auth SRS sections to Paramveer. | **Mentor Meeting:** Reviewed login requirements with mentor. | Updated auth specifications; sketched login wireframes. |
-| **Mitesh Nehra** | Drafted FR-04 & FR-05 (Lost & Found reporting forms). | Documented FR-06 & FR-07 (Validation & PENDING state). | Defined student claim & notification requirements. | Formulated student use cases and edge cases. | Finalized student SRS section; submitted to team. | **Mentor Meeting:** Received approval on student workflow. | Refined student panel layout designs based on review. |
-| **Naitik Pathak** | Drafted FR-08 (Admin approval queue requirements). | Drafted FR-09 & FR-10 (Notification trigger & desk entry). | Documented FR-11 & FR-12 (User directory & claim audit). | Formulated admin approval & rejection use cases. | Delivered admin SRS section to Paramveer. | **Mentor Meeting:** Discussed admin verification guidelines. | Finalized admin panel specifications for UI mockups. |
-| **Paramveer Singh** | Structured master SRS document per IEEE 830 standards. | Authored SRS Scope, Definitions, and Acronyms. | Assigned formal requirement codes (FR-01 to FR-16). | Documented system limits (Windows, JDK 17, MySQL, 512MB RAM). | Compiled complete IEEE SRS document and published PDF. | **Mentor Meeting:** Submitted complete SRS to Er. Ram Babu Buri. | Incorporated mentor's corrections into master SRS PDF. |
+| **Mohit Kumar** | I wrote the first part of the SRS (Introduction). It covers the purpose, scope and a short overview of our system. | I wrote the second part of the SRS. It explains that it is a desktop app, who the users are (Admin, Student) and what it runs on. | I wrote the database requirements for the SRS. I listed the three tables and the four status values: Pending, Approved, Rejected and Claimed. | I wrote short use-cases for saving a user, saving a lost item and changing the status of an item. | We checked the full SRS together and made sure everyone's part was included. I fixed small mistakes and pushed it to GitHub. | **Mentor meeting.** I showed the SRS and the mentor approved it. I noted the small corrections and updated the tracking sheet. | I made the mentor's corrections in the SRS and finished it. I also thought about the database design for next week. |
+| **Prabhash Kumar** | I wrote the first login and register requirements: register with details, check the email format and do not allow the same email twice. | I wrote more requirements: login with email and password, open the Admin or Student screen by role, and logout from any screen. | I wrote the non-functional requirements: login should be fast, the password should be hidden and the session stays in memory. | I wrote the use-cases for Login and Register with the normal steps and what happens for a wrong password or the same email. | I finished my SRS part and gave it to Paramveer. I also pushed the updated SRS to GitHub. | **Mentor meeting.** I told the mentor about my login requirements and noted the feedback. I helped update the tracking sheet. | I fixed the SRS as the mentor said. I also planned how the login and register screens will look. |
+| **Mitesh Nehra** | I wrote the first student requirements: report a lost item with name, description, place and date, and report a found item the same way. | I wrote that the student can see all their reports with the status and get notifications for items approved by the admin. | I wrote that the student can accept or reject a notification, accepted items go to My Claimed Items and the student can logout. | I wrote the use-cases for Report Lost Item and Accept Notification with the steps and what happens in other cases. | I finished my SRS part, gave it to Paramveer and pushed it to GitHub. | **Mentor meeting.** I told the mentor my student panel requirements and noted the feedback. I helped update the tracking sheet. | I read the mentor's feedback and planned how all 5 student sections will look. |
+| **Naitik Pathak** | I wrote the first admin requirements: view all students, view pending found items and approve or reject a found item. | I wrote more requirements: view pending lost items, approve one and notify the student, and reject one. | I wrote that after a student accepts, the item goes to the Claimed Items section and the admin can see claimed items with student details. | I wrote the use-cases for Approve Lost Item and View Claimed Items with the steps and other cases. | I finished my SRS part, gave it to Paramveer and pushed it to GitHub. | **Mentor meeting.** I told the mentor my admin requirements and noted the feedback. I helped update the tracking sheet. | I read the mentor's feedback and planned how the 4 admin sections will look. |
+| **Paramveer Singh** | I started the full SRS document. I made the title page, contents and Section 1 and started collecting input from everyone. | I wrote SRS Section 1: purpose, scope, definitions (DAO, JDBC, role-based access) and overview. | I collected the requirements of all 4 modules (login, student, admin and database) and gave them numbers like FR-01, FR-02. | I wrote the system limits (Windows, JDK 8+, SQLite, 512 MB RAM), the assumptions and a small glossary. | I finished the SRS with proper headings, page numbers and contents. I pushed the SRS PDF to GitHub. | **Mentor meeting.** I gave the SRS draft to the mentor and noted the corrections. I updated the tracking sheet. | I added all the mentor's corrections to the SRS and pushed the final SRS to GitHub. |
 
 ---
 
@@ -195,138 +186,7 @@ graph TD
     DBC --> MYSQL
 ```
 
-### 3.2 UML Class Diagram
-
-```mermaid
-classDiagram
-    direction TB
-
-    class User {
-        -int id
-        -String fullName
-        -String email
-        -String password
-        -String role
-        -String phone
-        -String collegeId
-        -Timestamp createdAt
-        +getId() int
-        +getFullName() String
-        +getEmail() String
-        +getRole() String
-        +getPhone() String
-        +getCollegeId() String
-    }
-
-    class LostItem {
-        -int id
-        -int userId
-        -String itemName
-        -String category
-        -String location
-        -Date lostDate
-        -String description
-        -String contactPhone
-        -String status
-        -Timestamp createdAt
-        +getId() int
-        +getItemName() String
-        +getCategory() String
-        +getStatus() String
-    }
-
-    class FoundItem {
-        -int id
-        -int userId
-        -String itemName
-        -String category
-        -String foundLocation
-        -String storageLocation
-        -Date foundDate
-        -String description
-        -String contactPhone
-        -String status
-        -Timestamp createdAt
-        +getId() int
-        +getItemName() String
-        +getCategory() String
-        +getStatus() String
-    }
-
-    class Claim {
-        -int id
-        -Integer lostItemId
-        -int foundItemId
-        -int claimantId
-        -String proofDetails
-        -String claimStatus
-        -String adminRemarks
-        -Timestamp createdAt
-        -Timestamp updatedAt
-        +getId() int
-        +getClaimStatus() String
-    }
-
-    class MatchingService {
-        +isMatch(LostItem lost, FoundItem found) boolean
-        +findMatchesForLostItem(LostItem lost, List~FoundItem~ list) List~FoundItem~
-        +getMatchLabel(LostItem lost, FoundItem found) String
-    }
-
-    class DatabaseConnection {
-        -Connection connection$
-        -String dbHost$
-        -String dbPort$
-        -String dbName$
-        -String dbUser$
-        -String dbPass$
-        -String dbSsl$
-        +getConnection()$ Connection
-        +closeConnection()$ void
-        -initializeTablesIfMissing(Connection conn)$ void
-    }
-
-    class UserDAO {
-        +authenticate(String email, String pass) User
-        +register(User user) boolean
-        +emailExists(String email) boolean
-        +getAllStudents() List~User~
-    }
-
-    class LostItemDAO {
-        +save(LostItem item) boolean
-        +getPendingLostItems() List~LostItem~
-        +getUserLostItems(int userId) List~LostItem~
-        +updateStatus(int itemId, String status) boolean
-    }
-
-    class FoundItemDAO {
-        +save(FoundItem item) boolean
-        +getPendingFoundItems() List~FoundItem~
-        +getUserFoundItems(int userId) List~FoundItem~
-        +updateStatus(int itemId, String status) boolean
-    }
-
-    class ClaimDAO {
-        +createClaim(Claim claim) boolean
-        +getClaimsByClaimant(int claimantId) List~Claim~
-        +getAllClaimsWithDetails() List~ClaimDetailsDTO~
-        +updateClaimStatus(int claimId, String status, String remarks) boolean
-    }
-
-    UserDAO ..> User
-    LostItemDAO ..> LostItem
-    FoundItemDAO ..> FoundItem
-    ClaimDAO ..> Claim
-    MatchingService ..> LostItem
-    MatchingService ..> FoundItem
-    UserDAO ..> DatabaseConnection
-    LostItemDAO ..> DatabaseConnection
-    FoundItemDAO ..> DatabaseConnection
-    ClaimDAO ..> DatabaseConnection
-```
-
-### 3.3 Sequence Diagram: Lost Item Submission & Admin Approval
+### 3.2 Sequence Diagram: Lost Item Submission & Admin Approval
 
 ```mermaid
 sequenceDiagram
@@ -362,15 +222,15 @@ sequenceDiagram
     Note over Student, DF: Next student login displays notification badge
 ```
 
-### 3.4 Week 3 Daily Activity Log
+### 3.3 Week 3 Daily Activity Log
 
 | Member | Mon (20 Jul) | Tue (21 Jul) | Wed (22 Jul) | Thu (23 Jul) | Fri (24 Jul) | Sat (25 Jul) | Sun (26 Jul) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Mohit Kumar** | Built initial ER diagram on draw.io with 4 relational entities. | Added DAO and `DatabaseConnection` classes to class diagram. | Mapped database foreign keys and cascade delete rules. | Verified method signatures between class diagram and plan. | Exported ER and class diagrams as high-res images. | **Mentor Meeting:** Presented ER diagram to Er. Ram Babu Buri. | Added `NOT NULL` constraints and fixed cardinality per mentor. |
-| **Prabhash Kumar** | Created Use-Case diagram for authentication flows on draw.io. | Added `LoginFrame`, `RegisterDialog`, `User` to class diagram. | Built Activity diagram for user login credential verification. | Built Activity diagram for student self-registration flow. | Exported auth UML diagrams and delivered to Paramveer. | **Mentor Meeting:** Walked through auth activity flow with mentor. | Fine-tuned role verification branch in activity diagram. |
-| **Mitesh Nehra** | Created Student Use-Case diagram on draw.io. | Added `StudentDashboard` methods and models to class diagram. | Created Sequence diagram for reporting a lost article. | Created Sequence diagram for accepting an approved notification. | Exported student UML diagrams for documentation compilation. | **Mentor Meeting:** Demonstrated student sequence flow to mentor. | Updated notification sequence based on mentor input. |
-| **Naitik Pathak** | Created Admin Use-Case diagram covering all 4 console sections. | Added `AdminDashboard` methods and models to class diagram. | Created Sequence diagram for administrator approval action. | Created Sequence diagram for resolving claimed item handovers. | Exported admin UML diagrams and submitted to repository. | **Mentor Meeting:** Validated admin sequence flows with mentor. | Adjusted admin approval states to align with student panel. |
-| **Paramveer Singh** | Collected all member UML diagrams into centralized repository. | Synthesized unified system architecture block diagram. | Cross-checked sequence diagrams against DAO method calls. | Drafted System Deployment diagram (Client, JRE, JDBC, MySQL). | Assembled comprehensive UML Design Specification PDF. | **Mentor Meeting:** Submitted complete UML package for review. | Applied final formatting and caption fixes to master UML PDF. |
+| **Mohit Kumar** | I made the ER diagram on draw.io with the three tables, their keys and how they connect. | I added the User, LostItem and FoundItem classes to the team's class diagram. I also added the DAO classes and the database connection class. | I made the sequence diagram for reporting a lost item. I also looked at my teammates' diagrams to see if they match. | I checked all the diagrams to make sure the class names are the same as the ones we will use in the code. I fixed the ones that did not match. | I saved my ER and class diagrams as images and put them on GitHub. I also helped Paramveer put all diagrams in one PDF. | **Mentor meeting.** I showed the ER and class diagrams and got approval. I updated the tracking sheet. | I read the mentor's feedback on the diagrams. I fixed the ER diagram by adding the missing NOT NULL parts and correcting one relationship. |
+| **Prabhash Kumar** | I made the use-case diagram for login, register and logout for the Student and Admin on draw.io. | I added LoginFrame, RegisterFrame and SessionManager to the class diagram with their main methods. | I made the activity diagram for login: enter details, check them, then open the Admin or Student screen. | I made the activity diagram for register: fill the form, check the email, check for duplicates, save and go to login. | I saved all my diagrams as images, put them on GitHub and sent them to Paramveer for the PDF. | **Mentor meeting.** I showed my diagrams and changed the activity diagram a little as the mentor said. I updated the tracking sheet. | I fixed my diagrams using the mentor's feedback and planned the coding of the login and register screens. |
+| **Mitesh Nehra** | I made the use-case diagram for the student: report lost, report found, view reports, view notifications, accept, reject and view claimed items. | I added StudentDashboard to the class diagram with a method to show each of the 5 panels. | I made the sequence diagram for reporting a lost item: click submit, read the form, save in the database and show a success message. | I made the sequence diagram for accepting a notification: click Accept, status changes to Claimed and the item shows in My Claimed Items. | I saved my diagrams as images, pushed them to GitHub and sent them to Paramveer for the PDF. | **Mentor meeting.** I showed my diagrams and changed one sequence diagram as the mentor said. I updated the tracking sheet. | I fixed my diagrams using the mentor's feedback and planned the dashboard coding for next week. |
+| **Naitik Pathak** | I made the use-case diagram for the admin: view users, approve or reject found items, approve and notify or reject lost items and view claimed items. | I added AdminDashboard to the class diagram with a method for each of the 4 sections. | I made the sequence diagram for approving a lost item: click Approve, status becomes Approved and the student gets the notification. | I made the sequence diagram for claimed items: the student accepts, status becomes Claimed and the item shows in Claimed Items. | I saved my diagrams as images, pushed them to GitHub and sent copies to Paramveer. | **Mentor meeting.** I showed my diagrams and fixed one sequence diagram as the mentor said. I updated the tracking sheet. | I fixed my diagrams as the mentor said and planned the admin dashboard coding. |
+| **Paramveer Singh** | I started collecting all the UML diagrams from the team into one folder. I also made the system architecture diagram (UI, logic, DAO, database). | I joined and checked the use-case diagram so that all actors and use cases are in one clear diagram. | I checked everyone's sequence diagrams to see that they show the right DAO calls and the right class names. | I made the deployment diagram: user machine, Java, Swing app, JDBC driver and the SQLite file. | I put all diagrams (ER, use-case, class, sequence, activity, deployment) in one UML PDF and pushed it to GitHub. | **Mentor meeting.** I showed the full set of diagrams and got approval. I updated the tracking sheet. | I added the mentor's corrections to the UML PDF and pushed the final one. |
 
 ---
 
@@ -438,7 +298,7 @@ erDiagram
     }
 ```
 
-### 4.2 Predefined Demonstration Accounts (Bootstrap Seed)
+### 4.2 Predefined Demonstration Accounts
 
 | Account Role | Full Name | Email Address | Default Password | Academic ID / Phone |
 | :--- | :--- | :--- | :--- | :--- |
@@ -453,11 +313,11 @@ erDiagram
 
 | Member | Mon (27 Jul) | Tue (28 Jul) | Wed (29 Jul) | Thu (30 Jul) | Fri (31 Jul) | Sat (1 Aug) | Sun (2 Aug) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Mohit Kumar** | Authored `database.sql` creating `users` table with unique email. | Added `lost_items` table with foreign keys & date columns. | Added `found_items` & seeded default admin user. | Wrote initial `DatabaseConnection.java` connection loader. | Tested JDBC connectivity and table creation with standalone test. | **Mentor Meeting:** Presented schema and connection logic. | Planned DAO signatures and parameterized query patterns. |
-| **Prabhash Kumar** | Coded `User.java` POJO with full getters/setters and constructors. | Wireframed `LoginFrame`: email, hidden password, role toggle. | Wireframed `RegisterDialog`: name, roll number, phone, email. | Began implementing `LoginFrame.java` using `GridBagLayout`. | Applied unified dark blue palette and button styles to login. | **Mentor Meeting:** Demonstrated login and register UI wireframes. | Reviewed layout feedback and prepared for authentication logic. |
-| **Mitesh Nehra** | Coded `LostItem.java` POJO entity with status attributes. | Sketched Student Dashboard navigation layout on paper. | Designed wireframes for all 5 student sub-panels. | Implemented `StudentDashboard` shell with sidebar navigation. | Wired 5 sidebar navigation buttons to `CardLayout` switcher. | **Mentor Meeting:** Showed interactive dashboard skeleton. | Documented panel specifications for module coding phase. |
-| **Naitik Pathak** | Coded `FoundItem.java` POJO entity with storage attributes. | Sketched Admin Dashboard layout: sidebar + data table area. | Designed wireframes for Registered Users and Approval tables. | Implemented `AdminDashboard` shell with 4 action buttons. | Verified seamless view switching across all 4 admin panels. | **Mentor Meeting:** Showed admin layout and action buttons. | Refined button placement and table dimensions per review. |
-| **Paramveer Singh** | Configured `pom.xml` dependencies and project build settings. | Configured Java compiler targets and manifest main class. | Wrote `build.bat` automation script for compilation & packaging. | Wrote `run.bat` launcher script for rapid testing. | Tested clean build pipeline and pushed build scripts to GitHub. | **Mentor Meeting:** Demonstrated automated build and run scripts. | Created testing template for Module Coding Phase 1. |
+| **Mohit Kumar** | I started the database.sql file and made the users table (id, name, email, password, role, phone, roll number). I made email unique. | I made the lost_items table in the same file and tested the command in SQLite Browser. It worked. | I made the found_items table and added a default admin user. I ran the whole file in SQLite Browser and all tables were created. | I wrote DatabaseConnection.java. It connects to the database, creates the tables the first time and shows an error if something fails. | I tested the connection class with a small Java program. The database file was created, all tables were there and the admin was added. | **Mentor meeting.** I showed the table design and the connection class. The mentor approved the tables. I updated the tracking sheet. | I thought about the feedback and planned the DAO classes for next week. I also added small comments to my SQL queries. |
+| **Prabhash Kumar** | I wrote the User.java class with all the fields, constructors, getters and setters. | I designed the login screen: email box, hidden password box, Login button and a Register link. I chose a dark blue colour. | I designed the register screen with name, email, password, confirm password, phone and roll number. | I started LoginFrame.java with the title, email box, password box and login button. I used GridBagLayout to place things. | I added the team's colours to the login screen, dark blue background and blue buttons, so it matches the other screens. | **Mentor meeting.** I showed the login screen and the register design. The mentor liked the layout. I updated the tracking sheet. | I read the design feedback and planned to finish the login logic next week. |
+| **Mitesh Nehra** | I wrote the LostItem.java class with its fields, constructors, getters and setters. | I drew the student dashboard on paper: a left sidebar with 5 buttons and a right area that changes when a button is clicked. | I designed all 5 student panels: the two report forms, the My Reports table, the Notifications table with buttons and the Claimed Items table. | I made the StudentDashboard skeleton with a sidebar on the left and a changing panel on the right. The window opens fine. | I added 5 sidebar buttons in the team's dark blue colours and made each button open the right panel. | **Mentor meeting.** I showed the dashboard with working sidebar buttons. The mentor liked it. I updated the tracking sheet. | I read the feedback and planned to build all 5 panels next week. |
+| **Naitik Pathak** | I wrote the FoundItem.java class with its fields, constructors, getters and setters. | I drew the admin dashboard on paper: a left sidebar with 4 buttons and a big table area on the right. | I designed each admin section: a read-only users table, tables with Approve and Reject buttons for found and lost items, and the claimed items table. | I made the AdminDashboard skeleton with a sidebar of 4 buttons and a changing panel on the right. | I connected each sidebar button to its panel and tested that all 4 panels switch correctly. | **Mentor meeting.** I showed the admin dashboard with working sidebar buttons. The mentor liked it. I updated the tracking sheet. | I read the feedback and planned to build the 4 panels next week. |
+| **Paramveer Singh** | I made the Maven pom.xml with the database driver and Java 1.8 and set it up to build a runnable JAR. | I set the main class in the JAR settings and tested 'mvn clean compile'. The project compiled. | I wrote build.bat that builds the project and copies the JAR to the dist folder. I tested it and it worked. | I wrote run.bat that runs the JAR file. I tested it and the application opened. | I pushed pom.xml, build.bat and run.bat to GitHub and wrote the README with the description, tools and how to build and run. | **Mentor meeting.** I showed the build and run scripts working. The JAR was built and opened. I updated the tracking sheet. | I checked everyone's progress so far and added new test scenarios from this week. |
 
 ---
 
@@ -465,19 +325,19 @@ erDiagram
 **Duration:** 3 August 2026 – 9 August 2026
 
 ### 5.1 Engineering Focus
-* **`UserDAO.java` Implementation:** Implemented parameterized query execution for user insertion, duplicate email validation, and student listing queries.
-* **`LostItemDAO.java` Implementation:** Implemented item persistence, student report fetching, pending record queues, and status updating.
-* **Authentication Logic:** Wired `LoginFrame` to verify credentials against database records, enforcing role integrity checks.
+* **`UserDAO.java` Implementation:** Implemented methods for user registration, checking duplicate emails, finding user by email, and getting the list of all students.
+* **`LostItemDAO.java` Implementation:** Implemented methods to add a lost item, retrieve pending lost items, and update status.
+* **Authentication Logic:** Finished `LoginFrame.java` with email and password checks, role checking for student vs admin dashboard opening.
 
 ### 5.2 Week 5 Daily Activity Log
 
 | Member | Mon (3 Aug) | Tue (4 Aug) | Wed (5 Aug) | Thu (6 Aug) | Fri (7 Aug) | Sat (8 Aug) | Sun (9 Aug) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Mohit Kumar** | Initiated `UserDAO.java`; wrote `register()` with error handling. | Wrote `authenticate()` query checking email and password. | Implemented `getAllStudents()` query for the admin console. | Initiated `LostItemDAO.java`; implemented `save()` method. | Implemented `getPendingLostItems()` and `updateStatus()`. | **Mentor Meeting:** Demonstrated working `UserDAO` & `LostItemDAO`. | Fixed two SQL syntax bugs in status update query; pushed fixes. |
-| **Prabhash Kumar** | Finalized `LoginFrame.java` UI layout and action listeners. | Connected Sign In button to query `UserDAO.authenticate()`. | Added credential validation and invalid login error dialogs. | Added role check preventing students from accessing admin UI. | Initiated `RegisterDialog.java` UI form and field placement. | **Mentor Meeting:** Demonstrated live login with valid/invalid inputs. | Resolved bug where admin credentials routed to student view. |
-| **Mitesh Nehra** | Built "Report Lost Item" panel with input fields and validation. | Implemented form data extraction creating `LostItem` instances. | Connected Submit button to invoke `LostItemDAO.save()`. | Built "Report Found Item" panel with location & date fields. | Implemented submit listener for found reports with error popups. | **Mentor Meeting:** Showed working lost and found reporting forms. | Tested database insertion of 5 sample items; fixed empty check. |
-| **Naitik Pathak** | Built "Registered Users" panel with `JTable` rendering. | Made users table non-editable; styled headers in dark blue. | Built "Found Items Approval" table loading pending records. | Implemented Approve / Reject buttons under found items table. | Added selection checks displaying prompt if no item is selected. | **Mentor Meeting:** Showed registered users and found items tables. | Fixed table refresh bug after executing approval updates. |
-| **Paramveer Singh** | Authored Test Cases TC-01 to TC-10 covering login and register. | Authored Test Cases TC-11 to TC-20 covering student panels. | Authored Test Cases TC-21 to TC-30 covering admin panels. | Authored Test Cases TC-31 to TC-35 covering end-to-end flows. | Published `TestCases.md` to GitHub; commenced testing TC-01 to 10. | **Mentor Meeting:** Presented formal test plan and initial results. | Retested failed login cases after fixes; updated test log. |
+| **Mohit Kumar** | I started UserDAO.java and wrote the method to add a new user. I also added a message in case saving fails. | I wrote a method to find a user by email. It gives back nothing if the user is not found. | I wrote a method to get the list of all students (not the admin) for the admin panel. | I started LostItemDAO.java with methods to add a lost item, get all lost items and get the pending ones. | I wrote the methods to update an item's status and to get one student's lost items. I tested both with sample data. | **Mentor meeting.** I showed my UserDAO and LostItemDAO code and the database working. I updated the tracking sheet. | I tested all the DAO methods with a small test class. I found two mistakes in the status update query, fixed them and pushed to GitHub. |
+| **Prabhash Kumar** | I finished the login screen. All boxes are in place with a login button and a 'Don't have an account? Register' link. | I made the login button work. It reads the email and password and looks up the user in the database. | I added the password check. If the details are wrong, an error pop-up with a clear message comes. | I added the role check. If the user is an admin, the admin dashboard opens, otherwise the student dashboard opens. | I started RegisterFrame.java with all the input boxes and gave it the same look as the other screens. | **Mentor meeting.** I showed the login live with right and wrong passwords. The mentor was happy. I updated the tracking sheet. | I tested the login again and fixed a bug where the student dashboard opened for the admin. I pushed the fix. |
+| **Mitesh Nehra** | I built the Report Lost Item panel with boxes for name, description, place and date and a Submit button. | I made the Submit button read the form, check that nothing is empty and create a lost item with the logged-in student's ID. | I connected Submit to the database. It shows 'Item Reported Successfully!' or an error, and clears the form after. | I built the Report Found Item panel. It is like the lost form but saves a found item. | I made the Found Item Submit button check the fields, save the item and show a success or error message. | **Mentor meeting.** I showed both report forms and they worked. I updated the tracking sheet. | I tested both forms by adding 3 lost and 2 found items. All reached the database. I fixed one empty field bug. |
+| **Naitik Pathak** | I built the Registered Users section with a table of name, email, roll number and phone, loaded from the database. | I made the users table read-only so nobody can edit it, and styled the header blue with white bold text. | I built the Found Items Approval section with a table of pending found items from the database. | I added Approve and Reject buttons under the table and made the Approve button work for the selected row. | I made the Reject button work for found items. If no row is selected it says 'Please select an item'. | **Mentor meeting.** I showed the Registered Users and Found Items sections and both worked. I updated the tracking sheet. | I tested the Found Items section by approving and rejecting items. The database updated, and I fixed one table refresh bug. |
+| **Paramveer Singh** | I wrote test cases 1 to 10 for login and register, like right login, wrong password, same email and empty fields. | I wrote test cases 11 to 20 for the student panel, like reporting an item, empty name, my reports and refresh. | I wrote test cases 21 to 30 for the admin panel, like loading tables, approve, reject and notify. | I wrote test cases 31 to 35 for the whole flow: student reports, admin sees it, admin approves, student accepts or rejects. | I pushed the full TestCases.md to GitHub and started running test cases 1 to 10 on Prabhash's code. I noted PASS or FAIL. | **Mentor meeting.** I showed the test plan and the first results. The mentor approved how we are testing. I updated the tracking sheet. | I ran the failed test cases again after Prabhash's fixes and updated the result sheet. |
 
 ---
 
@@ -504,11 +364,11 @@ stateDiagram-v2
 
 | Member | Mon (10 Aug) | Tue (11 Aug) | Wed (12 Aug) | Thu (13 Aug) | Fri (14 Aug) | Sat (15 Aug) | Sun (16 Aug) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Mohit Kumar** | Initiated `FoundItemDAO.java`; wrote `save()` and pending fetches. | Implemented `getUserFoundItems()` and `updateStatus()` queries. | Implemented notification queries fetching approved lost reports. | Coded student decision handlers (`CLAIMED` / `REJECTED`). | Tested full flow: submit report -> approve -> notify -> accept. | **Mentor Meeting:** Demonstrated complete DAO layer operations. | Resolved query filter bug in student claimed items query. |
-| **Prabhash Kumar** | Implemented registration button checking `emailExists()`. | Added registration success feedback and redirect to login. | Built session management tracking current logged-in `User`. | Implemented secure logout resetting session and opening login. | Added "Show Password" checkbox toggling password character echo. | **Mentor Meeting:** Demonstrated register, login, session, and logout. | Fixed UI bug where Show Password state persisted after logout. |
-| **Mitesh Nehra** | Built "My Reports" table consolidating lost and found items. | Populated table dynamically with color-coded status badges. | Added custom table renderer: Yellow=Pending, Green=Approved. | Implemented manual Refresh button for live status updates. | Built "Notifications & Approvals" panel with Accept/Reject. | **Mentor Meeting:** Demonstrated colored reports table & alerts. | Verified notification acceptance updates table in real-time. |
-| **Naitik Pathak** | Built "Lost Items Approval" panel with pending items queue. | Coded "Approve & Notify Student" button triggering updates. | Coded "Reject" button with confirmation alert popup. | Built "Claimed Items Details" table displaying audit records. | Tested full admin flow: approve report and observe claim status. | **Mentor Meeting:** Showed all 4 admin panels with operational logic. | Fixed refresh synchronization bug in Claimed Items view. |
-| **Paramveer Singh** | Executed TC-11 to TC-20 on student forms; noted blocked cases. | Executed TC-21 to TC-30 on admin approval tables; logged 2 bugs. | Retested login test suite after bug fixes; 10/10 tests passed. | Compiled structured bug report with severity and reproduction steps. | Tested first integrated test case (student report -> admin view). | **Mentor Meeting:** Presented bug tracker and testing milestones. | Re-ran regression tests on updated builds; updated test log. |
+| **Mohit Kumar** | I made FoundItemDAO.java with methods to add a found item, get pending found items and get all found items. | I added the status update and 'get my found items' methods in FoundItemDAO. This class is now done and tested. | I wrote a method to get notifications for a student. It shows the lost items the admin approved for that student. | I wrote the method for the student's reply. If the student accepts, the status becomes Claimed. If the student rejects, it becomes Rejected. | I tested the full flow: add a lost item, approve it, see it as a notification and accept it. The status changed to Claimed correctly. | **Mentor meeting.** I showed all DAO methods working with test data and the mentor approved the DAO layer. I updated the tracking sheet. | I fixed two small bugs from this week's testing, one in the student's lost items query and one in the claimed filter. I pushed the fixes. |
+| **Prabhash Kumar** | I finished the register button. It checks if the email already exists and shows 'Email already registered' if it does, otherwise it saves the user. | I added what happens after register: a success message and then the login screen. If it fails, a clear error shows. | I made SessionManager.java to remember who is logged in. It can set, get and clear the current user. | I made logout work. It clears the session, closes the dashboard and opens the login screen again. Both panels use it. | I added a 'Show Password' checkbox on the login screen. It switches between dots and normal letters. | **Mentor meeting.** I showed the full login part: register, login, role check, session and logout. The mentor approved it. I updated the tracking sheet. | I fixed a small bug where the Show Password box did not reset when the login screen opened again. |
+| **Mitesh Nehra** | I built the My Reports panel with a table showing type, item name, description, place, date and status. | I filled the table with the student's lost and found items from the database, combined into one table. | I coloured the status: yellow for Pending, green for Approved and red for Rejected. | I added a Refresh button to My Reports so the student can see the new status without restarting the app. | I built the Notifications panel with a table of approved lost items and Accept and Reject buttons below it. | **Mentor meeting.** I showed My Reports with colours and the Notifications panel. The mentor approved the design. I updated the tracking sheet. | I tested notifications by accepting one item and rejecting another. The table updated, and I fixed one refresh bug. |
+| **Naitik Pathak** | I built the Lost Items Approval section with a table of pending lost items from the database. | I made the 'Approve & Notify Student' button work. It sets the status to Approved so the student sees it as a notification. | I made the Reject button for lost items with a confirmation pop-up before the action, then the table refreshes. | I built the Claimed Items Details section with a read-only table of item, student name, roll number and date. | I tested the full admin flow: approve a lost item, accept it in the student panel and see it in Claimed Items. | **Mentor meeting.** I showed all 4 admin sections with real actions. The mentor approved the design. I updated the tracking sheet. | I added Refresh buttons to all 4 sections and fixed a bug where Claimed Items did not load after a student accepted. |
+| **Paramveer Singh** | I ran test cases 11 to 20 on Mitesh's student panel. Some were marked BLOCKED because notifications were not ready. | I ran test cases 21 to 30 on Naitik's admin panel. Two failed: approve with no selection and refresh. | I ran the login test cases again after Prabhash's fixes and all 10 passed. I updated the result sheet. | I made a bug report with ID, module, problem, steps, severity and who should fix it. I shared it with the team. | I tested the first integration case (student reports, admin sees it) and it passed. The rest were blocked for now. | **Mentor meeting.** I showed the test results and the bug report. The mentor liked the testing approach. I updated the tracking sheet. | I updated the test results with this week's work and ran the newly fixed cases again. |
 
 ---
 
@@ -516,61 +376,46 @@ stateDiagram-v2
 **Duration:** 17 August 2026 – 23 August 2026
 
 ### 7.1 Engineering Focus
-* **`ClaimDAO.java` Implementation:** Added claim tracking associating recovered items with claimant user profiles.
-* **Defensive Form Validation:** Enhanced `RegisterDialog` and reporting forms to strictly validate:
-  * 10-digit mobile phone numbers: `^[0-9]{10}$`
-  * Academic email address format: `^[\\w.-]+@[\\w.-]+\\.[A-Za-z]{2,}$`
-  * ISO Date format: `YYYY-MM-DD`
-* **Resource Safety:** Refactored all DAO database interactions to use Java **`try-with-resources`** statements to guarantee that database connections, statements, and result sets are closed automatically, preventing connection leaks.
+* **`ClaimDAO.java` Implementation:** Added student claim retrieval, connecting admin approval screen to notification methods, and `try-with-resources` resource cleanup.
+* **Form Validation:** Red error highlight for invalid fields, regex checks for 10-digit mobile number, college email format, and empty value restrictions.
 
 ### 7.2 Week 7 Daily Activity Log
 
 | Member | Mon (17 Aug) | Tue (18 Aug) | Wed (19 Aug) | Thu (20 Aug) | Fri (21 Aug) | Sat (22 Aug) | Sun (23 Aug) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Mohit Kumar** | Implemented `ClaimDAO.java` with claim record insertion. | Assisted Naitik in connecting admin approval views to queries. | Assisted Mitesh in wiring notification tables to queries. | Refactored all DAO classes with `try-with-resources`. | Added non-null and empty field validation checks across DAOs. | **Mentor Meeting:** Presented fully hardened, leak-free DAO layer. | Finalized DAO codebase; drafted database setup instructions. |
-| **Prabhash Kumar** | Implemented regex validation for email, phone, and roll number. | Added visual error feedback (red border highlighting) on inputs. | Tested edge cases (blank spaces, special characters, unicode). | Documented public method docstrings and cleaned imports. | Verified duplicate registration rejection over multiple attempts. | **Mentor Meeting:** Demonstrated input validation and error states. | Completed auth module coding; froze authentication code. |
-| **Mitesh Nehra** | Connected "Accept" button to transition item state to `CLAIMED`. | Connected "Reject" button to transition item state to `REJECTED`. | Built "My Claimed Items" panel displaying resolved items. | Tested full student journey from reporting to final claim. | Added empty placeholders ("No pending notifications found"). | **Mentor Meeting:** Demonstrated student claim lifecycle end-to-end. | Finalized student panel code; submitted module complete commit. |
-| **Naitik Pathak** | Added confirmation dialogs ("Are you sure?") for admin actions. | Added dynamic badge counter ("Total Pending: X items"). | Added placeholder label when queues have no pending items. | Styled tables with zebra row striping and distinct header fonts. | Cleaned up unused variables and debug prints across admin views. | **Mentor Meeting:** Presented polished admin console to mentor. | Finalized admin panel code; committed 'Admin Panel Complete'. |
-| **Paramveer Singh** | Executed TC-32 and TC-33 (approval notification & claim update). | Executed TC-34 and TC-35 (rejection flow & edge cases); PASS. | Ran full 35-case test suite: 33 Passed, 2 minor failures logged. | Assisted team in resolving the 2 defects; retested to 35/35 PASS. | Compiled Integration Test Report and pushed documentation. | **Mentor Meeting:** Submitted formal integration test report. | Captured high-resolution screenshots for README and report. |
+| **Mohit Kumar** | I wrote the method to get a student's claimed items. I also helped Mitesh show it in his 'My Claimed Items' section. | I helped Naitik connect the admin's lost items approval screen to my method. Approved items were still showing, so I fixed the query. | I helped Mitesh connect the notifications screen. I checked that the correct student ID reaches the query. | I changed all DAO methods to close the connection and statements properly using try-with-resources. | I added checks so empty or null values are not saved in the database. It now shows an error for wrong input. | **Mentor meeting.** I showed the full tested DAO layer and the mentor signed off my module. I updated the tracking sheet. | I stopped changing the DAO code and finalized it. I also added database setup steps in the GitHub README. |
+| **Prabhash Kumar** | I added checks on the register form: email format, roll number format and a 10-digit phone number. | I made the wrong field turn red, and go back to normal once the user fixes it. | I tested odd cases like spaces in the email or only spaces in the name. Now they show clear error messages. | I wrote comments for all public methods in my four files and removed the unused imports. | I tried to register 3 times with the same email. Only one user was saved and the error showed every time. | **Mentor meeting.** I showed the polished login part with all checks working. The mentor signed off my module. I updated the tracking sheet. | I stopped changing my code and pushed all the final files. |
+| **Mitesh Nehra** | I connected the Accept button. It marks the item as Claimed, shows a success message and refreshes the table. | I connected the Reject button. It marks the item as Rejected and removes it from the table at once. | I built the My Claimed Items panel. It shows the student's claimed items with name, description, place and date. | I tested the full flow: admin approves, the notification comes, I click Accept and the item shows in My Claimed Items. It all worked. | I added empty messages: 'No pending notifications' and 'You have not claimed any items yet'. | **Mentor meeting.** I showed the full student flow and the mentor signed off my module. I updated the tracking sheet. | I stopped changing the student panel code and pushed the final files with the message 'Student Panel - All sections complete'. |
+| **Naitik Pathak** | I added a confirmation pop-up before every approve and reject, asking 'Are you sure?' so nothing is clicked by mistake. | I added a count above each table like 'Total Pending: 5 items' that updates after every action. | I showed a 'No items found' label when a section has no data instead of an empty table. | I improved the tables with alternate row colours, a blue selected row and bold headers. | I wrote comments for all public methods in AdminDashboard and removed unused imports and debug prints. | **Mentor meeting.** I showed the polished admin panel and the mentor signed off my module. I updated the tracking sheet. | I stopped changing the admin code and pushed the final files with the message 'Admin Panel - All 4 sections complete'. |
+| **Paramveer Singh** | I ran test cases 32 and 33 (admin approves and student is notified, student accepts and claimed list updates). Both passed. | I ran test cases 34 and 35 (student rejects and the full flow). Both passed, so all integration cases pass. | I ran all 35 test cases on the full system. 33 passed and 2 failed (admin with no selection and double submit). I told Naitik and Mitesh. | I helped Naitik and Mitesh fix the 2 failed cases. I ran them again and all 35 test cases passed. | I wrote the integration test report, closed the fixed bugs in the bug report and pushed everything to GitHub. | **Mentor meeting.** I showed the integration report with all 35 passing. I updated the tracking sheet. | I added final screenshots to the README and reviewed everyone's progress before the last coding week. |
 
 ---
 
-## 🔹 Week 8: Module Coding Phase 4 — Smart Matching & UI Polish
+## 🔹 Week 8: Module Coding Phase 4 — Smart Matching & Final Polish
 **Duration:** 24 August 2026 – 30 August 2026
 
 ### 8.1 Multi-Attribute Matching Algorithm (`MatchingService.java`)
-The smart matching service compares reported lost items against cataloged found items to suggest candidate matches:
-
-$$\text{Match Score} = S_{\text{category}} + S_{\text{name}} + S_{\text{location}} + S_{\text{description}}$$
-
-$$\begin{aligned}
-S_{\text{category}} &= \begin{cases} 20 & \text{if } \text{Category}_{\text{lost}} = \text{Category}_{\text{found}} \\ 0 & \text{otherwise} \end{cases} \\
-S_{\text{name}} &= \begin{cases} 30 & \text{if lexical match / keyword overlap } (\ge 3 \text{ chars}) \\ 0 & \text{otherwise} \end{cases} \\
-S_{\text{location}} &= \begin{cases} 25 & \text{if campus location matches or overlaps} \\ 0 & \text{otherwise} \end{cases} \\
-S_{\text{description}} &= \begin{cases} 25 & \text{if shared descriptive tokens} \\ 0 & \text{otherwise} \end{cases}
-\end{aligned}$$
+The smart matching service compares reported lost items against cataloged found items to suggest candidate matches based on category equality and lexical keyword overlap.
 
 #### Worked Verification Examples
 
 | Lost Item Title (Category) | Found Item Title (Category) | Evaluation | Match Verdict & Technical Rationale |
 | :--- | :--- | :---: | :--- |
-| **Black Wallet** *(Wallet / Bag)* | **Wallet** *(Wallet / Bag)* | **Match** | Same category; substring overlap between titles. |
-| **Student ID Card** *(Documents)* | **ID Card** *(Documents)* | **Match** | Same category; shared keyword `"Card"` ($\ge 3$ characters). |
-| **Black Wallet** *(Wallet / Bag)* | **Black Wallet** *(Other)* | **No Match** | Category mismatch overrides title equality. |
-| **Silver Keychain** *(Keys)* | **Bunch of Keys** *(Keys)* | **No Match** | Different words used; no common token $\ge 3$ characters. |
-| **Black Umbrella** *(Other)* | **Black Water Bottle** *(Other)* | **Match** *(False)* | Shared generic token `"black"` within identical category. |
-
-> *Operational Rule:* Suggested matches serve as decision leads for administrative review and do **not** constitute automated ownership proof.
+| **Black Wallet** *(Wallet / Bag)* | **Wallet** *(Wallet / Bag)* | **Match** | Same category; found name is contained in lost name. |
+| **Student ID Card** *(Documents)* | **ID Card** *(Documents)* | **Match** | Same category; found name is contained in lost name. |
+| **Black Wallet** *(Wallet / Bag)* | **Black Wallet** *(Other)* | **No Match** | Categories differ. |
+| **Silver Keychain** *(Keys)* | **Bunch of Keys** *(Keys)* | **No Match** | No substring and no shared word of three or more letters. |
+| **Black Umbrella** *(Other)* | **Black Water Bottle** *(Other)* | **Match** *(False)* | Shared word "black" in the same category. |
 
 ### 8.2 Week 8 Daily Activity Log
 
 | Member | Mon (24 Aug) | Tue (25 Aug) | Wed (26 Aug) | Thu (27 Aug) | Fri (28 Aug) | Sat (29 Aug) | Sun (30 Aug) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Mohit Kumar** | Populated 15+ realistic sample campus records for benchmarks. | Coded database reset utility `ResetCleanDB.java` for demos. | Finalized production DDL script with constraints and indexes. | Performed code audit of all DAOs; verified naming conventions. | Pushed milestone commit `'DAO layer complete - v1.0'`. | **Mentor Meeting:** Demonstrated complete database module. | Documented schema notes for final report; assisted with README. |
-| **Prabhash Kumar** | Verified student name dynamically renders in dashboard header. | Assisted Naitik in testing admin header session rendering. | Executed rapid login/logout cycles across 10 sequential users. | Conducted code review: eliminated console debug statements. | Pushed milestone commit `'Auth module complete - v1.0'`. | **Mentor Meeting:** Showed completed authentication module. | Checked Git commit distribution; added documentation comments. |
-| **Mitesh Nehra** | Added personalized greeting banner (`Welcome, [Student Name]`). | Benchmarked all 5 student panels across multiple accounts. | Enhanced button hover animations and margin padding in panels. | Re-verified form field validation with whitespace test data. | Pushed milestone commit `'Student Panel complete - v1.0'`. | **Mentor Meeting:** Demonstrated student panel with final styling. | Audited commit history; pushed student panel documentation. |
-| **Naitik Pathak** | Added administrator status banner (`Welcome, Campus Admin`). | Styled active sidebar navigation button with bright blue glow. | Tested edge cases (approving without selection, double clicks). | Conducted code review: verified exception handling structure. | Pushed milestone commit `'Admin Panel complete - v1.0'`. | **Mentor Meeting:** Showed fully operational admin console. | Audited commit history; pushed admin module documentation. |
-| **Paramveer Singh** | Conducted student user acceptance testing (report -> claim). | Conducted admin acceptance testing (approval -> audit log). | Identified and resolved missing count label update bug. | Certified test sign-off: all 35 test cases PASS, 0 open bugs. | Built runnable JAR using Maven and tested execution. | **Mentor Meeting:** Demonstrated packaged JAR on clean computer. | Updated README with screenshots; tagged GitHub release `v1.0-final`. |
+| **Mohit Kumar** | I added more than 15 sample records and tested the queries. I also added indexes to make filtering faster. | I made a small ResetCleanDB.java file that deletes everything and creates fresh tables. It will help us during demos. | I finished the database.sql file with all tables, rules, indexes and starting data. | I did a last review of the DAO files. I checked method names, removed unused methods and added comments. | I pushed the final DAO code to GitHub with the message 'DAO layer complete - v1.0'. No more big changes after this. | **Mentor meeting.** We showed the full application with all modules together. The mentor said the database module is complete. I updated the tracking sheet. | I made notes about the small remaining database problems for next week's testing. I also helped Paramveer update the README. |
+| **Prabhash Kumar** | I helped Mitesh check that the logged-in student's data loads correctly in the student panel. | I helped Naitik check that the admin's name shows in the admin dashboard header. | I logged in and out 5 times in a row and registered 10 students one after another. Everything worked fine. | I did a final review of my files for naming, no print statements and proper error handling. | I pushed the final login code to GitHub with the message 'Auth module complete - v1.0'. The code is now frozen. | **Mentor meeting.** We showed the full app with all modules. The mentor said my login part is complete. I updated the tracking sheet. | I checked my GitHub commits to make sure I have 3 or more every week. I added one commit with comments. |
+| **Mitesh Nehra** | I added a 'Welcome, [Student Name]' label at the top of the dashboard. | I tested all 5 sections with more than 10 records and 3 different students. Each student saw only their own data. | I improved the look of all panels with equal spacing, font sizes and a hover colour on buttons. | I tested all form checks again, such as empty fields and only spaces. Proper error pop-ups showed. | I pushed the final student panel code with the message 'Student Panel complete - v1.0'. No more changes after this. | **Mentor meeting.** We showed the full app with all modules working. The mentor said my part is complete. I updated the tracking sheet. | I checked my GitHub commits for 3 or more per week and added comments as a documentation commit. |
+| **Naitik Pathak** | I added a 'Welcome, Admin' header at the top of the dashboard. | I made the active sidebar button turn a brighter blue so it is clear which section is open. | I tested tricky cases like approving with no row selected and approving an already approved item. Clear messages showed. | I did a final review of the admin code for names, error handling and clean structure. | I pushed the final admin panel code with the message 'Admin Panel complete - v1.0'. No more changes after this. | **Mentor meeting.** We showed the full app with all modules. The mentor said the admin panel is complete. I updated the tracking sheet. | I checked my GitHub commits for 3 or more per week and added a comments commit. |
+| **Paramveer Singh** | I did user testing as a student: registered, logged in, reported a lost item, accepted the claim and checked My Claimed Items. | I did user testing as the admin: opened all 4 sections and approved items for 3 students. Claimed items showed correctly. | I found one last important bug: the claimed count label in the admin panel did not update. Naitik fixed it. | I signed off the testing. All 35 test cases passed, user testing passed and there are 0 open bugs. | I built the final JAR with mvn clean package and ran it on another user profile. The app opened and everything worked. | **Mentor meeting.** I showed the final JAR running on a fresh computer. The mentor said it is ready for submission. I updated the tracking sheet. | I updated the README with screenshots, team details and build steps. I also made a GitHub release tag v1.0-final. |
 
 ---
 
@@ -578,19 +423,18 @@ S_{\text{description}} &= \begin{cases} 25 & \text{if shared descriptive tokens}
 **Duration:** 31 August 2026 – 6 September 2026
 
 ### 9.1 Engineering Focus
-* **End-to-End Workflow Testing:** Verified seamless execution of: Student Registration $\rightarrow$ Login $\rightarrow$ Lost Item Submission $\rightarrow$ Admin Review Queue $\rightarrow$ Approval Trigger $\rightarrow$ Notification Alert $\rightarrow$ Acceptance & Claim.
-* **Foreign Key Constraints:** Verified `ON DELETE CASCADE` from users and `ON DELETE SET NULL` on claims to ensure relational database consistency.
-* **Team Commit Alignment:** Audited GitHub commit history to ensure all 5 team members maintained consistent commit velocity.
+* Ran full workflow integration: Student registers -> Reports lost item -> Admin sees in approval queue -> Approves -> Student notified -> Claims.
+* Verified database foreign key integrity and tested boundary conditions.
 
 ### 9.2 Week 9 Daily Activity Log
 
-| Member | Mon (31 Aug) | Tue (1 Sep) | Wed (2 Sep) | Thu (3 Sep) | Fri (3 Sep) | Sat (5 Sep) | Sun (6 Sep) |
+| Member | Mon (31 Aug) | Tue (1 Sep) | Wed (2 Sep) | Thu (3 Sep) | Fri (4 Sep) | Sat (5 Sep) | Sun (6 Sep) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Mohit Kumar** | Ran full flow across modules; resolved foreign key mapping bug. | Verified database status transitions across all 4 tables. | Tested edge cases: rejecting already rejected records. | Resolved query bug where status filter omitted pending found items. | Inspected database integrity; confirmed 0 orphan records. | **Mentor Meeting:** Demonstrated fully integrated system. | Planned final optimizations for system testing week. |
-| **Prabhash Kumar** | Verified logged-in students see strictly their own data. | Verified role segregation: admin vs student navigation limits. | Assisted Paramveer in executing login tests 1-10; all passed. | Tested Back button navigation on registration screen. | Verified logout completely clears in-memory user credentials. | **Mentor Meeting:** Demonstrated role security during integration. | Audited auth code; confirmed all edge cases resolved. |
-| **Mitesh Nehra** | Verified lost item submissions appear in admin approval queue. | Verified admin approval updates notification table instantly. | Benchmarked multi-user isolation across 3 separate accounts. | Resolved integration bug where session ID was dropped. | Conducted final UI audit across all 5 student views. | **Mentor Meeting:** Showed integrated student workflows to mentor. | Addressed mentor suggestions on table column alignments. |
-| **Naitik Pathak** | Verified incoming lost reports display reporter details accurately. | Approved test items and verified student notifications received. | Verified student acceptance immediately updates Claimed Items. | Resolved admin bug where claimant name failed to load. | Verified all 4 admin panels reflect live database changes. | **Mentor Meeting:** Demonstrated integrated admin console. | Reviewed mentor feedback; confirmed zero pending admin bugs. |
-| **Paramveer Singh** | Executed integrated regression tests with 3 students and 9 items. | Audited team commit logs; reminded members to push updates. | Debugged SQL JOIN query in Claimed Items audit table. | Executed all 35 test cases after bug fixes; 100% PASS rate. | Restructured final project directory layout (`src`, `lib`, `dist`). | **Mentor Meeting:** Received formal mentor integration sign-off. | Confirmed all defects closed; prepared for system testing. |
+| **Mohit Kumar** | I ran the full flow with all modules: a student registers, reports a lost item and the admin sees it. I fixed one foreign key problem. | I checked the approval steps in the database. Pending to Approved to Claimed was saved properly every time. | I tested some tricky cases, like rejecting an already rejected item and one student reporting 3 items. No errors came. | I fixed this week's database bugs: a wrong status filter in one query and a foreign key error while deleting test data. | I opened the database after the full test and checked every record. All statuses were correct with no broken records. | **Mentor meeting.** I showed the fully connected system and all modules worked together. I updated the tracking sheet. | I read the feedback and planned the last fixes for testing week. I also checked my GitHub commits and I am on track. |
+| **Prabhash Kumar** | I tested that a student who logs in can see only their own data in Mitesh's student panel. | I tested admin login going to the admin panel and student login going to the student panel. Logout from both returns to the login screen. | I helped Paramveer run login test cases 1 to 10. All passed. I fixed one bug where the error showed twice on a wrong password. | I tested the Back button on the register screen and it goes to login. After closing and opening the app no old session is left. | I checked that logout fully clears the session, and a fresh login works with no old data. | **Mentor meeting.** We showed the integration demo and login worked well with everything. I updated the tracking sheet. | I went through the remaining issues and confirmed all login problems are fixed. |
+| **Mitesh Nehra** | I tested the connection today. A lost item from my panel appeared in Naitik's admin panel. I fixed an item name loading issue. | I tested that after the admin approves, the notification shows in my Notifications section. | I tested with 3 student accounts. Each student saw only their own reports, notifications and claimed items. | I fixed an integration bug where the session ID was not passed correctly to a query. | I did a final check that My Reports, Notifications and My Claimed Items show correct data in the full app. | **Mentor meeting.** We showed the integration demo and the student panel was fully connected. I updated the tracking sheet. | I went through the remaining feedback and confirmed all student panel issues are fixed. |
+| **Naitik Pathak** | I tested that a lost item from Mitesh's student panel shows in my Lost Items Approval section. I fixed one query filter issue. | I approved a lost item and then checked Mitesh's student panel. The notification showed correctly. | After a student accepted, I refreshed my Claimed Items section and the item showed with the student's name and roll number. | I fixed the last admin bug where the student's name did not load in Claimed Items. Mohit helped me fix the query. | I did a final check and all 4 sections show correct live data after every action. | **Mentor meeting.** We showed the integration demo and the admin panel worked with all modules. I updated the tracking sheet. | I went through the remaining feedback and confirmed all admin issues are fixed. |
+| **Paramveer Singh** | I ran the full test again with 3 students and 9 items. Everything passed and I saved the results. | I checked that all 5 members have 3 or more commits per week. I reminded one member, who then pushed the missing commits. | I helped the team with the last fixes and debugged one JOIN query problem in Claimed Items. | I ran all 35 test cases one last time after the fixes. All 35 passed and I pushed the final result sheet. | I made the final project folder: src, docs, database, dist JAR, build.bat, run.bat and README. I pushed it clean. | **Mentor meeting.** I showed the complete integration and the mentor gave the integration sign-off. I updated the tracking sheet. | I checked all open items: all tests pass, all bugs are closed and the code is frozen. I planned the report writing. |
 
 ---
 
@@ -601,37 +445,36 @@ S_{\text{description}} &= \begin{cases} 25 & \text{if shared descriptive tokens}
 
 | Test ID | Test Scenario | Input Data | Expected Result | Actual Result | Status |
 | :--- | :--- | :--- | :--- | :--- | :---: |
-| **TC-01** | System Launch | Application start | Login window renders without errors | Window displayed | **PASS** |
-| **TC-02** | Student Login | Valid credentials | Student dashboard opens with user details | Dashboard opened | **PASS** |
-| **TC-03** | Admin Login | Valid credentials | Admin dashboard opens with management tabs | Dashboard opened | **PASS** |
-| **TC-04** | Invalid Password | Incorrect password | Error dialog displayed; access denied | Error shown | **PASS** |
-| **TC-05** | Student Registration | Valid form data | New user created; success message shown | User registered | **PASS** |
-| **TC-06** | Duplicate Email | Existing email | Rejection dialog displayed; no duplicate created | Error shown | **PASS** |
-| **TC-07** | Lost Item Submission | Required fields | Record saved with `PENDING` status | Record created | **PASS** |
-| **TC-08** | Missing Fields | Blank name/location | Form rejected with validation alert | Alert shown | **PASS** |
-| **TC-09** | Found Item Submission | Valid form data | Record saved with `PENDING` status | Record created | **PASS** |
-| **TC-10** | Item Filter / Search | Keyword query | Matching items displayed in table | Table filtered | **PASS** |
-| **TC-11** | Smart Match Search | Sample records | Potential match identified by algorithm | Match found | **PASS** |
-| **TC-12** | Submit Item Claim | Valid claim | Claim recorded in database with `PENDING` status | Claim saved | **PASS** |
-| **TC-13** | Admin Report Approval | Approve button | Status changes to `APPROVED`; notification generated | Status updated | **PASS** |
-| **TC-14** | Data Persistence | App restart | Previously saved records remain intact | Data persisted | **PASS** |
-| **TC-15** | SQL Injection Defense | `' OR '1'='1` | Input stored harmlessly as literal string | Sanitized | **PASS** |
-| **TC-16** | Session Logout | Logout button | Session terminated; login window reopened | Window reopened | **PASS** |
+| **TC-01** | System Launch | Application start | Login window renders without errors | Login window opens without error | **PASS** |
+| **TC-02** | Student Login | Valid student credentials | Student dashboard opens | Student dashboard opens | **PASS** |
+| **TC-03** | Admin Login | Valid admin credentials | Admin dashboard opens | Admin dashboard opens | **PASS** |
+| **TC-04** | Invalid Password | Incorrect password | Error dialog displayed; access denied | Error message; no dashboard access | **PASS** |
+| **TC-05** | Student Registration | Valid form data | New user created; success message shown | Account is saved and success feedback appears | **PASS** |
+| **TC-06** | Duplicate Email | Existing email | Rejection dialog displayed; no duplicate created | Registration is rejected | **PASS** |
+| **TC-07** | Lost Item Submission | Required fields | Record saved with `PENDING` status | Record is saved and appears in list | **PASS** |
+| **TC-08** | Missing Fields | Blank name/location | Form rejected with validation alert | Validation message appears; record not saved | **PASS** |
+| **TC-09** | Found Item Submission | Valid form data | Record saved with `PENDING` status | Record is saved and visible for review | **PASS** |
+| **TC-10** | Item Filter / Search | Keyword query | Matching items displayed in table | Relevant records are displayed | **PASS** |
+| **TC-11** | Smart Match Search | Sample records | Potential match identified by algorithm | Candidate matches and score are displayed | **PASS** |
+| **TC-12** | Submit Item Claim | Valid claim | Claim recorded in database with `PENDING` status | Claim is stored with pending status | **PASS** |
+| **TC-13** | Admin Report Approval | Approve button | Status changes to `APPROVED`; notification generated | Database and relevant views show updated status | **PASS** |
+| **TC-14** | Data Persistence | App restart | Previously saved records remain intact | Persisted records remain available | **PASS** |
+| **TC-15** | SQL Injection Defense | `' OR '1'='1` | Input stored harmlessly as literal string | Input treated as data, not executable SQL | **PASS** |
+| **TC-16** | Session Logout | Logout button | Session terminated; login window reopened | Session ends and login screen is shown | **PASS** |
 
 ### 10.2 Standalone Packaging & Portability
-* **`jpackage` Windows App-Image:** Bundled a minimal Java 17 runtime into `dist/SmartLostAndFound/` alongside the application JAR and the native launcher `SmartLostAndFound.exe`.
-* **Zero-Dependency Execution:** Can run on any Windows 10/11 laptop without requiring Java or MySQL to be installed locally.
-* **Cloud Database Integration:** Connected to live **Clever Cloud MySQL** instance so all instances share real-time synchronized data.
+* Built with `jpackage` to bundle a private Java runtime into `dist/SmartLostAndFound/` with `SmartLostAndFound.exe`.
+* Pre-configured with live **Clever Cloud MySQL** database so any computer with internet runs the app with live synchronized data without local MySQL.
 
 ### 10.3 Week 10 Daily Activity Log
 
 | Member | Mon (7 Sep) | Tue (8 Sep) | Wed (9 Sep) | Thu (10 Sep) | Fri (11 Sep) | Sat (12 Sep) | Sun (13 Sep) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Mohit Kumar** | Tested DB with 20+ records; queries completed in sub-second. | Verified data persistence across app restarts; no duplicate seeds. | Added unique constraint on email in DB schema directly. | Implemented code freeze; tagged commit `'DB-Final-v1.0'`. | Assisted Paramveer with testing the standalone packaged JAR. | **Mentor Meeting:** Presented final database test results. | Verified commit logs across all weeks; added doc commits. |
-| **Prabhash Kumar** | Tested 5 student accounts; verified strict data isolation. | Tested role access; verified admins cannot access student forms. | Assisted Paramveer with testing the standalone build on clean PC. | Implemented code freeze; tagged commit `'Auth-Final-v1.0'`. | Authored report section on authentication & session management. | **Mentor Meeting:** Received final mentor sign-off on Auth module. | Verified commit distribution across the full semester. |
-| **Mitesh Nehra** | Ran system tests with 3 students reporting 3 items each (9 total). | Tested claim flows; verified each student sees their own claims. | Tested packaged JAR; verified forms, alerts, and tables work. | Implemented code freeze; tagged `'StudentPanel-Final-v1.0'`. | Authored report section on student workflows and panels. | **Mentor Meeting:** Received final mentor sign-off on Student module. | Reviewed and finalized student module documentation. |
-| **Naitik Pathak** | Executed batch approvals on 9 items; verified live claim updates. | Stress tested admin tables with 30+ records; verified UI speed. | Tested packaged JAR; verified all 4 admin consoles work. | Implemented code freeze; tagged `'AdminPanel-Final-v1.0'`. | Authored report section on administrative operations. | **Mentor Meeting:** Received final mentor sign-off on Admin module. | Reviewed and finalized admin module documentation. |
-| **Paramveer Singh** | Executed final system test with 30+ records; verified all flows. | Audited team commit logs; verified 3+ commits/week per member. | Tested executable on 2 separate PCs; verified DB auto-creation. | Released GitHub tag `v1.0-final` with executable package. | Enforced project-wide code freeze; planned report compilation. | **Mentor Meeting:** Presented final system test results to mentor. | Certified project readiness for documentation week. |
+| **Mohit Kumar** | I tested with more than 20 records. All queries ran in under a second, so there is no speed problem. | I closed and reopened the app to check the data stays saved. It did, and the default admin was not added twice. | I made email unique in the database itself too. Now even if the code check is skipped, a duplicate email is not allowed. | Today I stopped all database changes (code freeze) and tagged the last commit as DB-Final-v1.0 on GitHub. | I helped Paramveer test the final JAR file. Adding, updating and reading data all worked in the packaged app. | **Mentor meeting.** I showed the final test results and the mentor signed off the database module. I updated the tracking sheet. | I checked my GitHub commits for all 12 weeks and made sure I have 3 or more every week. I added a few documentation commits. |
+| **Prabhash Kumar** | I tested with 5 student accounts. I registered, logged in, reported items and logged out for each. Each student saw only their own data. | I checked role access. An admin cannot open the student report form and a student cannot open the admin sections. | I helped Paramveer test the final JAR. Login and register worked on a clean computer. | I tagged my last commit as Auth-Final-v1.0 on GitHub. The login code is completely frozen now. | I wrote my part of the report about the login flow, register checks, role access and the session. | **Mentor meeting.** The mentor gave the final sign-off and all my test cases passed. I updated the tracking sheet. | I checked my GitHub commits for 12 weeks and made sure I have 3 or more every week. |
+| **Mitesh Nehra** | I ran system tests where 3 students each reported 3 lost items. All 9 items showed correctly in the admin panel. | I tested claiming for 3 students, each accepted 2 items. Each student's claimed list showed exactly their own 2 items. | I helped Paramveer test the final JAR. Forms, notifications and claimed items all worked. | I tagged the final code as StudentPanel-Final-v1.0 on GitHub. The student panel is frozen now. | I wrote my part of the report about the 5 sections, the report flow and the accept and reject flow. | **Mentor meeting.** The mentor signed off the student panel and all student test cases passed. I updated the tracking sheet. | I checked my GitHub commits for 12 weeks and pushed the last documentation commits. |
+| **Naitik Pathak** | I ran system tests by approving 9 items from 3 students. All showed correctly in Claimed Items after the students accepted. | I tested with more than 30 records across all sections. Tables loaded fine and actions were quick. | I helped Paramveer test the final JAR and all 4 admin sections worked. | I tagged the final admin code as AdminPanel-Final-v1.0 on GitHub. The admin panel is frozen now. | I wrote my part of the report about the 4 sections, the approve and notify logic and claimed items tracking. | **Mentor meeting.** The mentor signed off the admin panel and all admin test cases passed. I updated the tracking sheet. | I checked my GitHub commits for 12 weeks and pushed the last documentation commits. |
+| **Paramveer Singh** | I ran the final system test with more than 30 records. All sections loaded and approve, reject, accept and claim all worked. | I checked everyone's commit counts and all have 3 or more per week. The GitHub history is clean. | I tested the JAR on 2 different computers. It ran on both and the database file was created on first launch. | I made the GitHub release v1.0-final with the final code, the JAR and a short description. | I locked all code after confirming with everyone that no more changes will be made. I started planning the report. | **Mentor meeting.** I showed the final system test results and the mentor gave the final project sign-off. I updated the tracking sheet. | I checked all GitHub work and confirmed everything is ready for the report writing week. |
 
 ---
 
@@ -639,48 +482,41 @@ S_{\text{description}} &= \begin{cases} 25 & \text{if shared descriptive tokens}
 **Duration:** 14 September 2026 – 20 September 2026
 
 ### 11.1 Academic Project Report & Paper Structure
-1. **Title Page & Certificates:** Approved by **Er. Ram Babu Buri** (Mentor) and **Dr. Ashok Kajla** (HOD).
-2. **Abstract & Introduction:** Research background, campus lost-and-found challenges, proposed digital solution.
-3. **Literature Review & Technology Stack:** Java Swing, JDBC, MySQL, DAO design pattern, rule-based text matching.
-4. **Software Requirements Specification (SRS):** IEEE 830 compliant functional and non-functional specifications.
-5. **System Design (UML):** Architecture diagram, class diagram, sequence diagrams, use cases, DFD Level 0 & Level 1.
-6. **Implementation Details:** Key class breakdowns, representative JDBC parameterized query code sheets.
-7. **Testing & Results:** Complete 35-case test execution matrix with 100% pass verification.
-8. **User Manual:** Step-by-step instructions for student and administrative roles.
-9. **Conclusion & Future Enhancements:** BCrypt password hashing, mobile client, and image attachment roadmaps.
+1. Title Page, Certificates, Declaration & Acknowledgement approved by Er. Ram Babu Buri (Mentor) and Dr. Ashok Kajla (HOD).
+2. Introduction & Literature Review covering campus lost-and-found practices.
+3. Architecture, DAO Pattern, Database Schema, and Rule-Based Matching.
+4. Complete 35-case testing results matrix with 100% pass verification.
+5. User manuals and deployment guides.
 
 ### 11.2 Week 11 Daily Activity Log
 
 | Member | Mon (14 Sep) | Tue (15 Sep) | Wed (16 Sep) | Thu (17 Sep) | Fri (18 Sep) | Sat (19 Sep) | Sun (20 Sep) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Mohit Kumar** | Authored report section on Database design and ER diagram. | Generated clean vector ER diagram with column descriptions. | Wrote DB implementation section with JDBC code snippets. | Proofread report section; corrected two technical terms. | Prepared 3 PPT slides: ER diagram, DAO design, SQL queries. | **Mentor Meeting:** Submitted draft report and presentation slides. | Recorded 2-minute video on DB module with live query demo. |
-| **Prabhash Kumar** | Authored report section on authentication and role routing. | Created login decision flowchart and code snippet figures. | Wrote auth implementation section for `LoginFrame` & `User`. | Proofread report section; submitted to Paramveer. | Prepared 3 PPT slides: login, register, role access flows. | **Mentor Meeting:** Reviewed report draft and slides with mentor. | Recorded 2-minute video demonstrating user auth & role routing. |
-| **Mitesh Nehra** | Authored report section on Student Dashboard architecture. | Created student navigation flowchart and screenshot figures. | Wrote student implementation section with table loading code. | Proofread report section; submitted to Paramveer. | Prepared 3 PPT slides: dashboard, reporting, notification panels. | **Mentor Meeting:** Reviewed student report content with mentor. | Recorded 2-minute video demonstrating student user journey. |
-| **Naitik Pathak** | Authored report section on Admin Dashboard operations. | Created admin workflow flowchart (approval -> notification). | Wrote admin implementation section with approval action code. | Proofread report section; submitted to Paramveer. | Prepared 4 PPT slides: one for each administrative console view. | **Mentor Meeting:** Reviewed admin report content with mentor. | Recorded 2-minute video demonstrating admin approval actions. |
-| **Paramveer Singh** | Merged individual sections into master project report document. | Embedded all UML diagrams, ERDs, and DFDs with captions. | Authored Testing section with 35 test case results and matrices. | Authored Conclusion and Future Scope (mobile app, images). | Assembled master 16-slide project presentation deck. | **Mentor Meeting:** Presented report draft and master PPT to mentor. | Edited all 5 video recordings into a 10-minute demo video. |
+| **Mohit Kumar** | I started my part of the report. I wrote about the database design, the ER diagram and how the DAO classes work. | I made a clean final ER diagram and explained every table and column for the report. | I wrote how the database is implemented in the report, with some code snippets of the connection and queries. | I read my report part again, fixed two technical mistakes and sent it to Paramveer for the main report. | I made 3 PPT slides: the ER diagram, the DAO structure and the main SQL queries we used. | **Mentor meeting.** I gave the report draft and my slides to the mentor and noted the final feedback. I updated the tracking sheet. | I recorded a 2-minute video explaining the database module with the ER diagram and a live query. I sent it to Paramveer. |
+| **Prabhash Kumar** | I wrote my documentation part: how login works, register checks, role-based access and how SessionManager works. | I made a login flow chart with each decision and added a small code example of the login check. | I wrote the implementation part about LoginFrame, RegisterFrame and SessionManager with code snippets. | I read my report part again, fixed some technical mistakes and gave it to Paramveer. | I made 3 PPT slides: the login screenshot, the register screen with its checks and the role access flowchart. | **Mentor meeting.** I noted the mentor's final feedback on the report and PPT and helped Paramveer give the draft. I updated the tracking sheet. | I recorded a 2-minute video: register a student, login, logout, then login as admin. I sent it to Paramveer. |
+| **Mitesh Nehra** | I wrote my documentation part explaining the 5 sections, how CardLayout switches panels and the main logic. | I made a student flow diagram from login to claimed items and added screenshots of every section. | I wrote the implementation part with code snippets of table loading, the Accept and Reject buttons and the empty messages. | I read my report part again, fixed two mistakes and sent it to Paramveer. | I made 3 PPT slides: dashboard overview, report lost and found forms, and Notifications with Claimed Items. | **Mentor meeting.** I noted the final feedback and helped Paramveer give the draft report to the mentor. I updated the tracking sheet. | I recorded a 2-minute video of the student flow: report lost, get a notification, accept and see it in claimed items. I sent it to Paramveer. |
+| **Naitik Pathak** | I wrote my documentation part explaining the 4 sections, the approve and reject logic, notifications and claimed items. | I made an admin workflow diagram: Pending, Admin approves, Student notified, Student accepts, Claimed. I added screenshots too. | I wrote the implementation part with code snippets of table loading, the approve button and the confirmation pop-up. | I read my report part again, fixed two mistakes and gave it to Paramveer. | I made 4 PPT slides, one for each admin section. | **Mentor meeting.** I noted the final feedback and helped Paramveer give the draft report to the mentor. I updated the tracking sheet. | I recorded a 2-minute video of the admin panel: view users, approve found and lost items and see Claimed Items update. I sent it to Paramveer. |
+| **Paramveer Singh** | I started the final report by joining all members' parts into one document with title page, abstract, index, introduction and tools. | I added all UML diagrams, the architecture diagram and the ER diagram to the report with captions. | I wrote the Testing chapter with the 35 test case results, integration results, user testing and bug summary. | I wrote the Conclusion and Future Scope, such as email notifications, a mobile app and barcode tracking. | I made the final PPT of 16 slides and sent it to everyone to check. | **Mentor meeting.** I gave the report draft and PPT to the mentor and noted the final corrections. I updated the tracking sheet. | I joined all 5 video clips into one 10-minute demo video with a title screen and pushed it to GitHub. |
 
 ---
 
-## 🔹 Week 12: Final Polish, Code Freeze & Release Deliverable
+## 🔹 Week 12: Final Documentation Polish & Code Freeze
 **Duration:** 21 September 2026 – 27 September 2026
 
 ### 12.1 Final Deliverable Release Summary
-* **Source Code Cleanliness:** Cleaned redundant debug print statements, retained essential comments, and verified documentation across all 15 Java source files.
-* **Portable Desktop Distribution:**
-  * Created `SmartLostAndFound.zip` (~27 MB) containing `SmartLostAndFound.exe`, bundled Java 17 runtime (`runtime/`), application JAR, and pre-configured `db.properties`.
-  * Removed unnecessary deeply nested license documentation from the embedded JRE to eliminate the Windows 260-character path length extraction issue (`Error 0x80010135`).
-* **Live Shared Cloud Database:** Configured **Clever Cloud MySQL** credentials, enabling multiple laptops to share the exact same synchronized lost-and-found data in real time.
-* **Final Mentor Approval:** Er. Ram Babu Buri conducted the final review of the source code, executable build, test logs, and report, granting official academic sign-off.
+* Cleaned the code by removing debug prints and adding final comments.
+* Created portable package `SmartLostAndFound.zip` (27 MB) with bundled runtime and live shared Cloud MySQL configuration.
+* Final review completed and all database, UI, testing, and documentation deliverables signed off by Er. Ram Babu Buri.
 
 ### 12.2 Week 12 Daily Activity Log
 
 | Member | Mon (21 Sep) | Tue (22 Sep) | Wed (23 Sep) | Thu (24 Sep) | Fri (25 Sep) | Sat (26 Sep) | Sun (27 Sep) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Mohit Kumar** | Incorporated mentor's report suggestions into DB section. | Audited `DatabaseConnection.java` and all DAO query methods. | Tested database auto-creation on fresh machine with zero config. | Verified relational integrity and foreign key cascades. | Removed debug logs; pushed `'Final Deliverable - DB Module'`. | **Mentor Meeting:** Participated in final review; DB approved. | Rest day; verified all database deliverables on GitHub. |
-| **Prabhash Kumar** | Incorporated mentor's report suggestions into Auth section. | Verified password masking and input validation across dialogs. | Tested rapid login/logout sequences; confirmed clean sessions. | Verified role access barriers prevent unauthorized navigation. | Cleaned up comments; pushed `'Final Deliverable - Auth Module'`. | **Mentor Meeting:** Participated in final review; Auth approved. | Rest day; verified all auth deliverables on GitHub. |
-| **Mitesh Nehra** | Incorporated mentor's report suggestions into Student section. | Verified all 5 student sub-panels render smoothly with data. | Tested notification acceptance and claim list transitions. | Refined table padding, column widths, and hover highlights. | Cleaned up comments; pushed `'Final Deliverable - Student Panel'`. | **Mentor Meeting:** Participated in final review; Student UI approved. | Rest day; verified all student deliverables on GitHub. |
-| **Naitik Pathak** | Incorporated mentor's report suggestions into Admin section. | Verified non-editable table properties and count labels. | Tested batch approvals and rejections across large datasets. | Verified student notifications are consistently triggered. | Cleaned up comments; pushed `'Final Deliverable - Admin Panel'`. | **Mentor Meeting:** Participated in final review; Admin UI approved. | Rest day; verified all admin deliverables on GitHub. |
-| **Paramveer Singh** | Finalized master report and exported publication-ready PDF. | Re-verified all test logs: 35/35 test cases PASS, 0 open bugs. | Exported finalized 16-slide PPT and 10-minute demo video. | Verified Maven build cleanliness and commit histories on GitHub. | Generated portable executable bundle and pushed final release. | **Mentor Meeting:** Led final project review; full approval granted. | Rest day; confirmed all project assets published on GitHub. |
+| **Mohit Kumar** | I added the mentor's final report suggestions to my part and sent the corrected part to Paramveer. | I went through the connection class and all DAO files once more. Connections close properly and queries use safe parameters. | I ran database.sql on a fresh computer to check that the database sets up by itself with no extra steps. | I helped the team check that foreign keys and status changes work fine when many actions are done. | I cleaned the code by removing debug prints and adding the last comments. I pushed the commit 'Final Deliverable - DB Module'. | **Mentor meeting.** I joined the final review and all my database work and documents were approved. | Rest day. I checked all my files once more and made sure everything is uploaded on GitHub. |
+| **Prabhash Kumar** | I added the mentor's final suggestions to my report part. | I checked LoginFrame and RegisterFrame again for the hidden password, email and phone checks and duplicate emails. | I tested login and logout many times to make sure no old user data stays after logout. | I worked with Mitesh and Naitik to check that students cannot open admin screens and admins go to the admin panel. | I did the final cleanup and added the last comments. I pushed the commit 'Final Deliverable - Auth Module'. | **Mentor meeting.** I joined the final review, showed the full login flow and got the mentor's sign-off. | Rest day. I checked that all my files are uploaded on GitHub. |
+| **Mitesh Nehra** | I added the mentor's final feedback to my report part and finished it. | I checked all 5 student sections again for form checks, empty messages and smooth panel switching. | I tested the whole notification and claim flow again. Approved items showed up and moved to My Claimed Items after accepting. | I improved the look of the panels with table spacing, column alignment, status colours and button hover. | I did the final cleanup with comments and removed debug prints. I pushed 'Final Deliverable - Student Panel'. | **Mentor meeting.** I joined the final review, showed all 5 student features and got the mentor's approval. | Rest day. I checked that all my files are on GitHub. |
+| **Naitik Pathak** | I added the mentor's final feedback to my report part and finished it. | I checked all 4 admin sections again for table models and read-only tables. | I tested approve and reject with many records. The pending count updated and the confirm pop-ups worked. | I worked with Mitesh to check that admin approvals always create the student notification with no missed updates. | I did the final cleanup with comments and removed debug prints. I pushed 'Final Deliverable - Admin Panel'. | **Mentor meeting.** I joined the final review, showed all 4 admin sections live and got the mentor's sign-off. | Rest day. I checked that all my files are on GitHub. |
+| **Paramveer Singh** | I added all the mentor's corrections to the report and saved it as Final_Report.pdf on GitHub. | I checked the test logs again. All 35 test cases pass and there are 0 open bugs. I signed off the test reports. | I finished the 16-slide PPT and exported the final 10-minute demo video. | I checked the GitHub repo and the build for all members. Commits look fine and the Maven build is clean. | I made the final release package with the JAR, build.bat, run.bat and database.sql and pushed the final commit. | **Mentor meeting.** I led the final review and gave the mentor the JAR, report, PPT, video and source code. The mentor approved it. | Rest day. I checked that all deliverables are saved and uploaded. |
 
 ---
 
@@ -729,6 +565,13 @@ SmartLostAndFound/
 │       ├── db.properties.example            # Configuration template
 │       ├── database.sql                     # Schema backup script
 │       └── README_PORTABLE.txt              # Standalone user guide
+│
+├── docs/                                    # Academic Project Documentation
+│   ├── ARCHITECTURE.md                      # System Architecture Specification
+│   ├── PROJECT_REPORT.md                    # Academic Project Report
+│   ├── RESEARCH_PAPER.md                    # Research Paper Specification
+│   ├── SRS.md                               # Software Requirements Specification
+│   └── demo_video_link.md                   # Video Walkthrough Overview & Links
 │
 ├── db.properties                            # Root database configuration
 ├── db.properties.example                    # Git-safe configuration template
