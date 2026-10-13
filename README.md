@@ -36,6 +36,19 @@ A stand-alone, high-performance desktop application engineered in **Core Java (J
 
 ---
 
+### 📑 Project Deliverables & Technical Artifacts (Direct Access)
+
+| Deliverable | Description | Resource Link |
+| :--- | :--- | :--- |
+| 📄 **Final Project Report** | Complete 36-Page Technical Architecture Document, System Requirements Specification (SRS), and Evaluation Metrics | [View Project Report](docs/PROJECT_REPORT.md) \| [ARCHITECTURE.md](docs/ARCHITECTURE.md) |
+| 📊 **Presentation Deck (PPT)** | 16-Slide B.Tech Final Project Evaluation Deck covering System Design, Cloud DB, Matching Service & Testing | [View Presentation Deck (Slides)](docs/PROJECT_REPORT.md) |
+| 🎥 **Video Demonstration** | 10-Minute HD Walkthrough of Smart Lost & Found System (Student Workflow, Matching Engine, Live Cloud DB & Admin Console) | [Watch Video Demonstration](docs/demo_video_link.md) |
+| 📜 **Software Requirements (SRS)** | IEEE 830 / ISO 29148 Compliant Specification Document covering all 16 Functional & Non-Functional Requirements | [View SRS Document](docs/SRS.md) |
+| 🔬 **Research Paper** | Complete Academic Research Paper on Campus Property Recovery & Rule-Based Matching Algorithms | [View Research Paper](docs/RESEARCH_PAPER.md) |
+
+
+---
+
 # 📅 12-Week Project Development Log (Week-by-Week)
 
 ---
@@ -323,14 +336,13 @@ sequenceDiagram
     participant LDAO as LostItemDAO
     participant DB as MySQL Database
     actor Admin as Administrator
-    participant ADAO as Admin Actions
 
-    Student->>DF: Fill Lost Item Form & Click Submit
-    DF->>DF: Validate required fields, date & phone
-    DF->>LDAO: save(LostItem [status=PENDING])
-    LDAO->>DB: INSERT INTO lost_items (...) VALUES (...)
-    DB-->>LDAO: Generated ID / Success
-    LDAO-->>DF: true
+    Student->>DF: Fill Lost Item Form and Click Submit
+    DF->>DF: Validate required fields date and phone
+    DF->>LDAO: save(LostItem)
+    LDAO->>DB: INSERT INTO lost_items VALUES (...)
+    DB-->>LDAO: Generated ID (Success)
+    LDAO-->>DF: return true
     DF-->>Student: Display "Item Reported Successfully!"
 
     Admin->>DF: Open "Lost Items Approval" Panel
@@ -338,16 +350,16 @@ sequenceDiagram
     LDAO->>DB: SELECT * FROM lost_items WHERE status='PENDING'
     DB-->>LDAO: ResultSet of pending records
     LDAO-->>DF: List of LostItem models
-    DF-->>Admin: Render table with Approve / Reject buttons
+    DF-->>Admin: Render table with Approve and Reject buttons
 
-    Admin->>DF: Select Item & Click "Approve & Notify Student"
+    Admin->>DF: Select Item and Click "Approve & Notify Student"
     DF->>LDAO: updateStatus(itemId, "APPROVED")
     LDAO->>DB: UPDATE lost_items SET status='APPROVED' WHERE id=?
     DB-->>LDAO: 1 row affected
-    LDAO-->>DF: true
-    DF-->>Admin: Table refreshes; Status changed to APPROVED
+    LDAO-->>DF: return true
+    DF-->>Admin: Table refreshes and status updated to APPROVED
 
-    Note over Student,DF: Next student login triggers Notification Badge!
+    Note over Student, DF: Next student login displays notification badge
 ```
 
 ### 3.4 Week 3 Daily Activity Log
