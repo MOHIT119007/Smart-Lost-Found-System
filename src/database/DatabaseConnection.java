@@ -32,6 +32,12 @@ public class DatabaseConnection {
 
     static {
         loadConfiguration();
+        try {
+            Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+                closeConnection();
+            }, "DB-Cleanup-Thread"));
+        } catch (Exception ignored) {
+        }
     }
 
     private DatabaseConnection() {
@@ -66,11 +72,26 @@ public class DatabaseConnection {
     }
 
     /**
+     * Helper to verify if the cached database connection is still active and valid.
+     */
+    public static boolean isConnectionAlive(Connection conn) {
+        if (conn == null) return false;
+        try {
+            return !conn.isClosed() && conn.isValid(2);
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    /**
      * Obtains the active database connection, opening a new one if closed.
      */
     public static synchronized Connection getConnection() throws SQLException {
         try {
-            if (connection == null || connection.isClosed()) {
+            if (connection == null || connection.isClosed() || !isConnectionAlive(connection)) {
+                // Ensure previous dead connection is safely closed first
+                closeConnection();
+
                 // Ensure MySQL JDBC driver is loaded
                 try {
                     Class.forName("com.mysql.cj.jdbc.Driver");
@@ -83,7 +104,9 @@ public class DatabaseConnection {
                         + "&useSSL=" + dbSsl
                         + "&allowPublicKeyRetrieval=true"
                         + "&serverTimezone=UTC"
-                        + "&characterEncoding=UTF-8";
+                        + "&characterEncoding=UTF-8"
+                        + "&connectTimeout=5000"
+                        + "&socketTimeout=30000";
 
                 connection = DriverManager.getConnection(url, dbUser, dbPass);
                 initializeTablesIfMissing(connection);
@@ -203,6 +226,7 @@ public class DatabaseConnection {
             try {
                 if (!connection.isClosed()) {
                     connection.close();
+                    System.out.println("Database connection released cleanly (Cloud MySQL slot freed).");
                 }
             } catch (SQLException e) {
                 System.err.println("Error closing connection: " + e.getMessage());

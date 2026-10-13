@@ -1,5 +1,6 @@
 package ui;
 
+import database.DatabaseConnection;
 import dao.UserDAO;
 import model.User;
 
@@ -30,7 +31,15 @@ public class LoginFrame extends JFrame {
     private void initComponents() {
         setTitle("Smart Lost & Found System – Campus Portal Login");
         setIconImage(UITheme.getAppLogo());
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            @Override
+            public void windowClosing(java.awt.event.WindowEvent e) {
+                DatabaseConnection.closeConnection();
+                dispose();
+                System.exit(0);
+            }
+        });
         setSize(480, 550);
         setLocationRelativeTo(null);
         setResizable(false);

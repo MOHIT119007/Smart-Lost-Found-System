@@ -1,5 +1,6 @@
 package ui;
 
+import database.DatabaseConnection;
 import dao.FoundItemDAO;
 import dao.LostItemDAO;
 import dao.UserDAO;
@@ -91,7 +92,15 @@ public class DashboardFrame extends JFrame {
                 ? "Smart Lost & Found System – Campus Administration Portal"
                 : "Smart Lost & Found System – Student Portal (" + currentUser.getFullName() + ")");
         setIconImage(UITheme.getAppLogo());
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            @Override
+            public void windowClosing(java.awt.event.WindowEvent e) {
+                DatabaseConnection.closeConnection();
+                dispose();
+                System.exit(0);
+            }
+        });
         setSize(1220, 750);
         setMinimumSize(new Dimension(1080, 680));
         setLocationRelativeTo(null);
