@@ -1,12 +1,19 @@
 # 📅 12-Week Project Development Plan & Daily Activity Logs
 ### Smart Lost & Found System — Campus Property Recovery & Management System
+---
 
-> **Institution:** Arya College of Engineering & Information Technology (ACEIT), Jaipur  
-> **Affiliation:** Rajasthan Technical University (RTU), Kota (Raj.)  
-> **Department:** Department of Artificial Intelligence & Data Science  
-> **Course:** Foundation Course (Tinkering & Elements of Design) / Java PBL Track  
-> **Academic Session:** 2026–27 | **Semester:** III  
-> **Project Guide:** **Er. Ram Babu Buri**, Assistant Professor | **HOD:** **Dr. Ashok Kajla**, Professor  
+## 🏛️ Academic Project Administration
+
+| Academic Parameter | Institutional Specification |
+| :--- | :--- |
+| **Project Title** | **Smart Lost & Found System** (Campus Property Recovery & Management) |
+| **Institution** | Arya College of Engineering & Information Technology (ACEIT), Jaipur |
+| **Affiliation** | Rajasthan Technical University (RTU), Kota (Raj.) |
+| **Department** | Department of Artificial Intelligence & Data Science |
+| **Course** | Foundation Course (Tinkering & Elements of Design) / Java PBL Track |
+| **Academic Session** | 2026–27 \| B.Tech. AI & Data Science (Semester III) |
+| **Project Guide & Mentor** | **Er. Ram Babu Buri**, Assistant Professor |
+| **Head of Department (HOD)** | **Dr. Ashok Kajla**, Professor |
 
 ---
 
