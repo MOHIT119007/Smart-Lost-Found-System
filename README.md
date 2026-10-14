@@ -30,19 +30,33 @@ A stand-alone, high-performance desktop application engineered in **Core Java (J
 
 ---
 
+## 📑 Project Deliverables & Technical Artifacts (Direct Access)
+
+| Deliverable | Description | Resource Link |
+| :--- | :--- | :--- |
+| 📄 **Final Project Report** | Complete Technical Architecture Document, System Requirements Specification, and Evaluation Metrics | [View Project Report](docs/PROJECT_REPORT/PROJECT_REPORT.md) \| [ARCHITECTURE.md](docs/ARCHITECTURE.md) |
+| 📊 **Presentation Deck (PPT)** | 16-Slide B.Tech Final Project Defense Deck covering System Design, Cloud DB, Matching Service & Testing | *Offline Academic Submission (Preserved for examination committee; standalone `.pptx` file not hosted in Git repository)* |
+| 🎥 **Video Demonstration** | 10-Minute HD Walkthrough of Smart Lost & Found System (Student Workflow, Matching Engine, Live Cloud DB & Admin Console) | [Watch Video Demonstration](docs/VIDEO/demo_video_link.md) |
+| 📜 **Software Requirements (SRS)** | College Curriculum Format (Arya College / RTU Kota) covering 16 Functional & Non-Functional Requirements, User Roles & Constraints | [View SRS Document](docs/SRS/SRS.md) |
+| 🔬 **Research Paper** | IEEE Standard Format Academic Research Paper on Campus Property Recovery & Rule-Based Matching Algorithms | [View Research Paper](docs/RESEARCH_PAPER/RESEARCH_PAPER.md) |
+| 📅 **12-Week Development Plan** | Comprehensive Week-by-Week Progress Reports, Milestone Tracking & Member Daily Activity Logs (Weeks 1–12) | [View Week-by-Week Data](week_wise_data.md) |
+
+
+---
+
 ## 📑 Table of Contents
 
-1. [Problem Statement & Objectives](#-problem-statement--objectives)
-2. [Key Features](#-key-features)
-3. [Technology Stack](#-technology-stack)
-4. [Project Modules & Team Responsibilities](#-project-modules--team-responsibilities)
-5. [System Architecture & Workflow](#-system-architecture--workflow)
-6. [Database Design (Relational 3NF Schema)](#-database-design-relational-3nf-schema)
-7. [Project Directory Structure](#-project-directory-structure)
-8. [Installation & Execution Instructions](#-installation--execution-instructions)
-9. [Screenshots & Visual Design System](#-screenshots--visual-design-system)
-10. [Formal Test Suite Checklist](#-formal-test-suite-checklist-100-pass)
-11. [Project Deliverables & Documentation Links](#-project-deliverables--technical-artifacts-direct-access)
+1. [Project Deliverables & Technical Artifacts](#-project-deliverables--technical-artifacts-direct-access)
+2. [Problem Statement & Objectives](#-problem-statement--objectives)
+3. [Key Features](#-key-features)
+4. [Technology Stack](#-technology-stack)
+5. [Project Modules & Team Responsibilities](#-project-modules--team-responsibilities)
+6. [System Architecture & Workflow](#-system-architecture--workflow)
+7. [Database Design (Relational 3NF Schema)](#-database-design-relational-3nf-schema)
+8. [Project Directory Structure](#-project-directory-structure)
+9. [Installation & Execution Instructions](#-installation--execution-instructions)
+10. [Screenshots & Visual Design System](#-screenshots--visual-design-system)
+11. [Formal Test Suite Checklist](#-formal-test-suite-checklist-100-pass)
 12. [Demonstration Accounts](#-demonstration-accounts)
 13. [License](#-license)
 
@@ -413,19 +427,6 @@ The project underwent comprehensive verification across 35 formal test cases. Th
 
 ---
 
-## 📑 Project Deliverables & Technical Artifacts (Direct Access)
-
-| Deliverable | Description | Resource Link |
-| :--- | :--- | :--- |
-| 📄 **Final Project Report** | Complete Technical Architecture Document, System Requirements Specification, and Evaluation Metrics | [View Project Report](docs/PROJECT_REPORT/PROJECT_REPORT.md) \| [ARCHITECTURE.md](docs/ARCHITECTURE.md) |
-| 📊 **Presentation Deck (PPT)** | 16-Slide B.Tech Final Project Defense Deck covering System Design, Cloud DB, Matching Service & Testing | *Offline Academic Submission (Preserved for examination committee; standalone `.pptx` file not hosted in Git repository)* |
-| 🎥 **Video Demonstration** | 10-Minute HD Walkthrough of Smart Lost & Found System (Student Workflow, Matching Engine, Live Cloud DB & Admin Console) | [Watch Video Demonstration](docs/VIDEO/demo_video_link.md) |
-| 📜 **Software Requirements (SRS)** | College Curriculum Format (Arya College / RTU Kota) covering 16 Functional & Non-Functional Requirements, User Roles & Constraints | [View SRS Document](docs/SRS/SRS.md) |
-| 🔬 **Research Paper** | IEEE Standard Format Academic Research Paper on Campus Property Recovery & Rule-Based Matching Algorithms | [View Research Paper](docs/RESEARCH_PAPER/RESEARCH_PAPER.md) |
-| 📅 **12-Week Development Plan** | Comprehensive Week-by-Week Progress Reports, Milestone Tracking & Member Daily Activity Logs (Weeks 1–12) | [View Week-by-Week Data](week_wise_data.md) |
-
----
-
 ## 🔑 Demonstration Accounts
 
 | Role | Email Address | Password | Full Name | Academic ID |
@@ -443,4 +444,3 @@ The project underwent comprehensive verification across 35 formal test cases. Th
 
 ## 📄 License
 This project is licensed under the [MIT License](LICENSE) — developed for the B.Tech. AI & Data Science Foundation Course at Arya College of Engineering & Information Technology (RTU Kota).
-
