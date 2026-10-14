@@ -16,7 +16,7 @@ The **Smart Lost & Found System** is packaged as a standalone portable Windows a
 Download the pre-compiled portable application archive using any of the following direct links:
 
 * 📦 **Primary Download (GitHub Latest Release):**  
-  👉 **[Download SmartLostAndFound.zip](dist/SmartLostAndFound.zip)**
+  👉 **[Download SmartLostAndFound.zip](../dist/SmartLostAndFound.zip)**
 * 📁 **Local Repository Distribution Folder:**  
   If you have cloned the repository locally, the distribution package and extracted files are located in:  
   👉 **[`dist/SmartLostAndFound/`](../dist/SmartLostAndFound/)** or **[`dist/`](../dist/)**
