@@ -8,7 +8,7 @@
 * **Institution:** Arya College of Engineering & Information Technology (ACEIT), Jaipur
 * **Department:** Department of Artificial Intelligence & Data Science
 * **Affiliation:** Rajasthan Technical University (RTU), Kota (Raj.)
-* **Academic Session:** 2026–27 | B.Tech. AI & Data Science (Semester III)
+* **Academic Session:** 2026–27 | B.Tech. AI & Data Science (Semester V)
 * **Course:** Foundation Course (Tinkering & Elements of Design) / Java PBL Track
 * **Project Guide & Mentor:** **Er. Ram Babu Buri**, Assistant Professor
 * **Head of Department (HOD):** **Dr. Ashok Kajla**, Professor
