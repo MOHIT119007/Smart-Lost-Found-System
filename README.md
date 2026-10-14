@@ -46,7 +46,7 @@ A stand-alone, high-performance desktop application engineered in **Core Java (J
 
 | Deliverable / Resource | Description | Resource Link / Direct Access |
 | :--- | :--- | :--- |
-| 🚀 **Run the Project** | Step-by-step setup guide, execution instructions & direct link to application distribution directory | [Run the project](#-installation--execution-instructions) \| [Open dist/ Directory](dist/) |
+| 🚀 **Run the Project** | Step-by-step setup guide, execution instructions & direct link to application distribution directory | [Run the project](Run/Steps.md) \| [Open dist/ Directory](dist/) |
 | 📄 **Final Project Report** | Complete Technical Architecture Document, System Requirements Specification, and Evaluation Metrics | [View Project Report](docs/PROJECT_REPORT/project_report.pdf) \| [ARCHITECTURE.md](docs/ARCHITECTURE.md) |
 | 📊 **Presentation Deck (PPT)** | 11-Slide B.Tech Final Project Defense Deck covering System Design, Cloud DB, Matching Service & Testing | [View Presentation Details & Slides](docs/PRESENTATION) |
 | 🎥 **Video Demonstration** | 10-Minute HD Walkthrough of Smart Lost & Found System (Student Workflow, Matching Engine, Live Cloud DB & Admin Console) | [Watch Video Demonstration](docs/VIDEO/demo_video_link.md) |
