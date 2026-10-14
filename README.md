@@ -27,6 +27,19 @@ A stand-alone, high-performance desktop application engineered in **Core Java (J
 * **Course:** Foundation Course (Tinkering & Elements of Design) / Java PBL Track
 * **Project Guide & Mentor:** **Er. Ram Babu Buri**, Assistant Professor
 * **Head of Department (HOD):** **Dr. Ashok Kajla**, Professor
+* **Project Duration:** 6 July 2026 – 6 October 2026 (13 Weeks | 93 Days)
+
+### 👥 Team Members & Module Allocation
+
+| S.No. | Name | Roll No. | Module |
+| :---: | :--- | :---: | :--- |
+| 1 | **Mitesh Nehra** | `24EARAD102` | Student Panel (UI + Logic) |
+| 2 | **Mohit Kumar Sharma** | `24EARAD103` | Database & DAO Layer |
+| 3 | **Naitik Pathak** | `24EARAD106` | Admin Panel (UI + Logic) |
+| 4 | **Paramveer Singh** | `24EARAD119` | Testing, Integration & Documentation |
+| 5 | **Prabhash Kumar Chaudhary** | `24EARAD121` | Authentication & User Management |
+
+> **Weekly Routine:** Saturday = Mentor Meeting (All members attend) | Sunday = Review / Self-Study
 
 ---
 
@@ -127,13 +140,13 @@ Misplacing personal belongings (student ID cards, lab records, calculators, elec
 
 ## 👥 Project Modules & Team Responsibilities
 
-| Team Member | Roll No. | Assigned Module | Technical Responsibilities |
-| :--- | :--- | :--- | :--- |
-| **Mohit Kumar Sharma** | `24EARAD103` | Database & DAO Layer | Singleton JDBC connection manager, `db.properties` loader, schema bootstrapping, cloud concurrency lifecycle, `database.sql` DDL/DML. |
-| **Prabhash Kumar Chaudhary** | `24EARAD121` | Authentication & Security | `LoginFrame.java`, `RegisterDialog.java`, `UserDAO.java`, regex validation (email, 10-digit mobile), RBAC session state. |
-| **Mitesh Nehra** | `24EARAD102` | Student Panel (UI & Logic) | `DashboardFrame.java` (Student CardLayout), lost/found forms, notification badge, claim acceptance workflow. |
-| **Naitik Pathak** | `24EARAD106` | Admin Panel (UI & Logic) | `DashboardFrame.java` (Admin CardLayout), verification queue, desk found item entry, student directory, claimed audit. |
-| **Paramveer Singh** | `24EARAD119` | Testing, Integration & Packaging | 35-case formal test suite execution, `build.bat` pipeline, standalone `jpackage` bundling, academic documentation. |
+| S.No. | Team Member | Roll No. | Assigned Module | Technical Responsibilities |
+| :---: | :--- | :---: | :--- | :--- |
+| 1 | **Mitesh Nehra** | `24EARAD102` | Student Panel (UI & Logic) | `DashboardFrame.java` (Student CardLayout), lost/found forms, notification badge, claim acceptance workflow. |
+| 2 | **Mohit Kumar Sharma** | `24EARAD103` | Database & DAO Layer | Singleton JDBC connection manager, `db.properties` loader, schema bootstrapping, cloud concurrency lifecycle, `database.sql` DDL/DML. |
+| 3 | **Naitik Pathak** | `24EARAD106` | Admin Panel (UI & Logic) | `DashboardFrame.java` (Admin CardLayout), verification queue, desk found item entry, student directory, claimed audit. |
+| 4 | **Paramveer Singh** | `24EARAD119` | Testing, Integration & Packaging | 35-case formal test suite execution, `build.bat` pipeline, standalone `jpackage` bundling, academic documentation. |
+| 5 | **Prabhash Kumar Chaudhary** | `24EARAD121` | Authentication & Security | `LoginFrame.java`, `RegisterDialog.java`, `UserDAO.java`, regex validation (email, 10-digit mobile), RBAC session state. |
 
 ---
 
