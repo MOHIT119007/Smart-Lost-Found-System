@@ -21,7 +21,7 @@
 | :--- | :--- | :--- |
 | 🏠 **Main Documentation** | Complete system overview, architecture, setup guide & test suite | [Open README.md](README.md) |
 | 🏗️ **System Architecture** | Decoupled 5-layer modular architecture and component specifications | [Open ARCHITECTURE.md](docs/ARCHITECTURE.md) |
-| 📜 **Software Requirements (SRS)** | College format curriculum SRS covering 16 functional requirements | [Open SRS.md](docs/SRS/SRS.PDF) |
+| 📜 **Software Requirements (SRS)** | College format curriculum SRS covering 16 functional requirements | [Open SRS.md](docs/SRS/SRS.pdf) |
 | 📄 **Academic Project Report** | Comprehensive academic report, capabilities, and evaluation metrics | [Open PROJECT_REPORT.md](docs/PROJECT_REPORT/project_report.pdf) |
 | 🔬 **Research Paper** | IEEE standard format research paper on campus property recovery | [Open RESEARCH_PAPER.md](docs/RESEARCH_PAPER/Smart_Lost_and_Found_Research_Paper.pdf) |
 | 🎥 **Video Demonstration** | 10-Minute HD walkthrough video outline, segments, and access links | [Open demo_video_link.md](docs/VIDEO) |
