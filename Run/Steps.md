@@ -16,7 +16,7 @@ The **Smart Lost & Found System** is packaged as a standalone portable Windows a
 Download the pre-compiled portable application archive using any of the following direct links:
 
 * 📦 **Primary Download (GitHub Latest Release):**  
-  👉 **[Download SmartLostAndFound.zip](https://github.com/MOHIT119007/Smart-Lost-Found-System/releases/latest/download/SmartLostAndFound.zip)**
+  👉 **[Download SmartLostAndFound.zip](dist/SmartLostAndFound.zip)**
 * ☁️ **Cloud Mirror (Google Drive):**  
   👉 **[Smart Lost & Found - Portable Package (Google Drive)](https://drive.google.com/file/d/1exampleSmartLostFoundZip/view?usp=sharing)**
 * 📁 **Local Repository Distribution Folder:**  
