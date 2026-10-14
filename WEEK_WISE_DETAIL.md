@@ -1,19 +1,17 @@
 # 📅 12-Week Project Development Plan & Daily Activity Logs
 ### Smart Lost & Found System — Campus Property Recovery & Management System
+
 ---
 
-## 🏛️ Academic Project Administration
+## 🏛️ Project Administration
 
-| Academic Parameter | Institutional Specification |
-| :--- | :--- |
-| **Project Title** | **Smart Lost & Found System** (Campus Property Recovery & Management) |
-| **Institution** | Arya College of Engineering & Information Technology (ACEIT), Jaipur |
-| **Affiliation** | Rajasthan Technical University (RTU), Kota (Raj.) |
-| **Department** | Department of Artificial Intelligence & Data Science |
-| **Course** | Foundation Course (Tinkering & Elements of Design) / Java PBL Track |
-| **Academic Session** | 2026–27 \| B.Tech. AI & Data Science (Semester III) |
-| **Project Guide & Mentor** | **Er. Ram Babu Buri**, Assistant Professor |
-| **Head of Department (HOD)** | **Dr. Ashok Kajla**, Professor |
+* **Institution:** Arya College of Engineering & Information Technology (ACEIT), Jaipur
+* **Department:** Department of Artificial Intelligence & Data Science
+* **Affiliation:** Rajasthan Technical University (RTU), Kota (Raj.)
+* **Academic Session:** 2026–27 | B.Tech. AI & Data Science (Semester III)
+* **Course:** Foundation Course (Tinkering & Elements of Design) / Java PBL Track
+* **Project Guide & Mentor:** **Er. Ram Babu Buri**, Assistant Professor
+* **Head of Department (HOD):** **Dr. Ashok Kajla**, Professor
 
 ---
 
@@ -30,13 +28,6 @@
 
 ---
 
-> [!NOTE]
-> **Maintainer Log Notes & Historical Architecture Evolution:**
-> * **100% Verbatim Preservation:** All 12 weeks of daily developer logs (Monday through Sunday for all 5 team members: Mohit Kumar Sharma, Prabhash Kumar Chaudhary, Mitesh Nehra, Naitik Pathak, and Paramveer Singh) are preserved completely from project tracking sheets.
-> * **Stack Standardization:** Early exploratory records in Weeks 1–2 document initial planning discussions (such as initial build script considerations and local prototyping). From Week 3 onward, the engineering stack officially standardized on **Core Java 17 (JDK 17 LTS)**, **Java Swing (Custom Dark Theme via UITheme.java)**, **MySQL 8.0 / Clever Cloud Relational Database**, and the **JDBC Data Access Object (DAO) Pattern** compiled via `build.bat` without external build managers.
-> * **Representative Test Scenarios:** Section 10.1 outlines 19 key representative verification scenarios covering login, registration, validation, approval queues, SQL injection mitigation, and the instant cloud connection release lifecycle.
-
----
 
 ## 📑 Table of Contents
 
