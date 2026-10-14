@@ -32,11 +32,11 @@
 | Resource | Description | Direct Access |
 | :--- | :--- | :--- |
 | 🏠 **Main Documentation** | Complete system overview, architecture, setup guide & test suite | [Open README.md](README.md) |
-| 🏗️ **System Architecture** | Decoupled 5-layer modular architecture and component specifications | [Open ARCHITECTURE.md](docs/ARCHITECTURE.md) |
-| 📜 **Software Requirements (SRS)** | College format curriculum SRS covering 16 functional requirements | [Open SRS.md](docs/SRS/SRS.md) |
-| 📄 **Academic Project Report** | Comprehensive academic report, capabilities, and evaluation metrics | [Open PROJECT_REPORT.md](docs/PROJECT_REPORT/PROJECT_REPORT.md) |
-| 📊 **Project Presentation (PPT)** | 16-Slide project defense presentation deck, slide structure & access links | [Open presentation_link.md](docs/PRESENTATION/presentation_link.md) |
-| 🔬 **Research Paper** | IEEE standard format research paper on campus property recovery | [Open RESEARCH_PAPER.md](docs/RESEARCH_PAPER/RESEARCH_PAPER.md) |
+| 🏗️ **System Architecture** | Decoupled 5-layer modular architecture and component specifications | [Open ARCHITECTURE](docs/ARCHITECTURE.md) |
+| 📜 **Software Requirements (SRS)** | College format curriculum SRS covering 16 functional requirements | [Open SRS](docs/SRS/SRS.pdf) |
+| 📄 **Academic Project Report** | Comprehensive academic report, capabilities, and evaluation metrics | [Open PROJECT_REPORT](docs/PROJECT_REPORT/project_report.pdf) |
+| 📊 **Project Presentation (PPT)** | 16-Slide project defense presentation deck, slide structure & access links | [Open PRESENTATION](docs/PRESENTATION) |
+| 🔬 **Research Paper** | IEEE standard format research paper on campus property recovery | [Open RESEARCH_PAPER](docs/RESEARCH_PAPER/Smart_Lost_and_Found_Research_Paper.pdf) |
 | 🎥 **Video Demonstration** | 10-Minute HD walkthrough video outline, segments, and access links | [Open demo_video_link.md](docs/VIDEO/demo_video_link.md) |
 
 ---
