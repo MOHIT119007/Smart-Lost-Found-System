@@ -17,8 +17,6 @@ Download the pre-compiled portable application archive using any of the followin
 
 * 📦 **Primary Download (GitHub Latest Release):**  
   👉 **[Download SmartLostAndFound.zip](dist/SmartLostAndFound.zip)**
-* ☁️ **Cloud Mirror (Google Drive):**  
-  👉 **[Smart Lost & Found - Portable Package (Google Drive)](https://drive.google.com/file/d/1exampleSmartLostFoundZip/view?usp=sharing)**
 * 📁 **Local Repository Distribution Folder:**  
   If you have cloned the repository locally, the distribution package and extracted files are located in:  
   👉 **[`dist/SmartLostAndFound/`](../dist/SmartLostAndFound/)** or **[`dist/`](../dist/)**
