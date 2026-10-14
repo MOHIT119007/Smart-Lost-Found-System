@@ -1,5 +1,3 @@
-
-
 # Smart Lost & Found System
 ### Campus Property Recovery & Management System
 
@@ -25,10 +23,24 @@ A stand-alone, high-performance desktop application engineered in **Core Java (J
 * **Institution:** Arya College of Engineering & Information Technology (ACEIT), Jaipur
 * **Department:** Department of Artificial Intelligence & Data Science
 * **Affiliation:** Rajasthan Technical University (RTU), Kota (Raj.)
-* **Academic Session:** 2026–27 | B.Tech. AI & Data Science (Semester V)
+* **Academic Session:** 2026–27 | B.Tech. AI & Data Science (Semester III)
 * **Course:** Foundation Course (Tinkering & Elements of Design) / Java PBL Track
 * **Project Guide & Mentor:** **Er. Ram Babu Buri**, Assistant Professor
 * **Head of Department (HOD):** **Dr. Ashok Kajla**, Professor
+
+---
+
+### 🔗 Quick Navigation & Project Deliverables
+
+| Deliverable / Resource | Description | Resource Link / Direct Access |
+| :--- | :--- | :--- |
+| 🚀 **Run the Project** | Step-by-step setup guide, execution instructions & direct link to application distribution directory | [Run the project](#-installation--execution-instructions) \| [Open dist/ Directory](dist/) |
+| 📄 **Final Project Report** | Complete Technical Architecture Document, System Requirements Specification, and Evaluation Metrics | [View Project Report](docs/PROJECT_REPORT/PROJECT_REPORT.md) \| [ARCHITECTURE.md](docs/ARCHITECTURE.md) |
+| 📊 **Presentation Deck (PPT)** | 16-Slide B.Tech Final Project Defense Deck covering System Design, Cloud DB, Matching Service & Testing | [View Presentation Details & Slides](docs/PRESENTATION/presentation_link.md) |
+| 🎥 **Video Demonstration** | 10-Minute HD Walkthrough of Smart Lost & Found System (Student Workflow, Matching Engine, Live Cloud DB & Admin Console) | [Watch Video Demonstration](docs/VIDEO/demo_video_link.md) |
+| 📜 **Software Requirements (SRS)** | College Curriculum Format (Arya College / RTU Kota) covering 16 Functional & Non-Functional Requirements, User Roles & Constraints | [View SRS Document](docs/SRS/SRS.md) |
+| 🔬 **Research Paper** | IEEE Standard Format Academic Research Paper on Campus Property Recovery & Rule-Based Matching Algorithms | [View Research Paper](docs/RESEARCH_PAPER/RESEARCH_PAPER.md) |
+| 📅 **13-Week Development Plan** | Comprehensive Week-by-Week Progress Reports, Milestone Tracking & Member Daily Activity Logs (Weeks 1–13, 6 July – 6 October 2026) | [View Week-by-Week Data](week_wise_data.md) |
 
 ---
 
@@ -44,9 +56,8 @@ A stand-alone, high-performance desktop application engineered in **Core Java (J
 8. [Installation & Execution Instructions](#-installation--execution-instructions)
 9. [Screenshots & Visual Design System](#-screenshots--visual-design-system)
 10. [Formal Test Suite Checklist](#-formal-test-suite-checklist-100-pass)
-11. [Project Deliverables & Documentation Links](#-project-deliverables--technical-artifacts-direct-access)
-12. [Demonstration Accounts](#-demonstration-accounts)
-13. [License](#-license)
+11. [Demonstration Accounts](#-demonstration-accounts)
+12. [License](#-license)
 
 ---
 
@@ -330,14 +341,13 @@ SmartLostAndFound/
 └── README.md                                # Main Project Documentation
 ```
 
----
-
+<a id="run-the-project"></a>
 ## 🚀 Installation & Execution Instructions
 
 ### Option A: Run the Portable Executable (Recommended)
-1. Download or extract **`dist/SmartLostAndFound.zip`** to any directory (e.g., Desktop or `C:\SmartLostAndFound`).
+1. Navigate directly to the **[`dist/` directory](dist/)** or extract **`dist/SmartLostAndFound.zip`** to any directory (e.g., Desktop or `C:\SmartLostAndFound`).
 2. Ensure your computer is connected to the Internet (Wi-Fi or Mobile Hotspot).
-3. Double-click **`SmartLostAndFound.exe`**.
+3. Double-click **`SmartLostAndFound.exe`** located in **[`dist/SmartLostAndFound/`](dist/SmartLostAndFound/)**.
 4. The application launches immediately — **no Java or MySQL installation required**!
 
 ### Option B: Build & Run from Source Code
@@ -412,19 +422,6 @@ The project underwent comprehensive verification across 35 formal test cases. Th
 | **TC-17** | Window Close DB Cleanup | User clicks 'X' (Close) button | Database connection closes immediately; Cloud slot released | Connection closed cleanly on window close | **PASS** |
 | **TC-18** | Shutdown Hook Trigger | Process terminated / Alt+F4 | JVM shutdown hook executes `closeConnection()` | Hook executes and disconnects from DB | **PASS** |
 | **TC-19** | Network Liveness Check | Reconnect after network drop | `isConnectionAlive()` detects dead socket and reconnects | Fresh connection established automatically | **PASS** |
-
----
-
-## 📑 Project Deliverables & Technical Artifacts (Direct Access)
-
-| Deliverable | Description | Resource Link |
-| :--- | :--- | :--- |
-| 📄 **Final Project Report** | Complete Technical Architecture Document, System Requirements Specification, and Evaluation Metrics | [View Project Report](docs/PROJECT_REPORT/project_report.pdf) \| [ARCHITECTURE.md](docs/ARCHITECTURE.md) |
-| 📊 **Presentation Deck (PPT)** | 16-Slide B.Tech Final Project Defense Deck covering System Design, Cloud DB, Matching Service & Testing | [View PPT](docs/PRESENTATION) |
-| 🎥 **Video Demonstration** | 10-Minute HD Walkthrough of Smart Lost & Found System (Student Workflow, Matching Engine, Live Cloud DB & Admin Console) | [Watch Video Demonstration](docs/VIDEO) |
-| 📜 **Software Requirements (SRS)** | College Curriculum Format (Arya College / RTU Kota) covering 16 Functional & Non-Functional Requirements, User Roles & Constraints | [View SRS Document](docs/SRS/SRS.pdf) |
-| 🔬 **Research Paper** | IEEE Standard Format Academic Research Paper on Campus Property Recovery & Rule-Based Matching Algorithms | [View Research Paper](docs/RESEARCH_PAPER/Smart_Lost_and_Found_Research_Paper.pdf) |
-| 📅 **12-Week Development Plan** | Comprehensive Week-by-Week Progress Reports, Milestone Tracking & Member Daily Activity Logs (Weeks 1–12) | [View Week-by-Week Data](WEEK_WISE_DETAIL.md) |
 
 ---
 
