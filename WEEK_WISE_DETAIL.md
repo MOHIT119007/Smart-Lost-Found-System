@@ -24,7 +24,6 @@
 | 4 | **Paramveer Singh** | `24EARAD119` | Testing, Integration & Documentation |
 | 5 | **Prabhash Kumar Chaudhary** | `24EARAD121` | Authentication & User Management |
 
-> **Weekly Routine:** Saturday = Mentor Meeting (All members attend) | Sunday = Review / Self-Study
 
 ---
 
