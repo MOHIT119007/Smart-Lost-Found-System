@@ -419,11 +419,11 @@ The project underwent comprehensive verification across 35 formal test cases. Th
 
 | Deliverable | Description | Resource Link |
 | :--- | :--- | :--- |
-| 📄 **Final Project Report** | Complete Technical Architecture Document, System Requirements Specification, and Evaluation Metrics | [View Project Report](docs/PROJECT_REPORT) \| [ARCHITECTURE.md](docs/ARCHITECTURE.md) |
+| 📄 **Final Project Report** | Complete Technical Architecture Document, System Requirements Specification, and Evaluation Metrics | [View Project Report](docs/PROJECT_REPORT/project_report.pdf) \| [ARCHITECTURE.md](docs/ARCHITECTURE.md) |
 | 📊 **Presentation Deck (PPT)** | 16-Slide B.Tech Final Project Defense Deck covering System Design, Cloud DB, Matching Service & Testing | *Offline Academic Submission (Preserved for examination committee; standalone `.pptx` file not hosted in Git repository)* |
 | 🎥 **Video Demonstration** | 10-Minute HD Walkthrough of Smart Lost & Found System (Student Workflow, Matching Engine, Live Cloud DB & Admin Console) | [Watch Video Demonstration](docs/VIDEO) |
-| 📜 **Software Requirements (SRS)** | College Curriculum Format (Arya College / RTU Kota) covering 16 Functional & Non-Functional Requirements, User Roles & Constraints | [View SRS Document](docs/SRS) |
-| 🔬 **Research Paper** | IEEE Standard Format Academic Research Paper on Campus Property Recovery & Rule-Based Matching Algorithms | [View Research Paper](docs/RESEARCH_PAPER) |
+| 📜 **Software Requirements (SRS)** | College Curriculum Format (Arya College / RTU Kota) covering 16 Functional & Non-Functional Requirements, User Roles & Constraints | [View SRS Document](docs/SRS/SRS.pdf) |
+| 🔬 **Research Paper** | IEEE Standard Format Academic Research Paper on Campus Property Recovery & Rule-Based Matching Algorithms | [View Research Paper](docs/RESEARCH_PAPER/Smart_Lost_and_Found_Research_Paper.pdf) |
 | 📅 **12-Week Development Plan** | Comprehensive Week-by-Week Progress Reports, Milestone Tracking & Member Daily Activity Logs (Weeks 1–12) | [View Week-by-Week Data](WEEK_WISE_DETAIL.md) |
 
 ---
