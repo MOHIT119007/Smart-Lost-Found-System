@@ -35,9 +35,9 @@
 | 🏗️ **System Architecture** | Decoupled 5-layer modular architecture and component specifications | [Open ARCHITECTURE](docs/ARCHITECTURE.md) |
 | 📜 **Software Requirements (SRS)** | College format curriculum SRS covering 16 functional requirements | [Open SRS](docs/SRS/SRS.pdf) |
 | 📄 **Academic Project Report** | Comprehensive academic report, capabilities, and evaluation metrics | [Open PROJECT_REPORT](docs/PROJECT_REPORT/project_report.pdf) |
-| 📊 **Project Presentation (PPT)** | 16-Slide project defense presentation deck, slide structure & access links | [Open PRESENTATION](docs/PRESENTATION) |
+| 📊 **Project Presentation (PPT)** | 11-Slide project defense presentation deck, slide structure & access links | [Open PRESENTATION](docs/PRESENTATION) |
 | 🔬 **Research Paper** | IEEE standard format research paper on campus property recovery | [Open RESEARCH_PAPER](docs/RESEARCH_PAPER/Smart_Lost_and_Found_Research_Paper.pdf) |
-| 🎥 **Video Demonstration** | 10-Minute HD walkthrough video outline, segments, and access links | [Open demo_video_link.md](docs/VIDEO/demo_video_link.md) |
+| 🎥 **Video Demonstration** | 5-Minute HD Walkthrough of Smart Lost & Found System (Student Workflow, Matching Engine, Live Cloud DB & Admin Console) | [▶ Watch Video Demonstration](https://drive.google.com/file/d/1vjYQqbe0GBU3cuUvUMAAX_Upbi5egU_J/view?usp=sharing) |
 
 ---
 
