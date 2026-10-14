@@ -28,13 +28,6 @@
 
 ---
 
-> [!NOTE]
-> **Maintainer Log Notes & Historical Architecture Evolution:**
-> * **100% Verbatim Preservation:** All 12 weeks of daily developer logs (Monday through Sunday for all 5 team members: Mohit Kumar Sharma, Prabhash Kumar Chaudhary, Mitesh Nehra, Naitik Pathak, and Paramveer Singh) are preserved completely from project tracking sheets.
-> * **Stack Standardization:** Early exploratory records in Weeks 1–2 document initial planning discussions (such as initial build script considerations and local prototyping). From Week 3 onward, the engineering stack officially standardized on **Core Java 17 (JDK 17 LTS)**, **Java Swing (Custom Dark Theme via UITheme.java)**, **MySQL 8.0 / Clever Cloud Relational Database**, and the **JDBC Data Access Object (DAO) Pattern** compiled via `build.bat` without external build managers.
-> * **Representative Test Scenarios:** Section 10.1 outlines 19 key representative verification scenarios covering login, registration, validation, approval queues, SQL injection mitigation, and the instant cloud connection release lifecycle.
-
----
 
 ## 📑 Table of Contents
 
