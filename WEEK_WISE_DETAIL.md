@@ -8,11 +8,23 @@
 * **Institution:** Arya College of Engineering & Information Technology (ACEIT), Jaipur
 * **Department:** Department of Artificial Intelligence & Data Science
 * **Affiliation:** Rajasthan Technical University (RTU), Kota (Raj.)
-* **Academic Session:** 2026–27 | B.Tech. AI & Data Science (Semester V)
+* **Academic Session:** 2026–27 | B.Tech. AI & Data Science (Semester III)
 * **Course:** Foundation Course (Tinkering & Elements of Design) / Java PBL Track
 * **Project Guide & Mentor:** **Er. Ram Babu Buri**, Assistant Professor
 * **Head of Department (HOD):** **Dr. Ashok Kajla**, Professor
 * **Project Duration:** 6 July 2026 – 6 October 2026 (13 Weeks | 93 Days)
+
+### 👥 Team Members & Module Allocation
+
+| S.No. | Name | Roll No. | Module |
+| :---: | :--- | :---: | :--- |
+| 1 | **Mitesh Nehra** | `24EARAD102` | Student Panel (UI + Logic) |
+| 2 | **Mohit Kumar Sharma** | `24EARAD103` | Database & DAO Layer |
+| 3 | **Naitik Pathak** | `24EARAD106` | Admin Panel (UI + Logic) |
+| 4 | **Paramveer Singh** | `24EARAD119` | Testing, Integration & Documentation |
+| 5 | **Prabhash Kumar Chaudhary** | `24EARAD121` | Authentication & User Management |
+
+> **Weekly Routine:** Saturday = Mentor Meeting (All members attend) | Sunday = Review / Self-Study
 
 ---
 
