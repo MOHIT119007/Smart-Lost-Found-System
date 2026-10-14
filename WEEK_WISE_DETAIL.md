@@ -1,4 +1,4 @@
-# 📅 12-Week Project Development Plan & Daily Activity Logs
+# 📅 13-Week Project Development Plan & Daily Activity Logs
 ### Smart Lost & Found System — Campus Property Recovery & Management System
 
 ---
@@ -8,10 +8,11 @@
 * **Institution:** Arya College of Engineering & Information Technology (ACEIT), Jaipur
 * **Department:** Department of Artificial Intelligence & Data Science
 * **Affiliation:** Rajasthan Technical University (RTU), Kota (Raj.)
-* **Academic Session:** 2026–27 | B.Tech. AI & Data Science (Semester V)
+* **Academic Session:** 2026–27 | B.Tech. AI & Data Science (Semester III)
 * **Course:** Foundation Course (Tinkering & Elements of Design) / Java PBL Track
 * **Project Guide & Mentor:** **Er. Ram Babu Buri**, Assistant Professor
 * **Head of Department (HOD):** **Dr. Ashok Kajla**, Professor
+* **Project Duration:** 6 July 2026 – 6 October 2026 (13 Weeks | 93 Days)
 
 ---
 
@@ -21,13 +22,25 @@
 | :--- | :--- | :--- |
 | 🏠 **Main Documentation** | Complete system overview, architecture, setup guide & test suite | [Open README.md](README.md) |
 | 🏗️ **System Architecture** | Decoupled 5-layer modular architecture and component specifications | [Open ARCHITECTURE.md](docs/ARCHITECTURE.md) |
-| 📜 **Software Requirements (SRS)** | College format curriculum SRS covering 16 functional requirements | [Open SRS.md](docs/SRS/SRS.pdf) |
-| 📄 **Academic Project Report** | Comprehensive academic report, capabilities, and evaluation metrics | [Open PROJECT_REPORT.md](docs/PROJECT_REPORT/project_report.pdf) |
-| 🔬 **Research Paper** | IEEE standard format research paper on campus property recovery | [Open RESEARCH_PAPER.md](docs/RESEARCH_PAPER/Smart_Lost_and_Found_Research_Paper.pdf) |
-| 🎥 **Video Demonstration** | 10-Minute HD walkthrough video outline, segments, and access links | [Open demo_video_link.md](docs/VIDEO) |
+| 📜 **Software Requirements (SRS)** | College format curriculum SRS covering 16 functional requirements | [Open SRS.md](docs/SRS/SRS.md) |
+| 📄 **Academic Project Report** | Comprehensive academic report, capabilities, and evaluation metrics | [Open PROJECT_REPORT.md](docs/PROJECT_REPORT/PROJECT_REPORT.md) |
+| 📊 **Project Presentation (PPT)** | 16-Slide project defense presentation deck, slide structure & access links | [Open presentation_link.md](docs/PRESENTATION/presentation_link.md) |
+| 🔬 **Research Paper** | IEEE standard format research paper on campus property recovery | [Open RESEARCH_PAPER.md](docs/RESEARCH_PAPER/RESEARCH_PAPER.md) |
+| 🎥 **Video Demonstration** | 10-Minute HD walkthrough video outline, segments, and access links | [Open demo_video_link.md](docs/VIDEO/demo_video_link.md) |
 
 ---
 
+### 📌 Project Standards & Log Verification
+
+| Parameter | Status | Specification & Implementation Details |
+| :--- | :---: | :--- |
+| 🛡️ **Daily Developer Logs** | `100% VERIFIED` | Complete daily activity logs preserved verbatim for all 5 team members across Weeks 1–13 (Monday–Sunday / Tuesday, 93 Days). |
+| ⚙️ **Standard Tech Stack** | `JAVA 17 + MYSQL` | Standardized on **Core Java 17**, **Java Swing (Dark UI)**, **MySQL 8.0 / Cloud DB**, and **JDBC DAO** compiled via `build.bat`. |
+| 🧪 **Formal Test Suite** | `35/35 PASS` | Comprehensive 35-case test suite with 19 core scenarios detailed in [Section 10.1](#week-10) (0 defects). |
+| ⚡ **Socket Concurrency** | `AUTO-RELEASE` | Automated `WindowAdapter` & JVM shutdown hooks immediately free cloud database connection slots on app close. |
+| 📋 **Evaluation Checklist** | `100 MARKS` | Aligned with the formal 8-component academic evaluation rubric detailed in [Section 13.2](#week-13). |
+
+---
 
 ## 📑 Table of Contents
 
@@ -72,6 +85,10 @@
 * [Week 12: Final Documentation Polish & Code Freeze (21 Sep – 27 Sep 2026)](#week-12)
   * [12.1 Final Deliverable Release Summary](#121-final-deliverable-release-summary)
   * [12.2 Week 12 Daily Activity Log](#122-week-12-daily-activity-log)
+* [Week 13: Final Submission & Project Completion (28 Sep – 6 Oct 2026)](#week-13)
+  * [13.1 Final Deliverables & Project Submission Checklist](#131-final-deliverables--project-submission-checklist)
+  * [13.2 Formal Evaluation Checklist (100 Marks Rubric)](#132-formal-evaluation-checklist-100-marks-rubric)
+  * [13.3 Week 13 Daily Activity Log](#133-week-13-daily-activity-log)
 
 ---
 
@@ -556,11 +573,57 @@ The smart matching service compares reported lost items against cataloged found 
 
 | Member | Mon (21 Sep) | Tue (22 Sep) | Wed (23 Sep) | Thu (24 Sep) | Fri (25 Sep) | Sat (26 Sep) | Sun (27 Sep) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Mohit Kumar** | I added the mentor's final report suggestions to my part and sent the corrected part to Paramveer. | I went through DatabaseConnection and added a window-close listener and JVM shutdown hook, so whenever someone closes the app, the cloud database connection closes immediately and frees the slot. | I tested database connection auto-reconnection and verified that queries use safe parameters and socket timeouts prevent hanging. | I helped the team check that foreign keys and status changes work fine when many actions are done. | I cleaned the code by removing debug prints and adding the last comments. I pushed the commit 'Final Deliverable - DB Module'. | **Mentor meeting.** I joined the final review and all my database work and documents were approved. | Rest day. I checked all my files once more and made sure everything is uploaded on GitHub. |
-| **Prabhash Kumar** | I added the mentor's final suggestions to my report part. | I added the window closing cleanup in LoginFrame so when a student closes the login window, the database connection closes safely. | I tested login and logout many times to make sure no old user data stays after logout. | I worked with Mitesh and Naitik to check that students cannot open admin screens and admins go to the admin panel. | I did the final cleanup and added the last comments. I pushed the commit 'Final Deliverable - Auth Module'. | **Mentor meeting.** I joined the final review, showed the full login flow and got the mentor's sign-off. | Rest day. I checked that all my files are uploaded on GitHub. |
+| **Mohit Kumar** | I added the mentor's final report suggestions to my part and sent the corrected part to Paramveer. | I went through the connection class and all DAO files once more. Connections close properly and queries use safe parameters. | I ran database.sql on a fresh computer to check that the database sets up by itself with no extra steps. | I helped the team check that foreign keys and status changes work fine when many actions are done. | I cleaned the code by removing debug prints and adding the last comments. I pushed the commit 'Final Deliverable - DB Module'. | **Mentor meeting.** I joined the final review and all my database work and documents were approved. | Rest day. I checked all my files once more and made sure everything is uploaded on GitHub. |
+| **Prabhash Kumar** | I added the mentor's final suggestions to my report part. | I checked LoginFrame and RegisterFrame again for the hidden password, email and phone checks and duplicate emails. | I tested login and logout many times to make sure no old user data stays after logout. | I worked with Mitesh and Naitik to check that students cannot open admin screens and admins go to the admin panel. | I did the final cleanup and added the last comments. I pushed the commit 'Final Deliverable - Auth Module'. | **Mentor meeting.** I joined the final review, showed the full login flow and got the mentor's sign-off. | Rest day. I checked that all my files are uploaded on GitHub. |
 | **Mitesh Nehra** | I added the mentor's final feedback to my report part and finished it. | I checked all 5 student sections again for form checks, empty messages and smooth panel switching. | I tested the whole notification and claim flow again. Approved items showed up and moved to My Claimed Items after accepting. | I improved the look of the panels with table spacing, column alignment, status colours and button hover. | I did the final cleanup with comments and removed debug prints. I pushed 'Final Deliverable - Student Panel'. | **Mentor meeting.** I joined the final review, showed all 5 student features and got the mentor's approval. | Rest day. I checked that all my files are on GitHub. |
 | **Naitik Pathak** | I added the mentor's final feedback to my report part and finished it. | I checked all 4 admin sections again for table models and read-only tables. | I tested approve and reject with many records. The pending count updated and the confirm pop-ups worked. | I worked with Mitesh to check that admin approvals always create the student notification with no missed updates. | I did the final cleanup with comments and removed debug prints. I pushed 'Final Deliverable - Admin Panel'. | **Mentor meeting.** I joined the final review, showed all 4 admin sections live and got the mentor's sign-off. | Rest day. I checked that all my files are on GitHub. |
-| **Paramveer Singh** | I added all the mentor's corrections to the report and saved it as Final_Report.pdf on GitHub. | I checked the test logs again. All 35 test cases pass and there are 0 open bugs. I signed off the test reports. | I tested running the app across two laptops and confirmed that closing the window on one laptop frees the database slot right away. | I rebuilt the portable package SmartLostAndFound.zip with the latest clean database code and removed all duplicate files. | I made the final release package with the JAR, build.bat, run.bat and database.sql and pushed the final commit. | **Mentor meeting.** I led the final review and gave the mentor the JAR, report, PPT, video and source code. The mentor approved it. | Rest day. I checked that all deliverables are saved and uploaded. |
+| **Paramveer Singh** | I added all the mentor's corrections to the report and saved it as Final_Report.pdf on GitHub. | I checked the test logs again. All 35 test cases pass and there are 0 open bugs. I signed off the test reports. | I finished the 16-slide PPT and exported the final 10-minute demo video. | I checked the GitHub repo and the build for all members. Commits look fine and the Maven build is clean. | I made the final release package with the JAR, build.bat, run.bat and database.sql and pushed the final commit. | **Mentor meeting.** I led the final review and gave the mentor the JAR, report, PPT, video and source code. The mentor approved it. | Rest day. I checked that all deliverables are saved and uploaded. |
 
 ---
+
+<a id="week-13"></a>
+## 🔹 Week 13: Final Submission & Project Completion
+**Duration:** 28 September 2026 – 6 October 2026 (9 Days | Total Project Duration: 13 Weeks, 93 Days)
+
+### 13.1 Final Deliverables & Project Submission Checklist
+* **Executable Application:** Runnable Standalone Application Package (`dist/SmartLostAndFound/`) bundled with private runtime and automation scripts (`build.bat`, `run.bat`).
+* **Relational Database:** Fully bootstrapped MySQL schema (`database/schema.sql`) and live shared Clever Cloud deployment.
+* **Master Documentation Suite:**
+  * Software Requirements Specification ([SRS.md](docs/SRS/SRS.md))
+  * Decoupled System Architecture & UML Models ([ARCHITECTURE.md](docs/ARCHITECTURE.md))
+  * Academic Project Report ([PROJECT_REPORT.md](docs/PROJECT_REPORT/PROJECT_REPORT.md))
+  * Academic Research Paper ([RESEARCH_PAPER.md](docs/RESEARCH_PAPER/RESEARCH_PAPER.md))
+* **Defense Media & Presentation:**
+  * 16-Slide Comprehensive Project Defense Presentation Deck ([presentation_link.md](docs/PRESENTATION/presentation_link.md))
+  * 10-Minute HD Video Demonstration Walkthrough ([demo_video_link.md](docs/VIDEO/demo_video_link.md))
+* **Complete Git Repository:** Clean version history with regular commits per member across all 13 weeks, tagged releases, and structured source packages.
+
+### 13.2 Formal Evaluation Checklist (100 Marks Rubric)
+
+| Component | Marks | Deliverable | Responsible Member |
+| :--- | :---: | :--- | :--- |
+| **Idea & Abstract** | 05 | Abstract PDF & Initial Scope Document | Mohit Kumar Sharma |
+| **SRS / Documentation** | 10 | Complete SRS Document (IEEE / RTU Format) | Paramveer Singh |
+| **Design (Use-case, Class, ER)** | 10 | Complete UML Diagrams PDF (Architecture, ER, Sequence, Activity) | All Members |
+| **Weekly Progress** | 25 | Comprehensive Tracking Sheet & Daily Logs (13 Weeks) | Paramveer Singh |
+| **Implementation & Code Quality** | 20 | GitHub Source Code, Clean Architecture & DAO Layer | All Members |
+| **Testing** | 10 | 35 Formal Test Cases + Verification Matrix (100% Pass) | Paramveer Singh |
+| **Presentation** | 10 | 16-Slide PPT Deck + 10-Minute Demonstration Video | Paramveer Singh |
+| **Demo & Viva** | 10 | Live Application Demo + Technical Viva Voce Q&A | Each Member |
+| **Total Marks** | **100** | **Comprehensive Academic Project Evaluation** | **Team & Individual** |
+
+> *Smart Lost & Found System | Java PBL A.Y. 2026–27 | 6 July – 6 October 2026 | 13 Weeks | 93 Days*
+
+### 13.3 Week 13 Daily Activity Log
+
+| Member | Mon (28 Sep) | Tue (29 Sep) | Wed (30 Sep) | Thu (1 Oct) | Fri (2 Oct) | Sat (3 Oct) | Sun (4 Oct) | Mon (5 Oct) | Tue (6 Oct) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Mohit Kumar** | I made a final list of everything I have to submit: DB code, SQL file, report part, PPT slides and video clip. | I downloaded the project fresh from GitHub and ran it on my laptop to check the database works for a new user. | I practiced my viva answers about the ER diagram, the three tables and how the DAO classes work. | I helped the team check the final report, the PPT and the demo video for small mistakes. | I practiced my demo once with the team. I showed how the database saves and updates data live. | **Mentor meeting.** We showed the finished project to the mentor and answered the questions. I updated the tracking sheet. | Rest and revision day. I read my notes on the database module once more. | I did a last check on GitHub and made sure that the final code, SQL file and README are uploaded. | **Project completed.** I submitted all my database module work and the project is ready. |
+| **Prabhash Kumar** | I made a checklist of my final items: login code, report part, PPT slides and video clip. | I downloaded the project from GitHub on a new laptop and checked that register and login work. | I practiced viva answers on how login works, how the session is stored and how roles are checked. | I helped read the final report and PPT to find spelling and formatting mistakes. | I practiced my demo with the team: register, login, logout and admin login. | **Mentor meeting.** We showed the finished project to the mentor and answered the questions. I updated the tracking sheet. | Rest and revision day. I went through my login module notes. | I did a final check of GitHub to confirm all login files are the latest. | **Project completed.** I submitted my login module work and everything is ready. |
+| **Mitesh Nehra** | I made a list of my final items: student panel code, report part, PPT slides and video clip. | I downloaded the project from GitHub on another laptop and tried the whole student flow to make sure it works. | I practiced viva answers about the 5 student sections, how CardLayout works and the accept and reject flow. | I helped check the final report, PPT and demo video for small mistakes. | I practiced my demo with the team: report an item, get the notification, accept it and see it in claimed items. | **Mentor meeting.** We showed the finished project to the mentor and answered the questions. I updated the tracking sheet. | Rest and revision day. I read my notes on the student panel. | I did a last GitHub check to confirm my final student panel files are uploaded. | **Project completed.** I submitted my student panel work and the project is ready. |
+| **Naitik Pathak** | I made a list of my final items: admin panel code, report part, PPT slides and video clip. | I downloaded the project from GitHub on another laptop and tried all 4 admin sections to make sure they work. | I practiced viva answers about the 4 admin sections, the approve and notify logic and how claimed items are tracked. | I helped check the final report, PPT and demo video for small mistakes. | I practiced my demo with the team: view users, approve found and lost items and see Claimed Items update. | **Mentor meeting.** We showed the finished project to the mentor and answered the questions. I updated the tracking sheet. | Rest and revision day. I read my notes on the admin panel. | I did a last GitHub check to confirm my final admin panel files are uploaded. | **Project completed.** I submitted my admin panel work and the project is ready. |
+| **Paramveer Singh** | I made a final submission checklist for the team: JAR, source code, report, PPT, video and README. | I downloaded the whole project from GitHub on a fresh laptop and ran it from start to end. It worked. | I checked the final report for spelling, page numbers and the contents page. I fixed a few small mistakes. | I checked the PPT and demo video again with the team and fixed small things in the slides. | I did a full practice of the demo and viva with all members and noted the questions we were not sure about. | **Mentor meeting.** We gave the final project to the mentor and answered the questions. I updated the tracking sheet. | Rest and revision day. I went through the report and test results once more. | I did a last GitHub check to make sure the final code, JAR, report, PPT and video are uploaded. | **Project completed.** All deliverables are submitted and the project is ready. |
+
+---
+
 
