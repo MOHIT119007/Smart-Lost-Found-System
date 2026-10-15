@@ -10,7 +10,7 @@
   <a href="https://docs.oracle.com/javase/tutorial/uiswing/"><img src="https://img.shields.io/badge/GUI-Java%20Swing-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java Swing" /></a>
   <a href="https://www.mysql.com/"><img src="https://img.shields.io/badge/Database-MySQL%208.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL 8.0" /></a>
   <a href="https://dev.mysql.com/doc/connector-j/en/"><img src="https://img.shields.io/badge/Connectivity-JDBC%20Type--4-00599C?style=for-the-badge" alt="JDBC Type-4" /></a>
-  <a href="https://www.rtu.ac.in/"><img src="https://img.shields.io/badge/Affiliation-RTU%20Kota-critical?style=for-the-badge" alt="RTU Kota" /></a>
+  <a href="https://www.rtu.ac.in/"><img src="https://img.shields.io/badge/Affiliation-RTU%20Kota-critical?style=for-the-badge" alt="" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-success?style=for-the-badge" alt="MIT License" /></a>
 </p>
 
