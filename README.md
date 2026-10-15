@@ -400,7 +400,14 @@ The application features a modern, eye-friendly dark design system implemented v
 | **Status: Pending** | `#f39c12` | Pending review status indicators |
 | **Status: Rejected** | `#e74c3c` | Rejected status badges and validation alerts |
 
+### User Interface Tour
+* **Login & Registration Window:** Sleek modal with academic ID, phone number formatting checks, and role radio buttons (`STUDENT` vs `ADMIN`).
+* **Student Self-Service Dashboard:** Sidebar navigation using `CardLayout` across 5 panels (Report Lost, Report Found, My Reports, In-App Notifications, My Claimed Items).
+* **Administrative Console:** Sidebar navigation across 5 governance views (Registered Students, Review Found Items, Desk Direct Registration, Review Lost Items, Claimed Items Audit).
 
+> *Note: Users can view the live interface instantly by launching `dist/SmartLostAndFound/SmartLostAndFound.exe` or by compiling from source.*
+
+---
 
 ## 🧪 Formal Test Suite Checklist (100% Pass)
 
