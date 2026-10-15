@@ -1,4 +1,4 @@
-# 📅 13-Week Project Development Plan & Daily Activity Logs
+# 📅 All Week Project Development Plan & Daily Activity Logs
 ### Smart Lost & Found System — Campus Property Recovery & Management System
 
 ---
