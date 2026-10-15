@@ -327,11 +327,11 @@ SmartLostAndFound/
 │       ├── SmartLostAndFound.exe            # Native Windows executable launcher
 │       ├── runtime/                         # Bundled Java 17 runtime (portable)
 │       ├── app/
-│       │   ├── SmartLostAndFound.jar        # Application executable JAR
-│       │   ├── SmartLostAndFound.cfg        # Java launcher configuration
-│       │   └── db.properties                # Live database configuration
-│       ├── db.properties                    # Live database configuration
-│       └── README_PORTABLE.txt              # Standalone user guide
+│       │   ├── SmartLostAndFound.jar        # Application executable JAR 
+│       │   ├── SmartLostAndFound.cfg        # Java launcher configuration  
+│       │   └── db.properties                # Live database configuration  
+│       ├── db.properties                    # Live database configuration 
+│       └── README_PORTABLE.txt              # Standalone user guide 
 │
 ├── docs/                                    # Academic Project Documentation
 │   ├── ARCHITECTURE.md                      # System Architecture Specification
@@ -340,19 +340,18 @@ SmartLostAndFound/
 │   ├── RESEARCH_PAPER/
 │   │   └── RESEARCH_PAPER.md                # IEEE Format Research Paper
 │   ├── SRS/
-│   │   └── SRS.md                           # College Format Software Requirements Specification
+│   │   └── SRS.md                           # College Format Software Requirements Specification 
 │   └── VIDEO/
-│       └── demo_video_link.md               # Video Walkthrough Overview & Links
+│       └── demo_video_link.md               # Video Walkthrough Overview & Links 
 │
-├── week_wise_data.md                        # Complete 12-Week Development Log & Daily Activity Logs
-├── db.properties                            # Root database configuration (git-ignored)
-├── db.properties.example                    # Git-safe configuration template
-├── build.bat                                # Rebuild Java sources & package JAR
-├── setup_jdk.ps1                            # Portable JDK 17 download script
-├── LICENSE                                  # MIT License
-└── README.md                                # Main Project Documentation
+├── week_wise_data.md                        # Complete 12-Week Development Log & Daily Activity Logs 
+├── db.properties                            # Root database configuration (git-ignored) 
+├── db.properties.example                    # Git-safe configuration template  
+├── build.bat                                # Rebuild Java sources & package JAR 
+├── setup_jdk.ps1                            # Portable JDK 17 download script 
+├── LICENSE                                  # MIT License 
+└── README.md                                # Main Project Documentation 
 ```
-
 <a id="run-the-project"></a>
 ## 🚀 Installation & Execution Instructions
 
@@ -384,7 +383,6 @@ SmartLostAndFound/
      ```cmd
      java -jar dist/SmartLostAndFound/app/SmartLostAndFound.jar
      ```
-
 ---
 
 ## 🖼️ Screenshots & Visual Design System
@@ -411,7 +409,7 @@ The application features a modern, eye-friendly dark design system implemented v
 
 ## 🧪 Formal Test Suite Checklist (100% Pass)
 
-The project underwent comprehensive verification across 35 formal test cases. The core representative scenarios are outlined below:
+The project underwent comprehensive verification across 35 formal test cases. The core representative scenarios are outlined below :
 
 | Test ID | Test Scenario | Input Data | Expected Result | Actual Result | Status |
 | :--- | :--- | :--- | :--- | :--- | :---: |
@@ -450,9 +448,8 @@ The project underwent comprehensive verification across 35 formal test cases. Th
 
 > *New students can also click **"Register as New Student"** on the login screen to create a new profile.*
 
----
+--
 
 ## 📄 License
 This project is licensed under the [MIT License](LICENSE) — developed for the B.Tech. AI & Data Science Foundation Course at Arya College of Engineering & Information Technology (RTU Kota).
-
 
