@@ -58,7 +58,18 @@ A stand-alone, high-performance desktop application engineered in **Core Java (J
 
 ## 📑 Table of Contents
 
-
+1. [Problem Statement & Objectives](#-problem-statement--objectives)
+2. [Key Features](#-key-features)
+3. [Technology Stack](#-technology-stack)
+4. [Project Modules & Team Responsibilities](#-project-modules--team-responsibilities)
+5. [System Architecture & Workflow](#-system-architecture--workflow)
+6. [Database Design (Relational 3NF Schema)](#-database-design-relational-3nf-schema)
+7. [Project Directory Structure](#-project-directory-structure)
+8. [Installation & Execution Instructions](#-installation--execution-instructions)
+9. [Screenshots & Visual Design System](#-screenshots--visual-design-system)
+10. [Formal Test Suite Checklist](#-formal-test-suite-checklist-100-pass)
+11. [Demonstration Accounts](#-demonstration-accounts)
+12. [License](#-license)
 
 ---
 
@@ -389,14 +400,7 @@ The application features a modern, eye-friendly dark design system implemented v
 | **Status: Pending** | `#f39c12` | Pending review status indicators |
 | **Status: Rejected** | `#e74c3c` | Rejected status badges and validation alerts |
 
-### User Interface Tour
-* **Login & Registration Window:** Sleek modal with academic ID, phone number formatting checks, and role radio buttons (`STUDENT` vs `ADMIN`).
-* **Student Self-Service Dashboard:** Sidebar navigation using `CardLayout` across 5 panels (Report Lost, Report Found, My Reports, In-App Notifications, My Claimed Items).
-* **Administrative Console:** Sidebar navigation across 5 governance views (Registered Students, Review Found Items, Desk Direct Registration, Review Lost Items, Claimed Items Audit).
 
-> *Note: Users can view the live interface instantly by launching `dist/SmartLostAndFound/SmartLostAndFound.exe` or by compiling from source.*
-
----
 
 ## 🧪 Formal Test Suite Checklist (100% Pass)
 
