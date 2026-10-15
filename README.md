@@ -135,6 +135,7 @@ Misplacing personal belongings (student ID cards, lab records, calculators, elec
 
 ---
 
+<a id="-technology-stack"></a>
 ## 🛠️ Technology Stack
 
 | Component | Technology | Version | Purpose |
