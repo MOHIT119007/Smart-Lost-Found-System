@@ -58,18 +58,7 @@ A stand-alone, high-performance desktop application engineered in **Core Java (J
 
 ## 📑 Table of Contents
 
-1. [Problem Statement & Objectives](#-problem-statement--objectives)
-2. [Key Features](#-key-features)
-3. [Technology Stack](#-technology-stack)
-4. [Project Modules & Team Responsibilities](#-project-modules--team-responsibilities)
-5. [System Architecture & Workflow](#-system-architecture--workflow)
-6. [Database Design (Relational 3NF Schema)](#-database-design-relational-3nf-schema)
-7. [Project Directory Structure](#-project-directory-structure)
-8. [Installation & Execution Instructions](#-installation--execution-instructions)
-9. [Screenshots & Visual Design System](#-screenshots--visual-design-system)
-10. [Formal Test Suite Checklist](#-formal-test-suite-checklist-100-pass)
-11. [Demonstration Accounts](#-demonstration-accounts)
-12. [License](#-license)
+
 
 ---
 
