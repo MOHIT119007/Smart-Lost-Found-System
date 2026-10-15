@@ -74,7 +74,7 @@ A stand-alone, high-performance desktop application engineered in **Core Java (J
 
 ---
 
-<a id="abstract"></a>
+<a id="-abstract"></a>
 ## 📝 Abstract
 
 Misplacing personal belongings such as student identity cards, laboratory manuals, calculators, electronic gadgets, backpacks, keys, and wallets is an enduring logistical challenge across educational campuses. Conventional campus recovery practices rely on informal physical pinboards, word-of-mouth inquiries, security counters with restricted operational hours, and unstructured social media chat groups. These fragmented channels suffer from acute information decay, zero remote searchability, vulnerability to fraudulent claims, and an absence of a verified administrative audit trail.
@@ -85,6 +85,7 @@ To accelerate property recovery, the platform integrates an automated lexical **
 
 ---
 
+<a id="-problem-statement--objectives"></a>
 ## 🎯 Problem Statement & Objectives
 
 ### The Problem
@@ -104,6 +105,7 @@ Misplacing personal belongings (student ID cards, lab records, calculators, elec
 
 ---
 
+<a id="-key-features"></a>
 ## ⚡ Key Features
 
 ### 1. Student Self-Service Portal
@@ -150,6 +152,7 @@ Misplacing personal belongings (student ID cards, lab records, calculators, elec
 
 ---
 
+<a id="-project-modules--team-responsibilities"></a>
 ## 👥 Project Modules & Team Responsibilities
 
 | S.No. | Team Member | Roll No. | Assigned Module | Technical Responsibilities |
@@ -162,6 +165,7 @@ Misplacing personal belongings (student ID cards, lab records, calculators, elec
 
 ---
 
+<a id="-system-architecture--workflow"></a>
 ## 🏗️ System Architecture & Workflow
 
 ### 1. Five-Layer System Architecture
@@ -234,6 +238,7 @@ graph TD
 
 ---
 
+<a id="-database-design-relational-3nf-schema"></a>
 ## 🗄️ Database Design (Relational 3NF Schema)
 
 ```mermaid
@@ -302,6 +307,7 @@ erDiagram
 
 ---
 
+<a id="-project-directory-structure"></a>
 ## 🗂️ Project Directory Structure
 
 ```text
@@ -366,7 +372,7 @@ SmartLostAndFound/
 └── README.md                                # Main Project Documentation
 ```
 
-<a id="run-the-project"></a>
+<a id="-installation--execution-instructions"></a>
 ## 🚀 Installation & Execution Instructions
 
 ### Option A: Run the Portable Executable (Recommended)
@@ -400,6 +406,7 @@ SmartLostAndFound/
 
 ---
 
+<a id="-screenshots--visual-design-system"></a>
 ## 🖼️ Screenshots & Visual Design System
 
 The application features a modern, eye-friendly dark design system implemented via `src/ui/UITheme.java`:
@@ -422,6 +429,7 @@ The application features a modern, eye-friendly dark design system implemented v
 
 ---
 
+<a id="-formal-test-suite-checklist-100-pass"></a>
 ## 🧪 Formal Test Suite Checklist (100% Pass)
 
 The project underwent comprehensive verification across 35 formal test cases. The core representative scenarios are outlined below:
@@ -450,6 +458,7 @@ The project underwent comprehensive verification across 35 formal test cases. Th
 
 ---
 
+<a id="-demonstration-accounts"></a>
 ## 🔑 Demonstration Accounts
 
 | Role | Email Address | Password | Full Name | Academic ID |
@@ -465,5 +474,6 @@ The project underwent comprehensive verification across 35 formal test cases. Th
 
 ---
 
+<a id="-license"></a>
 ## 📄 License
 This project is licensed under the [MIT License](LICENSE) — developed for the B.Tech. AI & Data Science Foundation Course at Arya College of Engineering & Information Technology (RTU Kota).
