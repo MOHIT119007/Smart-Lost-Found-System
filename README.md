@@ -58,18 +58,30 @@ A stand-alone, high-performance desktop application engineered in **Core Java (J
 
 ## 📑 Table of Contents
 
-1. [Problem Statement & Objectives](#-problem-statement--objectives)
-2. [Key Features](#-key-features)
-3. [Technology Stack](#-technology-stack)
-4. [Project Modules & Team Responsibilities](#-project-modules--team-responsibilities)
-5. [System Architecture & Workflow](#-system-architecture--workflow)
-6. [Database Design (Relational 3NF Schema)](#-database-design-relational-3nf-schema)
-7. [Project Directory Structure](#-project-directory-structure)
-8. [Installation & Execution Instructions](#-installation--execution-instructions)
-9. [Screenshots & Visual Design System](#-screenshots--visual-design-system)
-10. [Formal Test Suite Checklist](#-formal-test-suite-checklist-100-pass)
-11. [Demonstration Accounts](#-demonstration-accounts)
-12. [License](#-license)
+1. [Abstract](#-abstract)
+2. [Problem Statement & Objectives](#-problem-statement--objectives)
+3. [Key Features](#-key-features)
+4. [Technology Stack](#-technology-stack)
+5. [Project Modules & Team Responsibilities](#-project-modules--team-responsibilities)
+6. [System Architecture & Workflow](#-system-architecture--workflow)
+7. [Database Design (Relational 3NF Schema)](#-database-design-relational-3nf-schema)
+8. [Project Directory Structure](#-project-directory-structure)
+9. [Installation & Execution Instructions](#-installation--execution-instructions)
+10. [Screenshots & Visual Design System](#-screenshots--visual-design-system)
+11. [Formal Test Suite Checklist](#-formal-test-suite-checklist-100-pass)
+12. [Demonstration Accounts](#-demonstration-accounts)
+13. [License](#-license)
+
+---
+
+<a id="abstract"></a>
+## 📝 Abstract
+
+Misplacing personal belongings such as student identity cards, laboratory manuals, calculators, electronic gadgets, backpacks, keys, and wallets is an enduring logistical challenge across educational campuses. Conventional campus recovery practices rely on informal physical pinboards, word-of-mouth inquiries, security counters with restricted operational hours, and unstructured social media chat groups. These fragmented channels suffer from acute information decay, zero remote searchability, vulnerability to fraudulent claims, and an absence of a verified administrative audit trail.
+
+The **Smart Lost & Found System** addresses these operational bottlenecks by providing an enterprise-grade, stand-alone desktop application engineered in **Core Java (JDK 17)** with a responsive **Java Swing** graphical interface and a **MySQL / Cloud Relational Database** via the **JDBC Data Access Object (DAO) Pattern**. Built upon a clean layered architecture, the system enforces **Role-Based Access Control (RBAC)** across dedicated Student Self-Service and Administrative Governance consoles. Items progress through a strictly regulated status lifecycle (`PENDING` $\rightarrow$ `APPROVED` / `REJECTED` $\rightarrow$ `CLAIMED` $\rightarrow$ `RETURNED` / `RESOLVED`) supported by real-time in-app notifications and claim ownership verification.
+
+To accelerate property recovery, the platform integrates an automated lexical **Matching Engine (`MatchingService.java`)** that computes category compatibility and token overlap between lost reports and recovered inventory. Enterprise-level data integrity and resilience are achieved through parameterized SQL statements defending against injection, automated schema bootstrapping, connection socket lifecycle management (`WindowAdapter` & JVM shutdown hooks), and a self-contained zero-dependency portable Windows package (`SmartLostAndFound.exe`) with an embedded Java runtime. The system establishes a secure, transparent, and auditable digital ecosystem for campus property recovery.
 
 ---
 
