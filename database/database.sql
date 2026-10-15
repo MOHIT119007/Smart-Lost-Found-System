@@ -10,6 +10,10 @@ CREATE DATABASE IF NOT EXISTS smart_lost_found
 USE smart_lost_found;
 
 -- Drop existing tables to refresh with clean predefined records
+DROP TABLE IF EXISTS claims;
+DROP TABLE IF EXISTS found_items;
+DROP TABLE IF EXISTS lost_items;
+DROP TABLE IF EXISTS users;
 
 -- ---------------------------------------------------
 -- 1. Table: users
