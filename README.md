@@ -47,11 +47,11 @@ A stand-alone, high-performance desktop application engineered in **Core Java (J
 | Deliverable / Resource | Description | Resource Link / Direct Access |
 | :--- | :--- | :--- |
 | 🚀 **Run the Project** | Step-by-step setup guide, execution instructions & direct link to application distribution directory | [Run the project](Run/Steps.md) \| [Open dist/ Directory](dist/) |
-| 📄 **Final Project Report** | Complete Technical Architecture Document, System Requirements Specification, and Evaluation Metrics | [View Project Report](docs/PROJECT_REPORT/project_report.pdf) \| [ARCHITECTURE.md](docs/ARCHITECTURE.md) |
+| 📄 **Final Project Report** | Complete Technical Architecture Document, System Requirements Specification, and Evaluation Metrics | [View Project Report](docs/PROJECT_REPORT) \| [ARCHITECTURE.md](docs/ARCHITECTURE.md) |
 | 📊 **Presentation Deck (PPT)** | 11-Slide B.Tech Final Project Defense Deck covering System Design, Cloud DB, Matching Service & Testing | [View Presentation Details & Slides](docs/PRESENTATION) |
 | 🎥 **Video Demonstration** | 5-Minute HD Walkthrough of Smart Lost & Found System (Student Workflow, Matching Engine, Live Cloud DB & Admin Console) | [▶ Watch Video Demonstration](https://drive.google.com/file/d/1vjYQqbe0GBU3cuUvUMAAX_Upbi5egU_J/view?usp=sharing) |
-| 📜 **Software Requirements (SRS)** | College Curriculum Format (Arya College / RTU Kota) covering 16 Functional & Non-Functional Requirements, User Roles & Constraints | [View SRS Document](docs/SRS/SRS.pdf) |
-| 🔬 **Research Paper** | IEEE Standard Format Academic Research Paper on Campus Property Recovery & Rule-Based Matching Algorithms | [View Research Paper](docs/RESEARCH_PAPER/Smart_Lost_and_Found_Research_Paper.pdf) |
+| 📜 **Software Requirements (SRS)** | College Curriculum Format (Arya College / RTU Kota) covering 16 Functional & Non-Functional Requirements, User Roles & Constraints | [View SRS Document](docs/SRS) |
+| 🔬 **Research Paper** | IEEE Standard Format Academic Research Paper on Campus Property Recovery & Rule-Based Matching Algorithms | [View Research Paper](docs/RESEARCH_PAPER) |
 | 📅 **Weekly Data** | Comprehensive Week-by-Week Progress Reports, Milestone Tracking & Member Daily Activity Logs (Weeks 1–13, 6 July – 6 October 2026) | [View Week-by-Week Data](WEEK_WISE_DETAIL.md) |
 
 ---
